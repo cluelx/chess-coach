@@ -1,0 +1,17 @@
+body { background: #f6f4ed; color: #203029; }
+main { max-width: 980px; margin: auto; padding: 24px; }
+main a { color: #265c47; }
+main h1 { margin-top: 18px; }
+#contents { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 24px 0; }
+#contents h2 { width: 100%; }
+#chapters h4 { margin-top: 36px; scroll-margin-top: 20px; }
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.figure { padding: 12px; background: #fff; border-radius: 8px; }
+.figure h5 { margin: 0 0 8px; }
+.figure svg { display: block; width: 100%; height: auto; }
+button { cursor: pointer; padding: 6px 12px; margin: 6px 6px 0 0; }
+#replay { max-width: 420px; padding: 16px 0; }
+#replay select { max-width: 100%; margin-bottom: 12px; }
+#replay .board { aspect-ratio: 1; }
+details { margin: 18px 0; }
+summary { cursor: pointer; }

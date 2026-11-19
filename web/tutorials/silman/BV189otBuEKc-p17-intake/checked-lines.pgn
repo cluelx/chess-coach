@@ -1,0 +1,23 @@
+[Event "Philidor vs NN: connected passed pawns"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=17&t=432"]
+[Date "1749.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "5rk1/1p1n4/2p1q1pp/1p2P3/4QPP1/3B2NP/r7/4R1K1 w - - 0 28"]
+[SetUp "1"]
+
+28. f5 gxf5 29. gxf5 *
+
+[Event "Tarrasch vs Schlechter: opening the g-file"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=17&t=1476"]
+[Date "1894.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "4rbkn/pp2rqpp/2pp1p2/8/2PNP1PP/1P3PR1/PBQ5/6RK w - - 0 31"]
+[SetUp "1"]
+
+31. g5 fxg5 32. Rxg5 *

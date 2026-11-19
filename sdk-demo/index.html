@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>棋课资料搜索</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f0;color:#17261d;font:16px/1.6 system-ui}
+main{max-width:1080px;margin:auto;padding:3rem 1.2rem}
+h1{font-size:clamp(2rem,5vw,3rem);margin:0 0 1rem}
+form{display:flex;flex-wrap:wrap;gap:.75rem}
+input{flex:1 1 17rem;min-width:0;border:1px solid #889c8e;border-radius:9px;padding:.8rem;font:inherit}
+button{background:#215a43;color:white;border:0;border-radius:9px;padding:.8rem 1.4rem;font:inherit;cursor:pointer}
+button:disabled{opacity:.55}a{color:#215a43}iframe{width:100%;height:72vh;border:1px solid #ccd9cd;border-radius:12px;background:white}
+</style>
+<main>
+<h1>棋课资料搜索</h1>
+<form>
+  <input aria-label="学习主题或来源链接" name="question" required maxlength="2000"
+         placeholder="例如：初学者怎么找带将的马捉双？">
+  <button>搜索资料</button>
+</form>
+<p id="status" role="status">输入学习主题，或粘贴一个图文、Lichess 题目或视频链接。</p>
+<p><a href="/example" target="_blank" rel="noopener">查看马捉双示例</a>
+   <a id="json" hidden> · 打开 JSON</a></p>
+<details id="trace" open hidden>
+  <summary>工具调用追踪</summary>
+  <a id="traceFile">打开 trace.jsonl</a>
+  <ol id="events"></ol>
+</details>
+<iframe id="preview" title="素材预览" hidden></iframe>
+</main>
+<script>
+const form = document.querySelector("form");
+const button = form.querySelector("button");
+const status = document.querySelector("#status");
+const preview = document.querySelector("#preview");
+const jsonLink = document.querySelector("#json");
+const trace = document.querySelector("#trace");
+const events = document.querySelector("#events");
+const labels = {job_start:"任务开始",model_start:"请求模型",model_response:"SDK 返回模型",
+  model_error:"模型调用异常",search_fallback:"搜索降级",tool_call:"模型调用工具",tool_result:"SDK 工具结果",
+  local_start:"执行本地工具",local_end:"本地工具结束"};
+form.addEventListener("submit", async event => {
+  event.preventDefault();
+  button.disabled = true;
+  status.textContent = "正在查找资料…";
+  const start = Date.now();
+  try {
+    const response = await fetch("/api/jobs", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({question: form.elements.question.value.trim()})
+    });
+    const job = await response.json();
+    if (!response.ok) throw new Error(typeof job.detail === "string" ? job.detail : "请检查输入。");
+    preview.hidden = true;
+    jsonLink.hidden = true;
+    events.replaceChildren();
+    trace.hidden = false;
+    document.querySelector("#traceFile").href = "/results/" + job.id + "/trace.jsonl";
+    let revision;
+    while (true) {
+      const check = await fetch("/api/jobs/" + job.id, {cache: "no-store"});
+      if (!check.ok) throw new Error("无法读取任务状态，请刷新后重试。");
+      const info = await check.json();
+      for (const row of info.trace.slice(events.children.length)) {
+        const item = document.createElement("li");
+        const args = row.args && Object.keys(row.args).length ? JSON.stringify(row.args) : "";
+        item.textContent = [row.time.slice(11), labels[row.event] || row.event, row.stage,
+          row.model, row.tool, args, row.status,
+          row.seconds === undefined ? "" : row.seconds + " 秒"].filter(Boolean).join(" · ");
+        events.append(item);
+      }
+      if (info.revision && revision !== info.revision) {
+        revision = info.revision;
+        preview.src = "/results/" + job.id + "/materials.html?v=" + revision;
+        preview.hidden = false;
+        jsonLink.href = "/results/" + job.id + "/materials.json";
+        jsonLink.hidden = false;
+      }
+      if (info.status === "error") throw new Error(info.error);
+      const seconds = Math.round((Date.now() - start) / 1000);
+      if (info.status === "done") {
+        status.textContent = "已完成 · " + seconds + " 秒";
+        break;
+      }
+      status.textContent = (revision ? "已显示部分结果，继续查找…" : "正在查找资料…") + " " + seconds + " 秒";
+      await new Promise(resolve => setTimeout(resolve, 1200));
+    }
+  } catch (error) {
+    status.textContent = error.message;
+  } finally {
+    button.disabled = false;
+  }
+});
+</script>
+</html>

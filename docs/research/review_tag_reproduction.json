@@ -1,0 +1,128 @@
+{
+  "source": "Position reconstructed from user screenshot, not complete PGN",
+  "fen": "3q4/1Q6/3N2rk/6p1/2p5/6P1/1bP3PP/r4RK1 w - - 0 33",
+  "valid": true,
+  "depth": 18,
+  "multipv": 3,
+  "engine": {
+    "name": "Stockfish 17.1",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "variations": [
+    {
+      "score_white": "#+3",
+      "pv_san": [
+        "Nf5+",
+        "Kh5",
+        "g4+",
+        "Kxg4",
+        "Qf3#"
+      ],
+      "depth": 18
+    },
+    {
+      "score_white": "#+6",
+      "pv_san": [
+        "Nf7+",
+        "Kh5",
+        "g4+",
+        "Kh4",
+        "g3+",
+        "Kh3",
+        "Qg2+",
+        "Kxg4",
+        "Qf3+",
+        "Kh3",
+        "Qh5#"
+      ],
+      "depth": 18
+    },
+    {
+      "score_white": "-289",
+      "pv_san": [
+        "Rxa1",
+        "Bd4+",
+        "Kh1",
+        "Qxd6",
+        "Rd1",
+        "Qe6",
+        "h4",
+        "Bf6",
+        "Qf3",
+        "gxh4",
+        "gxh4"
+      ],
+      "depth": 18
+    }
+  ],
+  "best_move_san": "Nf5+",
+  "current_rule_findings_for_engine_best_move": [
+    {
+      "ply": 65,
+      "move_no": 33,
+      "side": "white",
+      "san": "Nf5+",
+      "from": "d6",
+      "to": "f5",
+      "uci": "d6f5",
+      "fen_before": "3q4/1Q6/3N2rk/6p1/2p5/6P1/1bP3PP/r4RK1 w - - 0 33",
+      "motif": "missed_fork",
+      "kp_id": "k06",
+      "severity": 56,
+      "level": "明显",
+      "title": "错过一个叉子",
+      "detail": "Nf7+ 可以同时攻击 h6 的王、d8 的后，实战没走。",
+      "better": {
+        "san": "Nf7+",
+        "uci": "d6f7",
+        "fen": "3q4/1Q6/3N2rk/6p1/2p5/6P1/1bP3PP/r4RK1 w - - 0 33"
+      }
+    },
+    {
+      "ply": 65,
+      "move_no": 33,
+      "side": "white",
+      "san": "Nf5+",
+      "from": "d6",
+      "to": "f5",
+      "uci": "d6f5",
+      "fen_before": "3q4/1Q6/3N2rk/6p1/2p5/6P1/1bP3PP/r4RK1 w - - 0 33",
+      "motif": "missed_capture",
+      "kp_id": "k08",
+      "severity": 46,
+      "level": "明显",
+      "title": "漏掉一个免费子",
+      "detail": "这个局面里可以白吃 b2 的象，实战走了别的。",
+      "better": {
+        "san": "Qxb2",
+        "uci": "b7b2",
+        "fen": "3q4/1Q6/3N2rk/6p1/2p5/6P1/1bP3PP/r4RK1 w - - 0 33"
+      }
+    },
+    {
+      "ply": 65,
+      "move_no": 33,
+      "side": "white",
+      "san": "Nf5+",
+      "from": "d6",
+      "to": "f5",
+      "uci": "d6f5",
+      "fen_before": "3q4/1Q6/3N2rk/6p1/2p5/6P1/1bP3PP/r4RK1 w - - 0 33",
+      "motif": "backrank",
+      "kp_id": "k10",
+      "severity": 48,
+      "level": "明显",
+      "title": "底线留下后门",
+      "detail": "王在最底排、前面三个兵一步没动，对方重子已经能沿这条横线进来。",
+      "better": null
+    }
+  ],
+  "capture_mate_order_test": {
+    "fen": "7k/7p/6KQ/8/8/8/8/8 w - - 0 1",
+    "valid": true,
+    "move": "h6h7",
+    "legal": true,
+    "kp_guess": "k08",
+    "checkmate": true
+  }
+}

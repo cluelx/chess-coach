@@ -1,0 +1,21 @@
+[Event "Alekhine vs Feldt: opening through 10.Bd3"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=8&t=1172"]
+[Date "1916.??.??"]
+[Round "?"]
+[White "Alexander Alekhine"]
+[Black "Feldt"]
+[Result "*"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. exd5 Nxd5 5. Ne4 f5 6. Ng5 Be7 7. N5f3 c6 8. Ne5 O-O 9. Ngf3 b6 10. Bd3 *
+
+[Event "Alekhine vs Feldt: conditional mate if 16...Kxe6"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=8&t=1247"]
+[Date "1916.??.??"]
+[Round "?"]
+[White "Alexander Alekhine"]
+[Black "Feldt"]
+[Result "*"]
+[FEN "r2qr3/pb1nbkpp/1p2pn2/2p2p2/2PP1B2/3B1N2/PP2QPPP/R4RK1 w - - 0 16"]
+[SetUp "1"]
+
+16. Qxe6+ Kxe6 17. Ng5# *

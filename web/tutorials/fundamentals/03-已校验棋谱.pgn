@@ -1,0 +1,1305 @@
+% 03-已校验棋谱.pgn
+% 底本：Project Gutenberg eBook #33870《Chess Fundamentals》(1921)
+% 第一部例局以书中例号（Example N）为单位，FEN 为原书该例的起始局面；
+% 第二部 14 局为完整示范对局。着法文本取自 Lichess Study 导出 PGN（含原书变例），
+% 并逐着以 python-chess 重放校验；BookID 与 02-棋图与例局.json 的 ID 对应。
+
+[Event "Chess Fundamentals — 示范对局 1"]
+[Site "1909 年对抗赛"]
+[Date "1909"]
+[Round "-"]
+[White "Frank James Marshall"]
+[Black "Jose Raul Capablanca"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME01"]
+[BookPage "159"]
+[BookSection "第 1 局 后翼弃兵（1909 年对抗赛）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/54O0RI0B"]
+[Verification "书中着法与 PGN 主线逐着比对 49/50；重放至第 last=49/49"]
+
+{原书第二部第 1 局（p.159）。作者执黑。开局 5...Kt-K5 之后 6 BxB QxB 7 B-Q3，他自评 7...PxP 更好；8...Kt-Q2 也不如 PxP 展开。12...P-B4 意在取得后翼多兵，但他自己怀疑这步，认为 P-B3 更稳。图 98 正是 13...P-QKt3 之后的局面，他承认这步让白方可以 P-R5 进攻而毫无补偿，若重下会走 13...R-K1。此后 16...Kt-Q2 使局面恶化，17 B-B5 的威胁他完全没看到。最后 25 QxR! 收官，黑认输。} 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 Ne4 6. Bxe7 Qxe7 7. Bd3 Nxc3 8. bxc3 Nd7 (8... dxc4 9. Bxc4 b6 { [%cal Gc8b7] }) 9. Nf3 O-O (9... dxc4 10. Bxc4 b6 11. Bb5 { [%cal Rc8b7,Gf3e5] }) 10. cxd5 exd5 11. Qb3 Nf6 12. a4 { [%cal Gc7c5] } 12... c5 13. Qa3 b6 { [%cal Ga4a5] } (13... Rb8 14. Qxc5 (14. dxc5 Bg4) 14... Qxc5 15. dxc5) 14. a5 Bb7 15. O-O Qc7 16. Rfb1 Nd7 (16... Rfb8) 17. Bf5 Rfc8 (17... Nf6) 18. Bxd7 Qxd7 19. a6 Bc6 20. dxc5 bxc5 21. Qxc5 Rab8 22. Rxb8 Rxb8 23. Ne5 Qf5 24. f4 Rb6 25. Qxb6! { 1-0 Black resigns. } (25. Nxc6 Rb1+) 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 2"]
+[Site "1911 年圣塞巴斯蒂安"]
+[Date "1911"]
+[Round "-"]
+[White "Akiba Rubinstein"]
+[Black "Jose Raul Capablanca"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME02"]
+[BookPage "163"]
+[BookSection "第 2 局 后翼弃兵（1911 年圣塞巴斯蒂安）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/L3LoqPvD"]
+[Verification "书中着法与 PGN 主线逐着比对 78/84；重放至第 last=83/83"]
+
+{原书第二部第 2 局（p.163）。Rubinstein 变例：白以 P-KKt3、B-Kt2 的布置孤立黑方 QP，再把子力逐渐压向它。作者自评 6...B-K3 是想避开常轨，作为出子着法原则上无可指摘，只是马本应先出。图 100 是 8...R-B1 之后的局面，黑准备用后翼压力对抗白方的中心。} 1. d4 d5 2. Nf3 c5 3. c4 e6 4. cxd5 exd5 5. Nc3 Nc6 6. g3 Be6 { [%cal Gg8f6] } 7. Bg2 Be7 8. O-O Rc8 { [%csl Re5][%cal Gg8f6,Gf6g4,Gh7h6] } 9. dxc5 Bxc5 10. Ng5 Nf6 11. Nxe6 fxe6 12. Bh3 Qe7 13. Bg5 { [%cal Gc8d8,Yh3c8] } 13... O-O 14. Bxf6 { [%cal Gg7f6] } 14... Qxf6 15. Nxd5! Qh6 16. Kg2 (16. Bg2 Ne5 17. Nf4 (17. Rc1 Qxc1 18. Qxc1 Bxf2+) 17... Ng4 18. h3 (18. Nh3 Bxf2+) 18... Nxf2 19. Rxf2 Bxf2+ 20. Kxf2 g5) 16... Rcd8 17. Qc1 exd5 18. Qxc5 Qd2 19. Qb5 Nd4 20. Qd3 Qxd3 21. exd3 Rfe8 22. Bg4 (22. Rae1 Nf3 23. Rxe8+ Rxe8 24. Rc1 Re3 25. Kf1 Nd4 (25... Rxd3 26. Be6+ Kf8 27. Bxd5) 26. Rc8+ Kf7 27. Rc7+ Re7 28. Rc5) 22... Rd6 23. Rfe1 Rxe1 24. Rxe1 Rb6 25. Re5 Rxb2 26. Rxd5 Nc6 27. Be6+ Kf8 28. Rf5+ Ke8 29. Bf7+ Kd7 30. Bc4 a6 (30... Kd6 31. Rb5 Rxb5 32. Bxb5 Nd4 { [%cal Gb7b5] }) 31. Rf7+ Kd6 32. Rxg7 b5 33. Bg8 a5 34. Rxh7 a4 35. h4 b4 36. Rh6+ Kc5 37. Rh5+ Kb6 { [%cal Gg8c4] } 38. Bd5 b3 (38... Rxa2 39. Bc4 Rc2 40. Rb5+ Kc7 41. Bd5 a3 42. h5 a2 43. Bxa2 Rxa2 44. h6 Ra6!) 39. axb3 a3 40. Bxc6 Rxb3 (40... a2 41. Rb5+ Ka6 42. Rb8) 41. Bd5 a2 42. Rh6+ { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 3"]
+[Site "1913 年哈瓦那"]
+[Date "1913"]
+[Round "-"]
+[White "David Janowski"]
+[Black "Jose Raul Capablanca"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME03"]
+[BookPage "169"]
+[BookSection "第 3 局 不规则防御（1913 年哈瓦那）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/KtKZB7dY"]
+[Verification "书中着法与 PGN 主线逐着比对 69/72；重放至第 last=72/99"]
+
+{原书第二部第 3 局（p.169）。1 P-Q4 Kt-KB3 2 Kt-KB3 P-Q3 3 B-Kt5 QKt-Q2 4 P-K3 P-K4 的不规则布置。作者解释其用意是把局面导向“让白方自己想办法”的状态：中心不动、没有明显弱点，适于深藏的调度；代价是出子慢。图 105—107 记录了这种慢速挤压。} 1. d4 Nf6 2. Nf3 d6 3. Bg5 Nbd7 4. e3 e5 5. Nc3 c6 6. Bd3 Be7 7. Qe2 Qa5 8. O-O Nf8 9. Rfd1 Bg4 10. h3 Bh5 11. dxe5 dxe5 12. Ne4 Nxe4 (12... O-O-O 13. Bxf6 gxf6 14. Ng3 Bg6 15. Nf5) 13. Bxe7 Kxe7 14. Bxe4 { [%cal Gf8e6,Gh5f3,Re4f5] } 14... Bg6 15. Qc4 Ne6 16. b4 Qc7 17. Bxg6 hxg6 18. Qe4 Kf6 19. Rd3 { [%cal Gh3h4,Gg2g4,Rc6c5,Rb7b6] } 19... Rad8 20. Rad1 g5 { [%cal Gg7g6] } 21. c4 Rxd3 22. Rxd3 Rd8 23. Rxd8 Nxd8 24. h4 gxh4 (24... Ne6 25. hxg5+ Nxg5 26. Qh4) 25. Qxh4+ Ke6 26. Qg4+ Kf6 27. Qg5+ Ke6 28. Qxg7 Qd6 29. c5 Qd5 30. e4! Qd1+ 31. Kh2 f6 32. Qg4+! Ke7 33. Nxe5 Qxg4 34. Nxg4 Ne6 35. e5 fxe5 36. Nxe5 Nd4 37. g4 Ke6 38. f4 a5 39. bxa5 Kd5 40. g5 Kxc5 41. g6 Nf5 42. Kh3 Kd5 43. Kg4 Ng7 44. Kg5 c5 45. Nd7 c4 46. Nb6+ Kd4 47. Nxc4 Kxc4 48. f5 Kd5 49. f6 Ne6+ 50. Kh6 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 4"]
+[Site "1913 年圣彼得堡"]
+[Date "1913"]
+[Round "-"]
+[White "Jose Raul Capablanca"]
+[Black "Eugene Aleksandrovich Znosko-Borovsky"]
+[Result "0-1"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME04"]
+[BookPage "174"]
+[BookSection "第 4 局 法国防御（1913 年圣彼得堡）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/QPxrX2Cz"]
+[Verification "书中着法与 PGN 主线逐着比对 73/81；重放至第 last=80/94"]
+
+{原书第二部第 4 局（p.174）。当时流行 5 P-K5，作者认为 5 PxP 更强。黑 5...QxP 打散白方后翼，白则以打散黑方王翼作为补偿——他给出一条开局原则：打散王翼比打散后翼更重要。图 108—111 展示白方如何把这一“补偿”兑现成攻势。} 1. d4 e6 2. e4 d5 3. Nc3 Nf6 4. Bg5 Bb4 { [%cal Ge4e5] } 5. exd5 Qxd5 6. Bxf6 gxf6 7. Nf3 Bxc3+ 8. bxc3 b6 { [%cal Gc8b7,Gb7h1,Rg8g1,Rh8g8] } 9. Be2 Bb7 10. Qd2 Nd7 11. c4 Qf5 12. O-O-O O-O-O 13. Qe3 Rhg8 14. g3 Qa5? 15. Rd3! Kb8 16. Rhd1 Qf5 17. Nh4 Qg5 18. f4 Qg7 19. Bf3 { [%cal Rf3b7] } 19... Rge8 20. Bxb7 Kxb7 21. c5 c6 { [%cal Gc5c6] } 22. Nf3 Qf8 { [%cal Gf3d2,Gd2e4,Gd2c4,Ge4d6,Gc4d6] } 23. Nd2? { [%cal Gd3b3] } 23... bxc5 24. Nc4 Nb6 { [%cal Gd7e5,Gd7b6] } 25. Na5+ Ka8 26. dxc5 Nd5 27. Qd4 Rc8 { [%cal Ga5c4] } (27... Rb8 28. Nxc6 Rbc8 29. Nxa7) 28. c4 (28. Qc4!) 28... e5 29. Qg1 e4 30. cxd5 exd3 31. d6 Re2 32. d7 Rc2+ 33. Kb1 Rb8+ 34. Nb3 Qe7 35. Rxd3 (35. Qd4 Rxh2 (35... Rxc5 36. d8=Q) 36. Qxd3! Rd8 37. Qa6 Kb8 { [%csl Gd5,Gd4] } (37... Qe4+ 38. Ka1 Kb8 39. Rb1) 38. Qxc6) 35... Re2 36. Qd4 Rd8 37. Qa4 Qe4 38. Qa6 Kb8 { [%cal Gb3d4,Re4h1] } 39. Kc1 Rxd7 40. Nd4 Re1+ 41. Kd2 Rxd4 { 0-1 White resigns. } 42. a3 Re3 43. Kc1 Qh1+ 44. Kb2 Re2+ 45. Rd2 Rexd2+ 46. Kc3 Qf3+ 47. Qd3 Qxd3# 0-1 *
+
+
+[Event "Chess Fundamentals — 示范对局 5"]
+[Site "1914 年圣彼得堡"]
+[Date "1914"]
+[Round "-"]
+[White "Emanuel Lasker"]
+[Black "Jose Raul Capablanca"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME05"]
+[BookPage "181"]
+[BookSection "第 5 局 西班牙开局（1914 年圣彼得堡）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/XSgnbZvn"]
+[Verification "书中着法与 PGN 主线逐着比对 69/75；重放至第 last=83/83"]
+
+{原书第二部第 5 局（p.181）。拉斯克 4 BxKt 早早兑换，作者解释黑方的想法：王应留在较弱的一翼，以便日后对抗白方兵的推进。他同时提醒读者注意：若此时把所有子力兑光，白实际上等于多一兵，残局白胜。图 112—114 是他如何避免这种结局的。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. d4 exd4 6. Qxd4 Qxd4 7. Nxd4 Bd6 8. Nc3 Ne7 { [%cal Ge7g6,Ge7c6,Gc6d4,Gc6c5] } 9. O-O O-O 10. f4 { [%cal Gd6c5] } 10... Re8 11. Nb3 (11. Be3 Nd5 12. exd5 Rxe3) 11... f6 { [%cal Gb7b6,Gc6c5,Gc8b7,Ge7g6] } (11... Bc5+ 12. Be3 Nd5) 12. f5 b6 13. Bf4 Bb7 (13... Bxf4 14. Rxf4 c5 15. Rd1 Bb7 16. Rf2 Rad8 (16... Rac8! { [%csl Re4][%cal Ge7c6,Gc6e5,Ge5g4,Gc6d4,Rb7e4] }) 17. Rxd8 Rxd8 18. Rd2 Rxd2 19. Nxd2 Nc6 { [%cal Gc3b5,Gc3d5] } 20. Nd5 Nd4) 14. Bxd6 cxd6 15. Nd4 Rad8 { [%cal Gc6c5,Gd6d5] } 16. Ne6 Rd7 17. Rad1 Nc8 { [%csl Re6][%cal Gg7g5] } (17... c5 18. Nd5 (18. Rf2 d5 19. exd5 Bxd5 20. Nxd5 (20. Rfd2 Bxe6) 20... Rxd5 21. Rxd5 Nxd5) 18... Bxd5 19. exd5 b5) 18. Rf2 b5 19. Rfd2 Rde7 20. b4 Kf7 21. a3 Ba8 (21... Rxe6 22. fxe6+ Rxe6) 22. Kf2 Ra7 23. g4 h6 24. Rd3 a5 25. h4 axb4 26. axb4 Rae7 (26... Ra3 { [%cal Gc8b6,Gb6c4] }) 27. Kf3 { [%csl Gb6,Gg6,Gb3,Gg3] } 27... Rg8 28. Kf4 g6 (28... g5+) 29. Rg3 g5+ 30. Kf3 Nb6 31. hxg5 hxg5 32. Rh3 Rd7 33. Kg3 Ke8 34. Rdh1 Bb7 35. e5 dxe5 36. Ne4 Nd5 37. N6c5 Bc8 38. Nxd7 Bxd7 39. Rh7 Rf8 40. Ra1 Kd8 41. Ra8+ Bc8 42. Nc5 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 6"]
+[Site "1916 年莱斯纪念赛"]
+[Date "1916"]
+[Round "-"]
+[White "Oscar Chajes"]
+[Black "Jose Raul Capablanca"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME06"]
+[BookPage "189"]
+[BookSection "第 6 局 法国防御（1916 年莱斯纪念赛）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/g3Mz8gvI"]
+[Verification "书中着法与 PGN 主线逐着比对 116/119；重放至第 last=119/131"]
+
+{原书第二部第 6 局（p.189）。作者说自己最喜欢 4...B-Kt5 这个变化，因为它给黑更多争取主动权的机会。白 5 P-K5 他不是不赞成，但不赞成白在这盘棋里所选的整体变化。图 115—118 记录黑如何利用白方被削弱的中心与出子迟缓反夺主动。} 1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 (5. exd5) 5... h6 6. Bd2 Bxc3 7. bxc3 Ne4 8. Qg4 Kf8 (8... g6 9. h4 h5 { [%csl Re4][%cal Gf1d3,Rd3e4,Re4g6] }) 9. Bc1 c5 { [%cal Gd8a5,Yc1a3] } 10. Bd3 Qa5 11. Ne2 cxd4 12. O-O dxc3 13. Bxe4 dxe4 14. Qxe4 Nc6 { [%csl Re5][%cal Rc6e5,Gc6e7,Ge7d5,Gc8d7,Gd7c6] } 15. Rd1 { [%cal Yc6e7,Ge2c3,Gc1a3] } 15... g6 16. f4 Kg7 17. Be3 (17. h4 { [%cal Gc1a3] }) 17... Ne7 18. Bf2 Nd5 19. Rd3 Bd7 20. Nd4 Rac8 21. Rg3 Kh7 22. h4 Rhg8 23. h5 Qb4 { [%csl Yb1][%cal Gb4e7,Ge7f8,Yb4b1,Gf7f5] } 24. Rh3 f5 (24... Qf8) 25. exf6 Nxf6 26. hxg6+ Rxg6 27. Rxh6+ Kxh6 28. Nf5+ exf5 29. Qxb4 Rcg8 (29... Bc6 30. g3 Kh5 { [%cal Gc8h8,Gh5g4,Gf6e4] }) 30. g3 Bc6 31. Rd1 Kh5 (31... Ne4) 32. Rd6 Be4 33. Qxc3 Nd5 34. Rxg6 Kxg6 (34... Nxc3 35. Rxg8 Nxa2) 35. Qe5 Kf7 36. c4 Re8 37. Qb2 Nf6 38. Bd4 Rh8 39. Qb5 Rh1+ 40. Kf2 a6 41. Qb6 Rh2+ 42. Ke1 Nd7 43. Qd6 Bc6 44. g4 fxg4 45. f5 Rh1+ 46. Kd2 Ke8 47. f6 Rh7 48. Qe6+ Kf8 49. Be3 Rf7 50. Bh6+ Kg8 51. Bg7 (51. Qxg4+ Kh7 52. Qh5 Rxf6 53. Bg5+ Kg7 54. Bxf6+ Kxf6) 51... g3 52. Ke2 g2 53. Kf2 Nf8 54. Qg4 Nd7 55. Kg1 a5 56. a4 Bxa4 57. Qh3 Rxf6 58. Bxf6 Nxf6 59. Qxg2+ Kf8 60. Qxb7 Be8 61. Qb6 Ke7 62. Qxa5 Nd7 63. Kf2 Bf7 64. Ke3 Kd6 65. Kd4 Kc6 66. Qf5 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 7"]
+[Site "1911 年圣塞巴斯蒂安"]
+[Date "1911"]
+[Round "-"]
+[White "Jose Raul Capablanca"]
+[Black "Amos Burn"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME07"]
+[BookPage "197"]
+[BookSection "第 7 局 西班牙开局（1911 年圣塞巴斯蒂安）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/N8oDH1qL"]
+[Verification "书中着法与 PGN 主线逐着比对 76/76；重放至第 last=76/91"]
+
+{原书第二部第 7 局（p.197）。白 5 P-Q3 是一种非常坚实的布置，作者自注当时因为不熟悉各种开局变化而偏爱这类下法。此后 7 QKt-Q2、8 Kt-B1、9 B-B2 的调动是这一体系的典型手法：把马送到王翼，再从中心推进。图 119—120 是关键点。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 d6 6. c3 Be7 (6... g6 7. h3 Bg7) 7. Nbd2 O-O 8. Nf1 b5 9. Bc2 d5 10. Qe2 dxe4 11. dxe4 Bc5 12. Bg5 Be6 13. Ne3 Re8 14. O-O Qe7 15. Nd5 Bxd5 16. exd5 Nb8 17. a4 b4 (17... Nbd7) 18. cxb4 Bxb4 19. Bxf6 Qxf6 20. Qe4 Bd6 21. Qxh7+ Kf8 22. Nh4 Qh6 (22... g6 23. Bxg6 { [%cal Gh7h8,Gh4f5,Gh8e5] }) 23. Qxh6 gxh6 24. Nf5 h5 25. Bd1 Nd7 26. Bxh5 Nf6 27. Be2 Nxd5 28. Rfd1 Nf4 29. Bc4 Red8 30. h4 a5 31. g3 Ne6 32. Bxe6 fxe6 33. Ne3 Rdb8 34. Nc4 Ke7 35. Rac1 Ra7 { [%cal Rc4d6,Gc1c7] } 36. Re1 Kf6 37. Re4 Rb4 38. g4 Ra6 (38... Rxa4 39. Nxd6) 39. Rc3 Bc5 40. Rf3+ Kg7 41. b3 Bd4 42. Kg2 Ra8 43. g5 Ra6 44. h5 Rxc4 45. bxc4 Rc6 46. g6 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 8"]
+[Site "1913 年柏林"]
+[Date "1913"]
+[Round "-"]
+[White "Jacques Mieses"]
+[Black "Jose Raul Capablanca"]
+[Result "0-1"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME08"]
+[BookPage "201"]
+[BookSection "第 8 局 中心开局（1913 年柏林）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/Ci9jnecj"]
+[Verification "书中着法与 PGN 主线逐着比对 86/89；重放至第 last=88/90"]
+
+{原书第二部第 8 局（p.201）。2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。他自评计划可行，问题出在执行。7 O-O-O 之后局面进入对攻。图 121—126 记录了他如何一步步陷入苦战，也说明 10 B-KB4 之后的 10...Q-B3 并非最佳。} 1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qe3 Nf6 5. Nc3 Bb4 6. Bd2 O-O 7. O-O-O Re8 { [%cal Gd7d6] } 8. Qg3 Nxe4 9. Nxe4 Rxe4 10. Bf4 Qf6 (10... d6 11. Bd3 Re8 12. Nf3) 11. Nh3 (11. Bxc7 d6) 11... d6 { [%cal Gc8h3] } 12. Bd3 Nd4 (12... Re8) 13. Be3 Bg4 (13... Rg4 14. Bxd4 Rxd4 15. c3 Bxc3 16. bxc3 Rg4 17. Qe3! Qxc3+ 18. Bc2 Qxe3+ 19. fxe3 Rxg2) 14. Ng5 Rxe3 15. Qxg4 Ne2+ 16. Bxe2 Rxe2 17. Ne4 Rxe4 18. Qxe4 Qg5+ 19. f4 Qb5 20. c3 Bc5 21. Rhe1 Qc6 22. Rd5 (22. Qxc6) 22... Qd7 23. f5 c6 24. Rd2 d5 { [%cal Gc5d4,Gd4f6,Gh7h6,Rg2g4,Rg4g5] } 25. Qf3 Be7 26. Rde2 Bf6 27. Qh5 h6 28. g4 Kh7 29. Kb1 Rd8 30. Rd1 c5 31. Qh3 Qa4 32. Red2 Qe4+ 33. Ka1 b5 { [%cal Gb5b4] } 34. Qg2 Qa4 35. Kb1 (35. Qxd5 Qxd1+ 36. Rxd1 Rxd5 37. Rxd5) 35... b4 36. cxb4 Qxb4 37. a3 (37. Rxd5 Rxd5 38. Rxd5 Bxb2 39. Qxb2 Qe4+ 40. Qc2 Qxd5) 37... Qa4 38. Rxd5 Rb8 39. R1d2 c4 40. Qg3 Rb3 41. Qd6 c3 (41... Bxb2) 42. Rc2 cxb2 43. Rd3 Qe4 44. Rd1 Rc3 { 0-1 White resigns. } 45. Qd2 Rxa3 0-1 *
+
+
+[Event "Chess Fundamentals — 示范对局 9"]
+[Site "1913 年柏林"]
+[Date "1913"]
+[Round "-"]
+[White "Jose Raul Capablanca"]
+[Black "Richard Teichmann"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME09"]
+[BookPage "209"]
+[BookSection "第 9 局 后翼弃兵（1913 年柏林）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/wKrwlYG5"]
+[Verification "书中着法与 PGN 主线逐着比对 74/76；重放至第 last=75/75"]
+
+{原书第二部第 9 局（p.209）。9 B-Kt5 是作者自称“灵机一动”的一步，他说这大概是自己的发明：既未违反原则，又能改变局面的常规走向。图 127—130 展示由此产生的局面，以及他如何在后翼与中心之间取得优势。} 1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Bg5 Be7 5. Nc3 Nbd7 6. e3 O-O 7. Rc1 b6 8. cxd5 exd5 9. Bb5 Bb7 10. O-O a6 11. Ba4 Rc8 12. Qe2 c5 13. dxc5 Nxc5 (13... bxc5 14. Rfd1) 14. Rfd1 Nxa4 (14... b5 15. Bc2 b4 16. Na4 Nce4) 15. Nxa4 b5 16. Rxc8 Qxc8 17. Nc3 Qc4 18. Nd4 (18. Rd4 Qxe2 19. Nxe2 Rc8 { [%cal Gc8c2] }) 18... Qxe2 19. Ncxe2 Rc8 20. Nf5 Kf8 (20... Bd8 21. Nd6 Rc7 22. Nxb7 Rxb7 23. Bxf6 Bxf6 24. Rxd5 Rc7 25. Rd2) (20... Bb4 21. Bxf6 gxf6) 21. Nxe7 Kxe7 22. Nd4 { [%cal Gd4f5] } 22... g6 23. f3 h6 { [%cal Gg1f2,Gf2g3,Gg3f4,Gf4e5] } 24. Bxh6 Nd7 25. h4 Nc5 26. Bf4 Ne6 27. Nxe6 Kxe6 (27... fxe6 28. Be5) 28. Rd2 Rh8 29. Rc2 Rc8 30. Rxc8 Bxc8 31. Kf2 { [%cal Gf2d4,Gd4c5,Ge6c6,Rd4e5] } 31... d4 32. exd4 Kd5 33. Ke3 Be6 34. Kd3 Kc6 35. a3 Bc4+ 36. Ke3 Be6 37. Bh6 { [%cal Gg6g5,Gf3f4] } 37... Kd5 38. Bg7 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 10"]
+[Site "1914 年圣彼得堡"]
+[Date "1914"]
+[Round "-"]
+[White "Jose Raul Capablanca"]
+[Black "Frank James Marshall"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME10"]
+[BookPage "215"]
+[BookSection "第 10 局 彼得罗夫防御（1914 年圣彼得堡）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/AnFzEBXu"]
+[Verification "书中着法与 PGN 主线逐着比对 46/46；重放至第 last=46/121"]
+
+{原书第二部第 10 局（p.215）。7 B-Kt5 是摩尔菲的老着，作者说这一步很妙：若黑兑后，出子就要落后一步，白只要走得准确就能让黑陷于局促。12 B-Q3! 之后他详细分析双方子力的位置（图 131），并指出黑方保留双象却无处发挥，是这盘棋的转折。} 1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. Qe2 Qe7 6. d3 Nf6 7. Bg5 { [%cal Ge7e2] } 7... Be6 8. Nc3 h6 9. Bxf6 Qxf6 10. d4 Be7 11. Qb5+ Nd7 12. Bd3! g5 { [%cal Gg5g4] } (12... O-O 13. Qxb7 Rab8 14. Qe4) (12... O-O-O 13. Qa5 a6 (13... Kb8 14. Nb5) 14. Bxa6) 13. h3 O-O (13... Rb8 14. Ne4 Qg7 15. d5 Bf5 16. Nxd6+ cxd6 17. Bxf5) 14. Qxb7 Rab8 15. Qe4 Qg7 16. b3 c5 { [%cal Gd7c5] } 17. O-O cxd4 18. Nd5! Bd8 19. Bc4 Nc5 20. Qxd4 Qxd4 21. Nxd4 Bxd5 22. Bxd5 Bf6 23. Rad1 Bxd4 24. Rxd4 Kg7 25. Bc4 Rb6 26. Re1 Kf6 27. f4 Ne6 28. fxg5+ hxg5 29. Rf1+ Ke7 30. Rg4 Rg8 31. Rf5 Rc6 32. h4 Rgc8 33. hxg5 Rc5 34. Bxe6 fxe6 35. Rxc5 Rxc5 36. g6 Kf8 37. Rc4 Ra5 38. a4 Kg7 39. Rc6 Rd5 40. Rc7+ Kxg6 41. Rxa7 Rd1+ 42. Kh2 d5 43. a5 Rc1 44. Rc7 Ra1 45. b4 Ra4 46. c3 d4 47. Rc6 dxc3 48. Rxc3 Rxb4 49. Ra3 Rb7 50. a6 Ra7 51. Ra5 Kf6 52. g4 Ke7 53. Kg3 Kd6 54. Kf4 Kc7 55. Ke5 Kd7 56. g5 Ke7 57. g6 Kf8 58. Kxe6 Ke8 59. g7 Rxg7 60. a7 Rg6+ 61. Kf5 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 11"]
+[Site "1914 年圣彼得堡"]
+[Date "1914"]
+[Round "-"]
+[White "Jose Raul Capablanca"]
+[Black "David Janowski"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME11"]
+[BookPage "221"]
+[BookSection "第 11 局 西班牙开局（1914 年圣彼得堡）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/VaFPrSQW"]
+[Verification "书中着法与 PGN 主线逐着比对 57/62；重放至第 last=61/61"]
+
+{原书第二部第 11 局（p.221）。5 Kt-B3 是作者与 Alekhine 讨论过的着法，Alekhine 当时认为它优于通常的 P-Q4，后来自己也在对拉斯克的棋中用了它，并且取得了优势局（只因漏着才输）。黑 5...B-QB4 他明确不喜欢，认为 P-B3 大概最好。图 133—134 是开局后的关键局面。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. Nc3 (5. d4) 5... Bc5 (5... f6) 6. d3 Bg4 7. Be3 Bxe3 8. fxe3 Qe7 9. O-O O-O-O 10. Qe1 (10. b4 Qxb4) (10. a3 { [%cal Gb2b4,Ga3a4,Gb4b5] }) 10... Nh6 11. Rb1 f6 12. b4 Nf7 13. a4 Bxf3 14. Rxf3 b6 (14... b5) 15. b5 cxb5 16. axb5 a5 17. Nd5 Qc5 18. c4 { [%cal Gd3d4] } 18... Ng5 { [%cal Gf3f1] } 19. Rf2 Ne6 20. Qc3 Rd7 21. Rd1 Kb7 (21... Kd8) 22. d4 Qd6 23. Rc2 exd4 24. exd4 Nf4 25. c5 Nxd5 26. exd5 Qxd5 27. c6+ Kb8 28. cxd7 Qxd7 29. d5 Re8 30. d6 cxd6 31. Qc6 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 12"]
+[Site "1918 年纽约"]
+[Date "1918"]
+[Round "-"]
+[White "Jose Raul Capablanca"]
+[Black "Oscar Chajes"]
+[Result "1-0"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME12"]
+[BookPage "225"]
+[BookSection "第 12 局 法国防御（1918 年纽约）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/pdm04bmf"]
+[Verification "书中着法与 PGN 主线逐着比对 88/89；重放至第 last=89/89"]
+
+{原书第二部第 12 局（p.225）。4 B-Q3 不是最受推崇的一步，但作者认为完全自然、无可厚非；黑 4...PxP 之后通常应 P-QB4。8 Q-K2 的目的是阻止黑 P-QKt3 加 B-Kt2 的常规展开——若黑仍走 8...P-QKt3，则 9 B-Kt5ch B-Q2 10 Kt-K5，白局面大好。图 135—139 记录了这个计划的实现。} 1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bd3 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 Be7 8. Qe2 (8. b3 Bb4+ 9. Bd2 Ne4) 8... O-O 9. Bg5 h6 (9... b6 10. Bxf6 { [%cal Ge2e4] }) 10. Bxf6 Bxf6 11. Qe4 g6 (11... Re8) 12. h4 e5 (12... Qd5 13. Qf4 Bg7 14. Qxc7 Bxd4 15. Nxd4 Qxd4 16. O-O-O) 13. dxe5 Bf5 14. Qf4 Bxd3 15. O-O-O Bg7 16. Rxd3 Qe7 17. Qc4 Rad8 18. Rhd1 (18. Re1 { [%cal Ge5e6] }) 18... Rxd3 19. Rxd3 Re8 20. c3 c6 (20... Bxe5 21. Nxe5 Qxe5 22. Re3) 21. Re3 c5 22. Kc2 b6 23. a4 Qd7 24. Rd3 Qc8 25. Qe4 Qe6 26. Rd5 Kf8 27. c4 Kg8 28. b3 Kf8 29. Kd3 Kg8 30. Rd6 Qc8 31. Rd5 Qe6 32. g4 Kf8 33. Qf4 Kg8 34. Qe4 Kf8 35. Ke2 (35. h5 gxh5 36. gxh5 Qh3 { [%csl Gh3,Gg4][%cal Gd3g3] }) 35... Kg8 36. Kf1 Kf8 37. Kg2 Kg8 38. Kg3 Kf8 39. h5 gxh5 (39... g5 40. Qf5) 40. gxh5 Qe7 (40... Kg8 41. Qg4) 41. Qf5 Kg8 (41... Rd8 42. Nh4 { [%cal Gh4g6] }) 42. Rd7 Bxe5+ 43. Kg4 Qf6 44. Nxe5 Qg7+ 45. Kf4 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 示范对局 13"]
+[Site "1918 年纽约"]
+[Date "1918"]
+[Round "-"]
+[White "John Stuart Morrison"]
+[Black "Jose Raul Capablanca"]
+[Result "0-1"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME13"]
+[BookPage "231"]
+[BookSection "第 13 局 西班牙开局（1918 年纽约）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/Vr3580Df"]
+[Verification "书中着法与 PGN 主线逐着比对 82/83；重放至第 last=82/82"]
+
+{原书第二部第 13 局（p.231）。黑用 P-QR3、B-Q2、P-KKt3、B-Kt2 的布置应对。白 10 B-KR4 被作者评为判断失误：白想保持牵制，但更该阻止黑立即易位（B-KB4 才行）。黑立刻 O-O，白 11 O-O-O 又过于冒进——作者说除非他下定决心赢或输。图 140—144 记录了白方王翼被撕开的过程。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. Nc3 Bd7 5. d4 exd4 6. Nxd4 g6 7. Nf3 Bg7 8. Bg5 Nf6 (8... Nge7 9. Nd5) (8... f6 { [%cal Gg8e7] }) 9. Qd2 h6 10. Bh4 (10. Bf4) 10... O-O 11. O-O-O Re8 12. Rhe1 { [%cal Gg6g5,Gf6e4] } 12... g5! 13. Bg3 Nh5 { [%cal Ge4e5] } 14. Nd5 (14. e5 Nxg3 15. hxg3 Nxe5) 14... a6 15. Bd3 Be6 16. c3 { [%csl Rd4,Rc3][%cal Rg7d4,Gd3b1,Gd2c2,Gc2h7,Ge4e5] } 16... f5! 17. h4 f4 18. hxg5! hxg5! 19. Rh1 Bf7 { [%cal Gg3h2] } 20. Kb1 Ne5 21. Nxe5 Rxe5 22. Bh2 Nf6 23. g3 (23. Nxf6+ Qxf6 { [%cal Ge5a5,Gf6e6] }) 23... Nxe4 24. Bxe4 Rxe4 25. gxf4 c6 26. Ne3 (26. Nb4) 26... Qa5 27. c4 Qxd2 28. Rxd2 gxf4 29. Ng4 Bg6 30. Ka1 Rae8 31. a3 (31. Rxd6 Re1+ 32. Rd1 R8e2) 31... Re1+ 32. Rxe1 Rxe1+ 33. Ka2 Bf7 34. Kb3 d5 35. Bxf4 dxc4+ 36. Kb4 c3 37. bxc3 Re4+ 38. c4 Rxc4+ 39. Ka5 Rxf4 40. Rd8+ Kh7 41. Rd7 Be6 { 0-1 White resigns. } 0-1 *
+
+
+[Event "Chess Fundamentals — 示范对局 14"]
+[Site "1918 年纽约"]
+[Date "1918"]
+[Round "-"]
+[White "Frank James Marshall"]
+[Black "Jose Raul Capablanca"]
+[Result "0-1"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "GAME14"]
+[BookPage "238"]
+[BookSection "第 14 局 后翼弃兵（1918 年纽约）"]
+[Source "Lichess Study k3M5fqR7 / https://lichess.org/study/k3M5fqR7/J9eylB73"]
+[Verification "书中着法与 PGN 主线逐着比对 72/79；重放至第 last=78/78"]
+
+{原书第二部第 14 局（p.238）。这一局是全书压轴。12...P-QKt3 被称作这套防御的关键：黑用一系列兑换简化局面，然后让 QB 沿长斜线出动，而不制造明显弱点——作者说，后翼弃兵里黑最大的难题就是 QB 的出路。图 145 是 14...KR-Q1 之后的局面，此后 15 P-Q5 Kt-B4! 开始反击。} 1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Nbd7 5. Bg5 Be7 6. e3 O-O 7. Rc1 c6 8. Qc2 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. O-O Nxc3 12. Qxc3 b6 13. e4 Bb7 14. Rfe1 Rfd8 15. d5 Nc5! 16. dxe6 Nxe6 17. Bxe6 Qxe6 18. Nd4! Qe5 (18... Qxa2 19. Ra1) (18... Qd7 19. Nf5 f6 20. Qg3 { [%cal Gc1d1] } 20... Kh8 21. Rcd1 Qf7 22. a4) 19. Nxc6 Qxc3 20. Rxc3 Rd2 21. Rb1 (21. Ne7+ Kf8 22. Rc7 Re8 (22... Bxe4 23. f3) 23. Rxb7 (23. Ng6+ fxg6 { [%cal Ge8e4] }) 23... Rxe7 24. Rb8+ Re8 25. Rxe8+ Kxe8) 21... Re8 22. e5 g5 23. h4 gxh4 { [%cal Ge8e6,Ge6g6,Gh4h3,Gh3h2] } 24. Re1 Re6! 25. Rec1 Kg7 { [%csl Rc6][%cal Ge6c6] } 26. b4 b5 { [%cal Gb4b5] } 27. a3 Rg6 28. Kf1 { [%cal Ge5e6] } 28... Ra2 29. Kg1 h3 30. g3 a6 31. e6 Rxe6 32. g4 (32. Nd4 h2+ 33. Kxh2 Rh6+ 34. Kg1 Rh1#) 32... Rh6 33. f3 (33. g5 h2+ 34. Kh1 Rxc6 35. Rxc6 Rxf2) 33... Rd6 34. Ne7 Rdd2 35. Nf5+ Kf6 36. Nh4 Kg5 37. Nf5 Rg2+ 38. Kf1 h2 39. f4+ Kxf4 { 0-1 White resigns. } 0-1 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example1"]
+[BookFigures "FIG001"]
+[SetUp "1"]
+[FEN "7k/8/8/8/8/8/8/R6K w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/jmEPtCP6"]
+[Verification "python-chess 逐着合法重放通过（17 个半回合）"]
+
+{原书第一部 Example 1，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Ra7 Kg8 2. Kg2 Kf8 3. Kf3 Ke8 4. Ke4 Kd8 5. Kd5 Kc8 (5... Ke8 6. Kd6 Kf8 7. Ke6 Kg8 8. Kf6 Kh8 9. Kg6 Kg8 10. Ra8#) 6. Kc6 (6. Kd6) 6... Kb8 7. Rf7 Ka8 8. Kb6 Kb8 9. Rf8# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example2"]
+[BookFigures "FIG002"]
+[SetUp "1"]
+[FEN "8/8/8/4k3/8/8/8/4K2R w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/osu05yiE"]
+[Verification "python-chess 逐着合法重放通过（21 个半回合）"]
+
+{原书第一部 Example 2，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Ke2 Kd5 2. Ke3 Kc4 (2... Ke5 3. Rh5+) 3. Rh5 Kc3 (3... Kb3 4. Kd3) 4. Rh4 Kc2 5. Rc4+ Kb3 6. Kd3 Kb2 7. Rb4+ Ka3 8. Kc3 Ka2 9. Ra4+ Kb1 10. Ra3 Kc1 11. Ra1# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example3"]
+[BookFigures "FIG003"]
+[SetUp "1"]
+[FEN "7k/8/8/8/8/8/8/2B1KB2 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/AQxwqqPM"]
+[Verification "python-chess 逐着合法重放通过（27 个半回合）"]
+
+{原书第一部 Example 3，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Bd3 Kg7 2. Bg5 Kf7 3. Bf5 Kg7 4. Kf2 Kf7 5. Kg3 Kg7 6. Kh4 Kf7 7. Kh5 Kg7 8. Bg6 Kg8 9. Kh6 Kf8 10. Bh5 Kg8 11. Be7 Kh8 12. Bg4 Kg8 13. Be6+ Kh8 14. Bf6# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example5"]
+[BookFigures "FIG005"]
+[SetUp "1"]
+[FEN "8/8/8/8/4k3/8/3KP3/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/0Mamgapy"]
+[Verification "python-chess 逐着合法重放通过（22 个半回合）"]
+
+{原书第一部 Example 5，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e3 Ke5 2. Kd3 Kd5 3. e4+ Ke5 4. Ke3 Ke6 5. Kd4 Kd6 6. e5+ Ke6 7. Ke4 Ke7 8. Kf5 Kf7 9. e6+ Ke7 10. Ke5 Ke8 11. Kf6 Kf8 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example6"]
+[BookFigures "FIG006"]
+[SetUp "1"]
+[FEN "8/8/5k2/8/5K2/8/4P3/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/DmXixB7g"]
+[Verification "python-chess 逐着合法重放通过（17 个半回合）"]
+
+{原书第一部 Example 6，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Ke4 Ke6 2. e3 Kf6 3. Kd5 Ke7 (3... Kf5 4. e4+) 4. Ke5 Kd7 5. Kf6 Ke8 6. e4 Kd7 7. e5 (7. Kf7 Kd6 8. Kf6) 7... Ke8 8. Ke6 Kf8 9. Kd7 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example7"]
+[BookFigures "FIG007,FIG008"]
+[SetUp "1"]
+[FEN "5k2/6p1/4K1P1/5P2/8/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/BRj2olPF"]
+[Verification "python-chess 逐着合法重放通过（13 个半回合）"]
+
+{原书第一部 Example 7，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Kd7 Kg8 2. Ke7 Kh8 3. f6 gxf6 (3... Kg8 4. f7+ Kh8 5. f8=Q#) 4. Kf7 f5 5. g7+ Kh7 6. g8=Q+ Kh6 7. Qg6# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example8"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/6p1/3k4/8/3K1PP1/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/TomqrSMe"]
+[Verification "python-chess 逐着合法重放通过（35 个半回合）"]
+
+{原书第一部 Example 8，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Ke4 Ke6 (1... g6 2. Kd4 Ke6 3. Kc5 Kf6 4. Kd6 Kf7 5. g5 Kg7 6. Ke7 Kg8 7. Kf6 Kh7 8. Kf7) 2. f5+ Kf6 3. Kf4 g6 4. g5+ Kf7 5. f6 Ke6 6. Ke4 Kf7 7. Ke5 Kf8 8. f7 Kxf7 9. Kd6 Kf8 10. Ke6 Kg7 11. Ke7 Kg8 12. Kf6 Kh7 13. Kf7 Kh8 14. Kxg6 Kg8 15. Kh6 (15. Kf6 Kh7 16. g6+ Kh8) 15... Kh8 16. g6 Kg8 17. g7 Kf7 18. Kh7 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example9"]
+[BookFigures "FIG009"]
+[SetUp "1"]
+[FEN "8/6pp/3k4/8/3K1PPP/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/NZtls7NX"]
+[Verification "python-chess 逐着合法重放通过（11 个半回合）"]
+
+{原书第一部 Example 9，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. f5 Ke7 (1... g6 2. g5) 2. Ke4 Kf7 3. g5 Ke7 4. h5 g6 5. hxg6 hxg6 6. f6+ * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example10"]
+[BookFigures "FIG010"]
+[SetUp "1"]
+[FEN "8/p6p/4k3/8/4K3/8/P5PP/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/jeqNZjR6"]
+[Verification "python-chess 逐着合法重放通过（13 个半回合）"]
+
+{原书第一部 Example 10，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. g4 a5 2. a4 Kf6 3. h4 Ke6 (3... Kg6) 4. g5 Kf7 5. Kf5 Kg7 6. h5 Kf7 (6... h6 7. g6) 7. Ke5 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example11"]
+[BookFigures "FIG011"]
+[SetUp "1"]
+[FEN "5rk1/1b3p1p/ppq3p1/2p5/8/1P1P1R1Q/PBP3PP/7K b - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/z3pIDyiG"]
+[Verification "python-chess 逐着合法重放通过（6 个半回合）"]
+
+{原书第一部 Example 11，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1... Re8 2. Qxh7+ Kxh7 3. Rh3+ Kg8 4. Rh8# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example12"]
+[BookFigures "FIG012"]
+[SetUp "1"]
+[FEN "5rk1/1bq1bp1p/p1n3p1/1p6/3N4/1P1PR2Q/PBP3PP/7K w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/mr7KrKXV"]
+[Verification "python-chess 逐着合法重放通过（7 个半回合）"]
+
+{原书第一部 Example 12，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Nxc6 Bg5 (1... Qxc6 2. Qxh7+ Kxh7 3. Rh3+) 2. Ne7+ Qxe7 (2... Bxe7 3. Qxh7+ Kxh7 4. Rh3+) 3. Rxe7 Bxe7 4. Qd7 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example13"]
+[BookFigures "FIG013,FIG014"]
+[SetUp "1"]
+[FEN "2q2rk1/1b3ppp/pp6/2p5/2P1N3/PP1Q4/1B3PPP/7K w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/l5R1mjDe"]
+[Verification "python-chess 逐着合法重放通过（5 个半回合）"]
+
+{原书第一部 Example 13，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Nf6+ gxf6 2. Qg3+ Kh8 (2... Qg4 3. Qxg4+ Kh8 4. Bxf6#) 3. Bxf6# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example14"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "2q1rrk1/1bpn1ppp/pp1p4/1B6/4N3/1P1QR3/PBP2PPP/6K1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/9Q0VXmOD"]
+[Verification "python-chess 逐着合法重放通过（7 个半回合）"]
+
+{原书第一部 Example 14，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Bxd7 Qxd7 2. Nf6+ gxf6 3. Rg3+ Kh8 4. Bxf6# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example15"]
+[BookFigures "FIG015"]
+[SetUp "1"]
+[FEN "r3qrk1/1pp2ppp/p1np4/3Q4/8/P2B1N2/1PP2PPP/3R2K1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/C6VDsDYY"]
+[Verification "python-chess 逐着合法重放通过（7 个半回合）"]
+
+{原书第一部 Example 15，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Bxh7+ Kxh7 (1... Kh8 2. Qh5 g6 3. Qh6) 2. Qh5+ Kg8 3. Ng5 Qe4 4. Nxe4 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example16"]
+[BookFigures "FIG016"]
+[SetUp "1"]
+[FEN "2nb1rk1/1pqrnppp/p2p4/2pQ1N2/6P1/1P1B1N1P/P3RP2/3R2K1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/wxp2baYW"]
+[Verification "python-chess 逐着合法重放通过（19 个半回合）"]
+
+{原书第一部 Example 16，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Nxe7+ Bxe7 2. Rxe7 Nxe7 3. Bxh7+ Kxh7 (3... Kh8 4. Qh5 g6 5. Bxg6+ Kg7 6. Qh7+ Kf6 7. g5+ Ke6 8. Bxf7+ Rxf7 9. Qe4#) 4. Qh5+ Kg8 5. Ng5 Rc8 6. Qh7+ Kf8 7. Qh8+ Ng8 8. Nh7+ Ke7 9. Re1+ Kd8 10. Qxg8# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example17"]
+[BookFigures "FIG017"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/huFGEkku"]
+[Verification "python-chess 逐着合法重放通过（13 个半回合）"]
+
+{原书第一部 Example 17，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example18"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/DkvMGgCS"]
+[Verification "python-chess 逐着合法重放通过（17 个半回合）"]
+
+{原书第一部 Example 18，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 h6 (4... Be7 5. dxe5 Nxe5 (5... dxe5 6. Qd5) 6. Nxe5 dxe5 7. Qh5) 5. Nc3 Ngf6 6. Be3 Be7 7. Qe2 c6 8. Rd1 Qc7 9. O-O * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example19"]
+[BookFigures "FIG018"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/HBuy2MuV"]
+[Verification "python-chess 逐着合法重放通过（16 个半回合）"]
+
+{原书第一部 Example 19，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 (4... dxe5) 5. Qxf3 dxe5 6. Bc4 Qf6 (6... Nf6 7. Qb3) 7. Qb3 b6 8. Nc3 c6 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example20"]
+[BookFigures "FIG019"]
+[SetUp "1"]
+[FEN "r2qkbnr/ppp2pp1/2np3p/4p3/2BPP1b1/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/NJwd3J3t"]
+[Verification "python-chess 逐着合法重放通过（7 个半回合）"]
+
+{原书第一部 Example 20，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. dxe5 Nxe5 2. Nxe5 Bxd1 3. Bxf7+ Ke7 4. Nd5# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example21"]
+[BookFigures "FIG020"]
+[SetUp "1"]
+[FEN "rn1qkbnr/ppp1ppp1/7p/8/2B3b1/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/iK3bpFG1"]
+[Verification "python-chess 逐着合法重放通过（6 个半回合）"]
+
+{原书第一部 Example 21，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1... Nc6 2. Bxf7+ (2. Ne5 Bxd1 3. Bxf7#) 2... Kxf7 3. Ne5+ Kf6 4. Nxg4+ * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example22"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/p5p1/7p/6k1/8/7K/PP5P/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/kSAwj8cp"]
+[Verification "python-chess 逐着合法重放通过（16 个半回合）"]
+
+{原书第一部 Example 22，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. a4 a5 2. Kg2 (2. Kg3 Kf5 3. Kh4 g6 4. b4 axb4 5. a5 b3 6. a6 b2 7. a7 b1=Q 8. a8=Q Qb4+ 9. Kg3 Qf4+ 10. Kg2 Qe4+ 11. Qxe4+ Kxe4) 2... Kf4 3. b4 axb4 4. a5 b3 5. a6 b2 6. a7 b1=Q 7. a8=Q Qe4+ 8. Qxe4+ Kxe4 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example23"]
+[BookFigures "FIG023,FIG024"]
+[SetUp "1"]
+[FEN "8/6p1/7p/8/5k2/8/6KP/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/bJB0s7Ua"]
+[Verification "python-chess 逐着合法重放通过（26 个半回合）"]
+
+{原书第一部 Example 23，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Kh3 Ke3 2. Kg2 Kf4 3. Kf2 Kg5 4. Kg2 Kh4 5. Kg1 Kh3 6. Kh1 h5 7. Kg1 h4 8. Kh1 g5 9. Kg1 g4 10. Kh1 g3 11. hxg3 (11. Kg1 g2) 11... hxg3 12. Kg1 g2 13. Kf2 Kh2 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example24"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/ppp4k/8/PPP5/8/8/8/7K w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/snOST4GF"]
+[Verification "python-chess 逐着合法重放通过（5 个半回合）"]
+
+{原书第一部 Example 24，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. b6 axb6 (1... cxb6 2. a6) 2. c6 bxc6 3. a6 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example25"]
+[BookFigures "FIG026"]
+[SetUp "1"]
+[FEN "8/p5kp/8/1P6/8/1K6/P7/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/Hceh4jks"]
+[Verification "python-chess 逐着合法重放通过（11 个半回合）"]
+
+{原书第一部 Example 25，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. a4 h5 2. a5 h4 3. b6 axb6 4. a6 b5 5. a7 b4 6. a8=Q * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example26"]
+[BookFigures "FIG028,FIG029,FIG030"]
+[SetUp "1"]
+[FEN "8/8/4k3/1p5p/1P2K2P/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/unjAdMku"]
+[Verification "python-chess 逐着合法重放通过（2 个半回合）"]
+
+{原书第一部 Example 26，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Kd4 Kd6 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example27"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "4k3/8/8/1p5p/1P5P/8/8/4K3 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/4TSFsFqB"]
+[Verification "python-chess 逐着合法重放通过（10 个半回合）"]
+
+{原书第一部 Example 27，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Ke2 Ke7 2. Ke3 Ke6 3. Ke4 Kf6 4. Kf4 Kg6 5. Ke5 Kg7 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example28"]
+[BookFigures "FIG031"]
+[SetUp "1"]
+[FEN "8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/c6ueEPvx"]
+[Verification "python-chess 逐着合法重放通过（11 个半回合）"]
+
+{原书第一部 Example 28，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Kh1! Kd2 (1... g4 2. Kg2 Kd2 3. fxg4 e4) 2. Kh2 Kd3 3. Kh3! Ke2 4. Kg2 Ke3 5. Kg3 Kd4 6. Kg4 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example29"]
+[BookFigures "FIG033"]
+[SetUp "1"]
+[FEN "k7/8/1K1N4/7p/7N/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/jg9qKMlb"]
+[Verification "python-chess 逐着合法重放通过（9 个半回合）"]
+
+{原书第一部 Example 29，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} { [%cal Gh4f5] } 1. Nf3 h4 2. Ne5 h3 3. Nc6 h2 4. Nb5 h1=Q 5. Nc7# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example31"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/8/5Np1/8/8/7p/5K2/7k b - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/D6KjQ9H1"]
+[Verification "python-chess 逐着合法重放通过（12 个半回合）"]
+
+{原书第一部 Example 31，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1... Kh2 2. Ng4+ Kh1 3. Kf1 g5 4. Kf2 h2 5. Ne3 g4 6. Nf1 g3+ 7. Nxg3# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example39"]
+[BookFigures "FIG044"]
+[SetUp "1"]
+[FEN "4k3/8/8/8/8/8/8/2B1K1N1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/z27iWUFm"]
+[Verification "python-chess 逐着合法重放通过（57 个半回合）"]
+
+{原书第一部 Example 39，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Ke2 Kd7 2. Kd3 Kc6 3. Bf4 Kd5 4. Ne2 Kc5 5. Nc3 Kb4 6. Kd4 Ka5 7. Kc5 Ka6 8. Kc6 Ka7 9. Nd5 Ka8 10. Nb6+ Ka7 11. Bc7 Ka6 12. Bb8 Ka5 13. Nd5 Ka4 14. Kc5! (14. Be5 Kb3 15. Ne3) 14... Kb3 15. Nb4 Kc3 16. Bf4 Kb3 17. Be5 Ka4 18. Kc4 Ka5 19. Bc7+ Ka4 20. Nd3 Ka3 21. Bb6 Ka4 22. Nb2+ Ka3 23. Kc3 Ka2 24. Kc2 Ka3 25. Bc5+ Ka2 26. Nd3 Ka1 27. Bb4 Ka2 28. Nc1+ Ka1 29. Bc3# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example40"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "1k6/1r6/2K5/Q7/8/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/qLDrXuEj"]
+[Verification "python-chess 逐着合法重放通过（15 个半回合）"]
+
+{原书第一部 Example 40，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Qe5+ Ka7 2. Qa1+ Kb8 3. Qa5 Rb3 (3... Rb1 4. Qe5+ Ka7) 4. Qe5+ Ka8! 5. Qh8+ Ka7 6. Qg7+ Ka8 7. Qg8+ Rb8 8. Qa2# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example41"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/k7/2K5/4Q3/8/8/8/1r6 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/hdviecZW"]
+[Verification "python-chess 逐着合法重放通过（19 个半回合）"]
+
+{原书第一部 Example 41，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Qc7+ Ka6 2. Qc8+ Ka7 3. Qd7+ Kb8 4. Qe8+ Ka7 5. Qf7+ Kb8 6. Qg8+ Ka7 7. Qa2+ Kb8 8. Qxb1+ Kc8 9. Qb7+ Kd8 10. Qd7# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example42a"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/V81OPoL1"]
+[Verification "python-chess 逐着合法重放通过（8 个半回合）"]
+
+{原书第一部 Example 42a，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Qe5+ Kf8 2. Kg6 Rd7 3. Qe6 (3. Qc5+ Ke8 4. Kf6 Rd6+) 3... Rg7+ 4. Kf6 Rf7+ * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example42b"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/bsm9l6VM"]
+[Verification "python-chess 逐着合法重放通过（15 个半回合）"]
+
+{原书第一部 Example 42b，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Qg5+ Kh8 (1... Kh7 2. Qg6+ Kh8 3. Kh6!) 2. Qe5+ Kh7! 3. Kg5 Ra7! (3... Rg7+ 4. Kf6) 4. Qe4+ Kg8 5. Qc4+ Kh7 6. Kf6 Rg7 7. Qh4+ Kg8 8. Qh5 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example42c"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/TcFVsgWg"]
+[Verification "python-chess 逐着合法重放通过（15 个半回合）"]
+
+{原书第一部 Example 42c，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Qg5+ Kf8 2. Qd8+ Kg7 3. Kg5 Rf3 (3... Kh7 4. Qd4 Rg7+ 5. Kf6) 4. Qd4+ Kf8 5. Kg6 (5. Qd6+ Kg7 6. Qe5+ Kf8 7. Kg6) 5... Rg3+ 6. Kf6 Rf3+ 7. Ke6 Rh3 8. Qf4+ * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example43"]
+[BookFigures "FIG049,FIG050"]
+[SetUp "1"]
+[FEN "2kr4/ppp1qp2/4bQ2/8/3P2r1/N1P5/PP4P1/R1B2RK1 b - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/aFY4GjAM"]
+[Verification "python-chess 逐着合法重放通过（7 个半回合）"]
+
+{原书第一部 Example 43，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} { [%cal Ge7f8] } 1... Rdg8! 2. Rf2 (2. Qxe7 Rxg2+ 3. Kh1 Bd5) 2... Rxg2+ 3. Kf1 Bc4+ 4. Nxc4 Rg1# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example44"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "kr2r3/pRp3pp/Q1P5/5R2/Pp1qp3/3p3P/6PK/8 b - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/nx2vfBuD"]
+[Verification "python-chess 逐着合法重放通过（6 个半回合）"]
+
+{原书第一部 Example 44，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1... e3 2. Rxa7+ (2. Ra5 Qf4+) 2... Qxa7 3. Ra5 Rb7 4. Qxb7# * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example45"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "3q1kn1/r5p1/1ppr1pQn/p2ppP2/P3P2R/1BPPB3/1P3PK1/7R w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/tO7NJrnV"]
+[Verification "python-chess 逐着合法重放通过（15 个半回合）"]
+
+{原书第一部 Example 45，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Rxh6! gxh6 2. Bxh6+ Ke7 (2... Nxh6 { Computer Suggests variation stronger than Capablanca's line for Black } 3. Rxh6 Rf7 4. Rh8+ Ke7 5. Rxd8 Rxd8) 3. Qh7+ Ke8 4. Qxg8+ Kd7 5. Qh7+ Qe7 6. Bf8 Qxh7 7. Rxh7+ Ke8 8. Rxa7 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example46"]
+[BookFigures "FIG052"]
+[SetUp "1"]
+[FEN "4r2r/p1pb1ppk/2ppn2p/1q3N1N/4PPP1/1P2Q3/4R2P/2R3K1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/P5pZs6pw"]
+[Verification "python-chess 逐着合法重放通过（11 个半回合）"]
+
+{原书第一部 Example 46，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Nfxg7 Nxg7 (1... Nc5) 2. Nf6+ Kg6 3. Nxd7 f6 4. e5 Kf7 5. Nxf6 Re7 6. Ne4 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example47"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/LiARHHfv"]
+[Verification "python-chess 逐着合法重放通过（8 个半回合）"]
+
+{原书第一部 Example 47，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Bxh7+ Kxh7 2. Ng5+ Kg6 (2... Kh6 3. Nxf7+) (2... Kg8 3. Qh5) 3. Qg4 f5 4. Qg3 Kh6 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example48"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "2r1r1k1/2p2pbp/2ppq1p1/8/2n1P3/2N2P2/PPPBQ1PP/1R3RK1 b - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/ultQn4oA"]
+[Verification "python-chess 逐着合法重放通过（17 个半回合）"]
+
+{原书第一部 Example 48，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1... Ra8 2. h4 (2. b3 Nxd2 3. Qxd2 Ra3) 2... Nxd2 3. Qxd2 Qc4 4. Rfd1 Reb8 { [%cal Gb8b2] } (4... Bxc3) 5. Qe3 Rb4 { [%cal Gg7d4] } 6. Qg5 Bd4+ 7. Kh1 Rab8 { [%csl Rc3][%cal Gd4c3,Rb2c3,Gb4b1] } 8. Rxd4 Qxd4 9. Rd1 Qc4 { [%cal Gb4b2] } * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example49"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "r4rk1/p3q1pp/1pb5/2pn1p2/8/3BPN2/PP2QPPP/2RR2K1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/y65Qlpnc"]
+[Verification "python-chess 逐着合法重放通过（9 个半回合）"]
+
+{原书第一部 Example 49，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Nd4! cxd4 2. Rxc6 Nb4 { [%cal Gd3c4] } 3. Bc4+ Kh8 4. Re6 d3 5. Rxd3 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example50"]
+[BookFigures "FIG055"]
+[SetUp "1"]
+[FEN "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/YZvcgIn9"]
+[Verification "python-chess 逐着合法重放通过（33 个半回合）"]
+
+{原书第一部 Example 50，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Bxh7+ Kxh7 2. Ng5+ Kg6 3. Qg4 f5! (3... e5 4. Ne6+ Kf6 5. f4! e4 6. Qg5+ Kxe6 7. Qe5+ Kd7 8. Rfd1+ Nd3 9. Nxe4 Kc6 (9... Ke8 10. Nd6+ Qxd6 11. Qxd6) 10. Rxd3 Qxd3 11. Rc1+ Kb6 (11... Kd7 { [%cal Gc1c7,Gd7d8] } 12. Rc7+ Kd8 13. Qxe7#) 12. Qc7+ Ka6 13. Nc5+ Kb5 14. a4+ Kb4 15. Nxd3+ Kxa4 16. Ra1+ Kb3 17. Ra3#) 4. Qg3 Kh6 5. Qh4+ Kg6 6. Qh7+ Kf6 (6... Kxg5 7. Qxg7+ Kh5 8. f4 Ng8 9. Rf3 Ne4 10. Rh3+ Qh4 11. Nxe4 e5 12. Ng3#) 7. e4 Ng6 8. exf5 exf5 9. Rad1 Nd3 10. Qh3 Ndf4 11. Qg3 Qc7 12. Rfe1 Ne2+ (12... Be6 13. Rxe6+ Nxe6 14. Nd5#) 13. Rxe2 Qxg3 14. Nh7+ Kf7 15. hxg3 Rh8 16. Ng5+ Kf6 17. f4 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example51"]
+[BookFigures "FIG056"]
+[SetUp "1"]
+[FEN "r1bq1k1r/b5pp/1nRN4/4p3/1P2P1n1/5NB1/P4PPP/3Q1RK1 w - - 0 21"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/p7rptCNd"]
+[Verification "python-chess 逐着合法重放通过（19 个半回合）"]
+
+{原书第一部 Example 51，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 21. Bh4 Qd7 22. Nxc8 Qxc6 23. Qd8+ Qe8 (23... Kf7 24. Nd6+ Ke6 (24... Kg6 25. Qg5#) 25. Ng5#) 24. Be7+ Kf7 25. Nd6+ Kg6 26. Nh4+ Kh5 (26... Kh6 27. Ndf5+ Kh5 28. Ng3+ Kh6 29. Bg5#) 27. Nxe8 Rxd8 28. Nxg7+ Kh6 29. Ngf5+ Kh5 30. h3! * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example53"]
+[BookFigures "FIG061,FIG062,FIG063,FIG064"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/xRV9zUvp"]
+[Verification "python-chess 逐着合法重放通过（65 个半回合）"]
+
+{原书第一部 Example 53，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. Bxc6+ bxc6 6. d4 Be7 7. Nc3 (7. dxe5) 7... Nd7 8. dxe5 dxe5 9. Qe2 O-O 10. Rd1 Bd6 11. Bg5 Qe8 12. Nh4 g6 13. Bh6 Nc5 14. Rd2 Rb8 15. Nd1 Rb4 16. c4 Ne6 17. Bxf8 Qxf8 18. Ne3 (18. Nf3) 18... Nd4 19. Qd1 c5 20. b3 Rb8 21. Nf3 f5 22. exf5 gxf5 23. Nf1 f4 24. Nxd4 cxd4 25. Qh5 Bb7 26. Re1 c5 27. f3 Re8 28. Rde2 Re6 29. Rxe5 Bxe5 30. Rxe5 Rh6 31. Qe8 Qxe8 32. Rxe8+ Kf7 33. Re5 Rc6 34. Nd2 (34. Rf5+) 34... Kf6 35. Rd5 Re6 36. Ne4+ Ke7 37. Rxc5 d3! 38. Kf2 Bxe4 39. fxe4 Rxe4 40. Rd5 Re3 41. b4! Re4 42. Rxd3 Rxc4 43. Rh3 Rxb4 44. Rxh7+ Kf6 45. Rxa7 Kf5 46. Kf3 Rb2 47. Ra5+ Kf6 48. Ra4 Kg5 49. Rxf4 Rxa2 50. h4+ Kh5 51. Rf5+ Kh6 52. g4 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example52"]
+[BookFigures "FIG057,FIG058,FIG059,FIG060"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/U5uTXIQy"]
+[Verification "python-chess 逐着合法重放通过（65 个半回合）"]
+
+{原书第一部 Example 52，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} { Played at the Havana International Masters Tournament, 1913. (French Defence.) White: J. R. Capablanca. Black: R. Blanco. } 1. e4 { [%eval 0.05] } 1... e6 { [%eval 0.13] } 2. d4 { [%eval 0.0] } 2... d5 { [%eval 0.0] } 3. Nc3 { [%eval 0.0] } 3... dxe4 { [%eval 0.28] } 4. Nxe4 { [%eval 0.0] } 4... Nd7 { [%eval 0.33] } 5. Nf3 { [%eval 0.13] } 5... Ngf6 { [%eval 0.5] } 6. Nxf6+ { [%eval 0.53] } 6... Nxf6 { [%eval 0.25] } 7. Ne5 { [%eval 0.0] [%cal Gb7b6,Gb7b5] } 7... Bd6 { [%eval 0.28] } 8. Qf3 { [%eval 0.3] } (8. Bg5 { [%cal Gg5f6] }) 8... c6?! { [%eval 0.94] } { Inaccuracy. O-O was best. } (8... c5 { [%csl Ye1][%cal Gd6e5,Gd8a5] }) (8... O-O 9. Bg5 Be7 10. c3 c5 11. dxc5 Qc7 12. Nc4 Qxc5 13. Be3 Qc7 14. Qg3 Qxg3 15. hxg3) 9. c3 { [%eval 0.91] } 9... O-O { [%eval 1.39] } 10. Bg5 { [%eval 1.38] } 10... Be7 { [%eval 1.45] } 11. Bd3 { [%eval 1.66] } 11... Ne8?! { [%eval 2.61] } { Inaccuracy. c5 was best. } (11... Nd5 12. Qh3 g6 (12... h6 13. Bxh6)) (11... c5 12. dxc5) 12. Qh3 { [%eval 2.41] } 12... f5 { [%eval 2.61] } 13. Bxe7 { [%eval 2.6] } 13... Qxe7 { [%eval 2.79] } 14. O-O?! { [%eval 1.87] } { Inaccuracy. O-O-O was best. } (14. O-O-O Nf6 15. Bc2 a5 16. g4 g6 17. Qh4 Nd5 18. g5 c5 19. dxc5 Qxc5 20. Qg3 b5) 14... Rf6 { [%eval 2.41] } 15. Rfe1 { [%eval 2.32] } 15... Nd6 { [%eval 2.4] } 16. Re2 { [%eval 2.59] } 16... Bd7 { [%eval 2.38] } 17. Rae1 { [%eval 2.71] } 17... Re8 { [%eval 2.62] } 18. c4?! { [%eval 2.0] } { Inaccuracy. Bc2 was best. } (18. Bc2 Nf7) 18... Nf7 { [%eval 2.27] } 19. d5?! { [%eval 1.65] } { Inaccuracy. Nxf7 was best. } (19. Nxf7 Qxf7) (19. Nxd7 Qxd7 20. Bxf5 Ng5 21. Qg4 Rxf5 22. h4 h5 23. Qxf5 exf5 24. Rxe8+ Kh7 25. hxg5 Qxd4) 19... Nxe5 { [%eval 1.87] } 20. Rxe5 { [%eval 2.04] } 20... g6 { [%eval 2.37] } 21. Qh4 { [%eval 2.21] } 21... Kg7 { [%eval 2.54] } 22. Qd4 { [%eval 2.5] } 22... c5 { [%eval 2.51] } 23. Qc3 { [%eval 2.74] } 23... b6 { [%eval 2.74] } 24. dxe6 { [%eval 2.7] } 24... Bc8?! { [%eval 4.17] } { Inaccuracy. Bc6 was best. } (24... Bc6 25. Be2) 25. Be2? { [%eval 2.19] } { Mistake. Bc2 was best. } (25. Bc2) 25... Bxe6?? { [%eval 4.74] } { Blunder. Qd6 was best. } (25... Qd6) 26. Bf3 { [%eval 4.67] } 26... Kf7 { [%eval 4.43] } 27. Bd5 { [%eval 5.03] } 27... Qd6 { [%eval 4.68] } 28. Qe3 { [%eval 4.31] } 28... Re7?! { [%eval 5.62] } { Inaccuracy. f4 was best. } (28... f4 29. Qh3 h5 30. Qh4 Re7 31. Qg5 Kg7 32. h4 Qd7 33. g3 fxg3 34. f4) 29. Qh6 { [%eval 5.62] } 29... Kg8 { [%eval 5.46] } 30. h4 { [%eval 5.58] } 30... a6 { [%eval 5.71] } 31. h5 { [%eval 5.31] } 31... f4 { [%eval 5.59] } 32. hxg6 { [%eval 5.5] } 32... hxg6 { [%eval 5.84] } 33. Rxe6 { [%eval 5.46] } { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example53"]
+[BookFigures "FIG061,FIG062,FIG063,FIG064"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/EjZV2iZT"]
+[Verification "python-chess 逐着合法重放通过（103 个半回合）"]
+
+{原书第一部 Example 53，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. Bxc6+ bxc6 6. d4 Be7 7. Nc3 (7. dxe5) 7... Nd7 8. dxe5 dxe5 9. Qe2 O-O 10. Rd1 Bd6 11. Bg5 Qe8 12. Nh4 g6 13. Bh6 Nc5 14. Rd2 Rb8 15. Nd1 Rb4 16. c4 Ne6 17. Bxf8 Qxf8 18. Ne3 (18. Nf3) 18... Nd4 19. Qd1 c5 20. b3 Rb8 21. Nf3 f5 22. exf5 gxf5 23. Nf1 f4 24. Nxd4 cxd4 25. Qh5 Bb7 26. Re1 c5 27. f3 Re8 28. Rde2 Re6 29. Rxe5 Bxe5 30. Rxe5 Rh6 31. Qe8 Qxe8 32. Rxe8+ Kf7 33. Re5 Rc6 34. Nd2 (34. Rf5+) 34... Kf6 35. Rd5 Re6 36. Ne4+ Ke7 37. Rxc5 d3! 38. Kf2 Bxe4 39. fxe4 Rxe4 40. Rd5 Re3 41. b4! Re4 42. Rxd3 Rxc4 43. Rh3 Rxb4 44. Rxh7+ Kf6 45. Rxa7 Kf5 46. Kf3 Rb2 47. Ra5+ Kf6 48. Ra4 Kg5 49. Rxf4 Rxa2 50. h4+ Kh5 51. Rf5+ Kh6 52. g4 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example54"]
+[BookFigures "FIG065,FIG066,FIG067"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/GCOMMUrM"]
+[Verification "python-chess 逐着合法重放通过（58 个半回合）"]
+
+{原书第一部 Example 54，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. Bxc6 dxc6 7. d3 Bd6 8. Bg5 h6 9. Bh4 c5 10. Nd5 g5 11. Nxf6+ Qxf6 12. Bg3 Bg4 13. h3 Bxf3 14. Qxf3 Qxf3 15. gxf3 f6 16. Kg2 a5 17. a4 Kf7 18. Rh1 Ke6 19. h4 Rfb8 20. hxg5 hxg5 21. b3 c6 22. Ra2 b5 23. Rha1 c4 24. axb5 cxb3 25. cxb3 Rxb5 26. Ra4 Rxb3 27. d4 Rb5 28. Rc4 Rb4 29. Rxc6 Rxd4 { 0-1 White resigns. } 0-1 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example55"]
+[BookFigures "FIG068,FIG069,FIG070,FIG071,FIG072,FIG073"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/VdSywS6q"]
+[Verification "python-chess 逐着合法重放通过（88 个半回合）"]
+
+{原书第一部 Example 55，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Nbd7 5. Bg5 c6 6. e3 Qa5 7. Bxf6 Nxf6 8. a3 Ne4 9. Qb3 Be7 10. Bd3 Nxc3 11. bxc3 dxc4 12. Bxc4 Bf6 13. O-O O-O 14. e4 e5 15. d5 Qc7 16. Bd3 b6 17. c4 Bb7 18. Rfc1 Be7 19. Rc2 Bc5 20. Qb2 f6 21. Rb1 Rad8 22. a4 Ba6 23. Rd1 Rfe8 24. Qb3 Rd6 25. Nh4 g6 26. Be2 cxd5 27. exd5 e4 28. g3 e3 29. f4 Bc8 30. Nf3 Bf5 31. Rb2 Re4 32. Kg2 Qc8 33. Ng1 g5 34. fxg5 (34. Bf3 gxf4 35. Bxe4 Bxe4+) 34... fxg5 35. Rf1 g4 36. Bd3 Rf6 37. Ne2 Qf8 38. Rbb1 (38. Nf4 e2! (38... Qh6 39. Qc2 Qh3+!!) 39. Nxe2 Rxe2+ 40. Rxe2 Be4+!! 41. Bxe4! Rxf1) 38... Qh6 39. Qc2 Qh3+ 40. Kh1 Rxc4 (40... Rh6 41. Ng1 Qxg3 42. Qg2) 41. Qxc4 (41. Rxf5) 41... Bxd3 (41... Rh6 42. d6+) 42. Rxf6 (42. Qxd3 Rh6) 42... Bxc4 43. Nf4 e2 44. Rg1 Qf1 { 0-1 White resigns. } 0-1 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example56"]
+[BookFigures "FIG074"]
+[SetUp "1"]
+[FEN "6k1/p4p1p/1p4p1/3r4/2r5/P1P4P/2R2PP1/2R1K3 b - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/Q0dfHRU8"]
+[Verification "python-chess 逐着合法重放通过（19 个半回合）"]
+
+{原书第一部 Example 56，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1... Re4+ 2. Re2 Ra4 3. Ra2 h5 4. Rd1 Rda5 5. Rda1 h4 6. Kd2 Kg7 7. Kc2 Rg5 8. Rg1 (8. Kb3 Raa5 9. g3) 8... Rf4 9. Kd3 Rf3+ 10. Ke2 (10. gxf3 Rxg1) 10... Rxh3 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example57"]
+[BookFigures "FIG075,FIG076,FIG077"]
+[SetUp "1"]
+[FEN "2r2rk1/p1pp1p1p/2p2p2/8/8/2PP1P2/PP3P1P/R3R1K1 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/LHFn5sse"]
+[Verification "python-chess 逐着合法重放通过（99 个半回合）"]
+
+{原书第一部 Example 57，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. Re4 Rfe8 2. Rae1 Re6 3. R1e3 Rce8 4. Kf1 Kf8 (4... d5 5. Rg4+ Kf8) (4... f5 5. Rd4! Rxe3? 6. fxe3 Rxe3 7. Kf2 Re7 8. Rh4 { [%cal Gh4h7] }) 5. Ke2 Ke7 6. Ra4 Ra8 7. Ra5! d5 8. c4! Kd6 (8... d4 9. Re4 Kd6 10. b4! Re5 11. Ra6) 9. c5+ Kd7 10. d4 f5 11. Rxe6 fxe6 { [%cal Ga5a6] } 12. f4 Kc8 13. Kd2 (13. Ra3 Rb8 14. b3 Kb7 15. b4 Ka8 16. Rb3) 13... Kb7 14. Ra3 Rg8 15. Rh3 Rg7 16. Ke2 Ka6 17. Rh6 Re7 18. Kd3 Kb7 19. a4 Kc8 20. Rh5 Kd7 21. Rg5 Rf7 22. Kc3 Kc8 23. Kb4 Rf6 24. Ka5 Kb7 25. h4 a6 26. h5 Rh6 27. b4 Rf6 28. b5 (28. Rg7) 28... axb5 29. axb5 Rf8! 30. Rg7 Ra8+ 31. Kb4 cxb5 32. Kxb5 Ra2 33. c6+ Kb8 34. Rxh7 Rb2+ 35. Ka5 Ra2+ 36. Kb4 Rxf2 37. Re7 Rxf4 (37... Rb2+ { [%cal Gb2g2] }) 38. h6! Rxd4+ 39. Kb5 Rd1 40. h7 Rb1+ 41. Kc5 Rc1+ 42. Kd4 Rd1+ 43. Ke5 Re1+ 44. Kf6 Rh1 45. Re8+ Ka7 46. h8=Q Rxh8 47. Rxh8 Kb6 48. Kxe6 Kxc6 49. Kxf5 Kc5 50. Ke5 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example58"]
+[BookFigures "FIG078"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/NvICJfwb"]
+[Verification "python-chess 逐着合法重放通过（91 个半回合）"]
+
+{原书第一部 Example 58，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. d4 exd4 3. c3 d5 4. exd5 Qxd5 5. cxd4 Nc6 6. Nf3 Bg4 7. Be2 Nf6 8. h3 Bb4+ 9. Nc3 Bxf3 10. Bxf3 Qc4 11. Bxc6+ bxc6 12. Qe2+ Qxe2+ 13. Kxe2 O-O 14. Be3 Rfe8 15. Rac1 c5 16. dxc5 Bxc5 17. Nb5 Bxe3 18. fxe3 Rab8 19. Nxc7 Rxb2+ 20. Kf3 Re5 21. Nd5 Rf5+ 22. Kg3 Rg5+ 23. Kf4 h6 24. Rc8+ Kh7 25. Nxf6+ gxf6 26. g4 Rxa2 (26... Rf2+ 27. Kg3 (27. Ke4 Re5+ 28. Kd3 Rxa2) 27... Rxa2) 27. Rd1 Ra4+ (27... f5) 28. Rd4 Raa5 (28... Rga5) 29. Rdd8 Rg7 (29... f5 30. Rh8+ Kg6 31. Rcg8+ Kf6 32. Rxh6+ Rg6 33. g5+ Ke7 34. Rhxg6 fxg6 35. Rg7+ Ke8 36. Rxg6) 30. h4 h5 31. Rh8+ { 1-0 Black resigns. } 31... Kg6 32. gxh5+ Rxh5 33. Rxh5 Kxh5 34. Rh8+ Rh7 (34... Kg6 35. h5#) 35. Rxh7+ Kg6 36. Rh8 f5 37. h5+ Kg7 38. Ra8 Kf6 39. Rxa7 Ke6 40. h6 f6 41. h7 Kd5 42. h8=Q Kc4 43. Qc8+ Kd3 44. Rd7+ Ke2 45. Qc2+ Kf1 46. Rd1# 1-0 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example59"]
+[BookFigures "FIG079,FIG080,FIG081,FIG082"]
+[SetUp "1"]
+[FEN "8/7R/8/2k2P2/1p6/3r4/5PKP/8 w - - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/fu265ajQ"]
+[Verification "python-chess 逐着合法重放通过（6 个半回合）"]
+
+{原书第一部 Example 59，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. f6 Rd6! 2. f7 (2. Rc7+ Kd4! (2... Kb6 3. f7 Rg6+ 4. Kf1 Rf6 5. Re7! Kc5 6. Ke2 b3 7. Re3 b2 8. Rb3 Rxf7 9. Rxb2 Rh7 10. Rd2 Rxh2 11. Ke3) 3. f7 Rg6+ 4. Kf1 Rf6 5. Rb7 Kc3) 2... Rd8! (2... Rg6+ 3. Kf3 Rf6+ 4. Ke2 Re6+ 5. Kd3 Rf6 6. Rh5+ Kb6 7. Rh6) (2... Rf6 3. Rg7! Kc4 4. h4 b3 5. Rg4+ Kc3 6. Rg3+) 3. Rh5+ Kc4 * *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example60"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/juGhCXMk"]
+[Verification "python-chess 逐着合法重放通过（97 个半回合）"]
+
+{原书第一部 Example 60，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 c5 5. c3 Nc6 6. Bd3 Bd6 7. Bxd6 Qxd6 8. Nbd2 e5 9. dxe5 Nxe5 10. Nxe5 Qxe5 11. Bb5+ Bd7 12. Qa4 Qc7 13. O-O-O O-O 14. Bxd7 Nxd7 15. Nf3 Qc6 16. Qxc6 bxc6 17. Nd2 Ne5 18. Kc2 c4 19. Rhf1 f5 20. Nf3 Nxf3 21. gxf3 { [%csl Yb3][%cal Ga7a5,Ga5a4] } 21... Rae8 22. Rd4 { [%cal Rf5f4,Yb2b3] } 22... Rf6 { [%cal Gf6g6,Gg6g2] } 23. b3 cxb3+ 24. axb3 Kf7 25. Kd3 Re7 { [%cal Gf1a1] } 26. Ra1 Ke6 { [%cal Gg7g5] } 27. Ra6 Rc7 28. Rda4 g5 29. h4 (29. Rxa7 Rxa7 30. Rxa7 Rh6 { [%csl Rh2] }) 29... g4 (29... gxh4 30. Rxh4 h6 31. b4 { [%cal Gb4b5] }) 30. Ke2 gxf3+ (30... h5 { [%cal Gf3f4] }) 31. Kxf3 Rff7 { [%cal Gb3b4] } 32. Ke2 Kd6 33. b4 Rb7 34. h5 (34. f4 Rg7 35. h5 Rg2+ 36. Kd3 Rh2 37. Rxa7 Rxa7 38. Rxa7 Rxh5 39. Ra6) 34... h6 (34... f4 35. exf4 Rbe7+! 36. Kf1 Rxf4 37. Rxa7 Re3!) 35. f4 Rg7 36. Kd3 Rge7 37. Ra1 Rg7 38. Kd4 Rg2 39. R6a2 { [%cal Gg2g7] } 39... Rbg7 40. Kd3 Rxa2 41. Rxa2 Re7 (41... Rg1 42. Ra6 Rd1+ 43. Kc2 Rh1 44. b5 Rxh5 45. Rxc6+ Kd7 46. Ra6) 42. Rg2 Re6 43. Rg7 Re7 44. Rg8 c5 45. Rg6+ Re6 46. bxc5+ Kd7 47. Rg7+ Kc6 48. Rxa7 Kxc5 49. Rf7 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example61"]
+[BookFigures "FIG086,FIG087"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/u2qkNqEr"]
+[Verification "python-chess 逐着合法重放通过（107 个半回合）"]
+
+{原书第一部 Example 61，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. O-O Bg4 7. h3 Bh5 8. Qe2 Bd6 9. d3 Qe7 10. Nd1 O-O-O 11. Ne3 Bg6 12. Nh4 Rhg8 13. Nef5 Qe6 14. f4 Bxf5 15. Nxf5 exf4 16. Bxf4 Bc5+ 17. Be3 Bf8 18. Qf2 Rd7 19. Bc5 Bxc5 20. Qxc5 Kb8 21. Rf2 Ne8 22. Raf1 f6 23. b3 Nd6 24. Rf4 Nxf5 25. Qxf5 Qxf5 26. Rxf5 Re8 27. g4 { [%cal Gg4g5] } 27... b6 28. b4 Kb7 29. Kf2 b5 { [%cal Ga6a5] } 30. a4 Rd4 31. Rb1 Re5 32. Ke3 Rd7 33. a5 Re6 (33... Rxf5 34. gxf5) 34. Rbf1 Rde7 35. g5 fxg5 36. Rxg5 Rh6 37. Rg3 Rhe6 38. h4 g6 39. Rg5 h6 (39... Re5 40. Rf8 Re8 41. Rxe5) 40. Rg4 Rg7 41. d4 Kb8 42. Rf8+ Kb7 43. e5 g5 44. Ke4 Ree7 45. hxg5 hxg5 46. Rf5 Kc8 47. Rgxg5 Rh7 48. Rh5 Kd7 49. Rxh7 Rxh7 50. Rf8 Rh4+ 51. Kd3 Rh3+ 52. Kd2 c5 53. bxc5 Ra3 54. d5 { 1-0 Black resigns. } 1-0 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example62"]
+[BookFigures "-"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/uL7pPw98/LXm0sKJK"]
+[Verification "python-chess 逐着合法重放通过（100 个半回合）"]
+
+{原书第一部 Example 62，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} 1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d4 exd4 5. O-O Be7 6. e5 Ne4 7. Nxd4 O-O 8. Nf5 d5 9. Bxc6 bxc6 10. Nxe7+ Qxe7 11. Re1 Qh4 12. Be3 f6 13. f3 fxe5 14. fxe4 d4 15. g3 Qf6 16. Bxd4 exd4 17. Rf1 Qxf1+ 18. Qxf1 Rxf1+ 19. Kxf1 Rb8 20. b3 Rb5 21. c4 Rh5 22. Kg1 c5 23. Nd2 Kf7 24. Rf1+ Ke7 25. a3 Rh6 26. h4 Ra6 27. Ra1 Bg4 28. Kf2 Ke6 29. a4 (29. Nf3 Bxf3 30. Kxf3 Ke5 31. Ke2 { [%cal Re5e4,Ga6f6] }) 29... Ke5 30. Kg2 Rf6 31. Re1 d3 32. Rf1 Kd4 33. Rxf6 gxf6 34. Kf2 c6 35. a5 a6 36. Nb1 Kxe4 37. Ke1 Be2 38. Nd2+ Ke3 39. Nb1 f5 40. Nd2 h5 41. Nb1 Kf3 42. Nc3 Kxg3 43. Na4 f4 44. Nxc5 f3 45. Ne4+ Kf4 46. Nd6 c5 47. b4 cxb4 48. c5 b3 49. Nc4 Kg3 50. Ne3 b2 { 0-1 White resigns. } 0-1 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example65A"]
+[BookFigures "FIG091,FIG092"]
+[SetUp "1"]
+[FEN "r3r1k1/2pq1p1p/p5p1/1p1pP3/3P4/3Q4/PP3PPP/2R1R1K1 w q - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/k3M5fqR7/tEAAsRtB"]
+[Verification "python-chess 逐着合法重放通过（39 个半回合）"]
+
+{原书第一部 Example 65 A，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} Rc5 c6 Qa3 Re6 Rec1 Rc8 Qb4 Qb7 Qa3 f5 h3 Ra8 f4 Rc8 g4 Ra8 Kh1 Rc8 gxf5 gxf5 Qf3 Qd7 R5c2 Rg6 Rg2 Kh8 Rcg1 Rcg8 Qh5 Rxg2 Rxg2 Rxg2 Kxg2 Qg7+ Kh2 Qg6 Qxg6 hxg6 b4 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example65B"]
+[BookFigures "FIG091,FIG092"]
+[SetUp "1"]
+[FEN "3r3k/2q4p/p1p1r1p1/1pRpPp2/1P1P1PP1/2R3KP/P7/2Q5 b - - 1 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/k3M5fqR7/3rPDBtOT"]
+[Verification "python-chess 逐着合法重放通过（2 个半回合）"]
+
+{原书第一部 Example 65 B，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} Rf8 Qc2 *
+
+
+[Event "Chess Fundamentals — 第一部 例局"]
+[Site "?"]
+[Date "1921"]
+[Round "-"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Annotator "J. R. Capablanca（原书评注）"]
+[BookID "Example67"]
+[BookFigures "FIG095,FIG096,FIG097"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+[Source "Lichess Study uL7pPw98 / https://lichess.org/study/k3M5fqR7/weWNBXfb"]
+[Verification "python-chess 逐着合法重放通过（75 个半回合）"]
+
+{原书第一部 Example 67，起始局面见 FEN 字段。本段为书中主线，括注内的分支为原书变例。} d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 Nbd7 Bd3 dxc4 Bxc4 Nb6 Bd3 Nfd5 Bxe7 Qxe7 Nf3 O-O O-O Bd7 Rc1 c6 Ne4 f5 Nc5 Be8 Ne5 Rb8 Re1 Rf6 Qf3 Rh6 Qg3 Rc8 f3 Rc7 a3 Kh8 h3 g5 e4 f4 Qf2 Ne3 Rxe3 fxe3 Qxe3 Nc8 Ng4 Rg6 e5 Rg7 Bc4 Bf7 Nf6 Nb6 Nce4 h6 h4 Nd5 Qd2 Rg6 hxg5 Qf8 f4 Ne7 g4 hxg5 fxg5 Bg8 Qh2+ Kg7 Bxe6 *
+

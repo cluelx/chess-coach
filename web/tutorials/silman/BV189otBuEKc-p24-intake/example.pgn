@@ -1,0 +1,11 @@
+[Event "Capablanca example: illustrative continuation from video frame"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=24&t=690"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "r4rn1/1pQ2pkp/p2q2p1/1b1pN3/3P4/5N2/PP3PPP/2R1R1K1 b - - 0 1"]
+[SetUp "1"]
+
+1... Qxc7 2. Rxc7 *

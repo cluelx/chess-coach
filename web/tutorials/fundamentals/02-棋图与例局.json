@@ -1,0 +1,3006 @@
+{
+ "book": "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+ "source": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html",
+ "figures": [
+  {
+   "ID": "FIG001",
+   "图号": "Fig.1",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "一些简单的杀王",
+   "章节标题": "1. SOME SIMPLE MATES",
+   "页码": 3,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page3",
+   "例号或对局号": "Example 1",
+   "piece_placement": "7k/8/8/8/8/8/8/R6K",
+   "FEN": "7k/8/8/8/8/8/8/R6K w - - 0 1",
+   "中文讲解": "第 1 节「一些简单的杀王」的棋图（原书 p.3），对应 Example 1。局面材料：白王车 vs 黑王；白方行棋。本图作用：先熟悉各子的力量。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/jmEPtCP6"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG002",
+   "图号": "Fig.2",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "一些简单的杀王",
+   "章节标题": "1. SOME SIMPLE MATES",
+   "页码": 5,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page5",
+   "例号或对局号": "Example 2",
+   "piece_placement": "8/8/8/4k3/8/8/8/4K2R",
+   "FEN": "8/8/8/4k3/8/8/8/4K2R w - - 0 1",
+   "中文讲解": "第 1 节「一些简单的杀王」的棋图（原书 p.5），对应 Example 2。局面材料：白王车 vs 黑王；白方行棋。本图作用：先熟悉各子的力量。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/osu05yiE"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG003",
+   "图号": "Fig.3",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "一些简单的杀王",
+   "章节标题": "1. SOME SIMPLE MATES",
+   "页码": 6,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page6",
+   "例号或对局号": "Example 3",
+   "piece_placement": "7k/8/8/8/8/8/8/2B1KB2",
+   "FEN": "7k/8/8/8/8/8/8/2B1KB2 w - - 0 1",
+   "中文讲解": "第 1 节「一些简单的杀王」的棋图（原书 p.6），对应 Example 3。局面材料：白王象2 vs 黑王；白方行棋。本图作用：先熟悉各子的力量。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/AQxwqqPM"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG004",
+   "图号": "Fig.4",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "一些简单的杀王",
+   "章节标题": "1. SOME SIMPLE MATES",
+   "页码": 8,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page8",
+   "例号或对局号": "Example 4",
+   "piece_placement": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+   "FEN": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "中文讲解": "第 1 节「一些简单的杀王」的棋图（原书 p.8），对应 Example 4。局面材料：白王后车2象2马2兵8 vs 黑王后车2象2马2兵8；白方行棋。本图作用：先熟悉各子的力量。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/yNwKjiMK"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG005",
+   "图号": "Fig.5",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "兵的升变",
+   "章节标题": "2. PAWN PROMOTION",
+   "页码": 9,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page9",
+   "例号或对局号": "Example 5",
+   "piece_placement": "8/8/8/8/4k3/8/3KP3/8",
+   "FEN": "8/8/8/8/4k3/8/3KP3/8 w - - 0 1",
+   "中文讲解": "第 2 节「兵的升变」的棋图（原书 p.9），对应 Example 5。局面材料：白王兵 vs 黑王；白方行棋。本图作用：理解“王在兵前”这一升变铁律。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/0Mamgapy"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG006",
+   "图号": "Fig.6",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "兵的升变",
+   "章节标题": "2. PAWN PROMOTION",
+   "页码": 11,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page11",
+   "例号或对局号": "Example 6",
+   "piece_placement": "8/8/5k2/8/5K2/8/4P3/8",
+   "FEN": "8/8/5k2/8/5K2/8/4P3/8 w - - 0 1",
+   "中文讲解": "第 2 节「兵的升变」的棋图（原书 p.11），对应 Example 6。局面材料：白王兵 vs 黑王；白方行棋。本图作用：理解“王在兵前”这一升变铁律。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/DmXixB7g"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG007",
+   "图号": "Fig.7",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "兵的残局",
+   "章节标题": "3. PAWN ENDINGS",
+   "页码": 13,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page13",
+   "例号或对局号": "Example 7",
+   "piece_placement": "5k2/6p1/4K1P1/5P2/8/8/8/8",
+   "FEN": "5k2/6p1/4K1P1/5P2/8/8/8/8 w - - 0 1",
+   "中文讲解": "第 3 节「兵的残局」的棋图（原书 p.13），对应 Example 7。局面材料：白王兵2 vs 黑王兵；白方行棋。本图作用：用两兵对一兵、三兵对两兵的具体例子。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/BRj2olPF"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG008",
+   "图号": "Fig.8",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "兵的残局",
+   "章节标题": "3. PAWN ENDINGS",
+   "页码": 14,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page14",
+   "例号或对局号": "Example 7",
+   "piece_placement": "8/5K2/6Qk/5p2/8/8/8/8",
+   "FEN": "8/5K2/6Qk/5p2/8/8/8/8 b - - 2 7",
+   "中文讲解": "第 3 节「兵的残局」的棋图（原书 p.14），对应 Example 7。局面材料：白王后 vs 黑王兵；黑方行棋。本图作用：用两兵对一兵、三兵对两兵的具体例子。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/BRj2olPF"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG009",
+   "图号": "Fig.9",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "兵的残局",
+   "章节标题": "3. PAWN ENDINGS",
+   "页码": 16,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page16",
+   "例号或对局号": "Example 9",
+   "piece_placement": "8/6pp/3k4/8/3K1PPP/8/8/8",
+   "FEN": "8/6pp/3k4/8/3K1PPP/8/8/8 w - - 0 1",
+   "中文讲解": "第 3 节「兵的残局」的棋图（原书 p.16），对应 Example 9。局面材料：白王兵3 vs 黑王兵2；白方行棋。本图作用：用两兵对一兵、三兵对两兵的具体例子。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/NZtls7NX"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG010",
+   "图号": "Fig.10",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "兵的残局",
+   "章节标题": "3. PAWN ENDINGS",
+   "页码": 17,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page17",
+   "例号或对局号": "Example 10",
+   "piece_placement": "8/p6p/4k3/8/4K3/8/P5PP/8",
+   "FEN": "8/p6p/4k3/8/4K3/8/P5PP/8 w - - 0 1",
+   "中文讲解": "第 3 节「兵的残局」的棋图（原书 p.17），对应 Example 10。局面材料：白王兵3 vs 黑王兵2；白方行棋。本图作用：用两兵对一兵、三兵对两兵的具体例子。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/jeqNZjR6"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG011",
+   "图号": "Fig.11",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中局的一些致胜局面",
+   "章节标题": "4. SOME WINNING POSITIONS IN THE MIDDLE-GAME",
+   "页码": 19,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page19",
+   "例号或对局号": "Example 11",
+   "piece_placement": "5rk1/1b3p1p/ppq3p1/2p5/8/1P1P1R1Q/PBP3PP/7K",
+   "FEN": "5rk1/1b3p1p/ppq3p1/2p5/8/1P1P1R1Q/PBP3PP/7K b - - 0 1",
+   "中文讲解": "第 4 节「中局的一些致胜局面」的棋图（原书 p.19），对应 Example 11。局面材料：白王后车象兵6 vs 黑王后车象兵6；黑方行棋。本图作用：在接触开局之前。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/z3pIDyiG"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG012",
+   "图号": "Fig.12",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中局的一些致胜局面",
+   "章节标题": "4. SOME WINNING POSITIONS IN THE MIDDLE-GAME",
+   "页码": 20,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page20",
+   "例号或对局号": "Example 12",
+   "piece_placement": "5rk1/1bq1bp1p/p1n3p1/1p6/3N4/1P1PR2Q/PBP3PP/7K",
+   "FEN": "5rk1/1bq1bp1p/p1n3p1/1p6/3N4/1P1PR2Q/PBP3PP/7K w - - 0 1",
+   "中文讲解": "第 4 节「中局的一些致胜局面」的棋图（原书 p.20），对应 Example 12。局面材料：白王后车象马兵6 vs 黑王后车象2马兵5；白方行棋。本图作用：在接触开局之前。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/mr7KrKXV"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG013",
+   "图号": "Fig.13",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中局的一些致胜局面",
+   "章节标题": "4. SOME WINNING POSITIONS IN THE MIDDLE-GAME",
+   "页码": 21,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page21",
+   "例号或对局号": "Example 13",
+   "piece_placement": "2q2rk1/1b3ppp/pp6/2p5/2P1N3/PP1Q4/1B3PPP/7K",
+   "FEN": "2q2rk1/1b3ppp/pp6/2p5/2P1N3/PP1Q4/1B3PPP/7K w - - 0 1",
+   "中文讲解": "第 4 节「中局的一些致胜局面」的棋图（原书 p.21），对应 Example 13。局面材料：白王后象马兵6 vs 黑王后车象兵6；白方行棋。本图作用：在接触开局之前。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/l5R1mjDe"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG014",
+   "图号": "Fig.14",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中局的一些致胜局面",
+   "章节标题": "4. SOME WINNING POSITIONS IN THE MIDDLE-GAME",
+   "页码": 22,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page22",
+   "例号或对局号": "Example 13",
+   "piece_placement": "2q2r1k/1b3p1p/pp3B2/2p5/2P5/PP4Q1/5PPP/7K",
+   "FEN": "2q2r1k/1b3p1p/pp3B2/2p5/2P5/PP4Q1/5PPP/7K b - - 0 3",
+   "中文讲解": "第 4 节「中局的一些致胜局面」的棋图（原书 p.22），对应 Example 13。局面材料：白王后象兵6 vs 黑王后车象兵5；黑方行棋。本图作用：在接触开局之前。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/l5R1mjDe"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG015",
+   "图号": "Fig.15",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中局的一些致胜局面",
+   "章节标题": "4. SOME WINNING POSITIONS IN THE MIDDLE-GAME",
+   "页码": 22,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page22",
+   "例号或对局号": "Example 15",
+   "piece_placement": "r3qrk1/1pp2ppp/p1np4/3Q4/8/P2B1N2/1PP2PPP/3R2K1",
+   "FEN": "r3qrk1/1pp2ppp/p1np4/3Q4/8/P2B1N2/1PP2PPP/3R2K1 w - - 0 1",
+   "中文讲解": "第 4 节「中局的一些致胜局面」的棋图（原书 p.22），对应 Example 15。局面材料：白王后车象马兵6 vs 黑王后车2马兵7；白方行棋。本图作用：在接触开局之前。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/C6VDsDYY"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG016",
+   "图号": "Fig.16",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中局的一些致胜局面",
+   "章节标题": "4. SOME WINNING POSITIONS IN THE MIDDLE-GAME",
+   "页码": 23,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page23",
+   "例号或对局号": "Example 16",
+   "piece_placement": "2nb1rk1/1pqrnppp/p2p4/2pQ1N2/6P1/1P1B1N1P/P3RP2/3R2K1",
+   "FEN": "2nb1rk1/1pqrnppp/p2p4/2pQ1N2/6P1/1P1B1N1P/P3RP2/3R2K1 w - - 0 1",
+   "中文讲解": "第 4 节「中局的一些致胜局面」的棋图（原书 p.23），对应 Example 16。局面材料：白王后车2象马2兵5 vs 黑王后车2象马2兵7；白方行棋。本图作用：在接触开局之前。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/wxp2baYW"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG017",
+   "图号": "Fig.17",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "开局的一般战略",
+   "章节标题": "6. GENERAL STRATEGY OF THE OPENING",
+   "页码": 27,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page27",
+   "例号或对局号": "Example 17",
+   "piece_placement": "r1bq1rk1/ppp2ppp/2np1n2/1B2p1B1/1b2P3/2NP1N2/PPP2PPP/R2Q1RK1",
+   "FEN": "r1bq1rk1/ppp2ppp/2np1n2/1B2p1B1/1b2P3/2NP1N2/PPP2PPP/R2Q1RK1 b - - 1 7",
+   "中文讲解": "第 6 节「开局的一般战略」的棋图（原书 p.27），对应 Example 17。局面材料：白王后车2象2马2兵8 vs 黑王后车2象2马2兵8；黑方行棋。本图作用：记住开局第一原则：尽快出子。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/huFGEkku"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG018",
+   "图号": "Fig.18",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "中心的控制",
+   "章节标题": "7. CONTROL OF THE CENTRE",
+   "页码": 32,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page32",
+   "例号或对局号": "Example 19",
+   "piece_placement": "rn2kbnr/p4ppp/1pp2q2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R",
+   "FEN": "rn2kbnr/p4ppp/1pp2q2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R w KQkq - 0 9",
+   "中文讲解": "第 7 节「中心的控制」的棋图（原书 p.32），对应 Example 19。局面材料：白王后车2象2马兵7 vs 黑王后车2象马2兵7；白方行棋。本图作用：看懂为什么占中心、为什么用兵抢中心。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/HBuy2MuV"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG019",
+   "图号": "Fig.19",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "陷阱",
+   "章节标题": "8. TRAPS",
+   "页码": 33,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page33",
+   "例号或对局号": "Example 20",
+   "piece_placement": "r2qkbnr/ppp2pp1/2np3p/4p3/2BPP1b1/2N2N2/PPP2PPP/R1BQK2R",
+   "FEN": "r2qkbnr/ppp2pp1/2np3p/4p3/2BPP1b1/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+   "中文讲解": "第 8 节「陷阱」的棋图（原书 p.33），对应 Example 20。局面材料：白王后车2象2马2兵8 vs 黑王后车2象2马2兵8；白方行棋。本图作用：认识开局里最常见的战术陷阱。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/NJwd3J3t"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG020",
+   "图号": "Fig.20",
+   "部": "第一部",
+   "章": "第一部 第一章",
+   "小节": "陷阱",
+   "章节标题": "8. TRAPS",
+   "页码": 33,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page33",
+   "例号或对局号": "Example 21",
+   "piece_placement": "rn1qkbnr/ppp1ppp1/7p/8/2B3b1/2N2N2/PPPP1PPP/R1BQK2R",
+   "FEN": "rn1qkbnr/ppp1ppp1/7p/8/2B3b1/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 0 1",
+   "中文讲解": "第 8 节「陷阱」的棋图（原书 p.33），对应 Example 21。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；黑方行棋。本图作用：认识开局里最常见的战术陷阱。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/iK3bpFG1"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG021",
+   "图号": "Fig.21",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "一条基本原则",
+   "章节标题": "9. A CARDINAL PRINCIPLE",
+   "页码": 35,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page35",
+   "例号或对局号": "",
+   "piece_placement": "8/p5p1/7p/6k1/8/7K/PP5P/8",
+   "FEN": "8/p5p1/7p/6k1/8/7K/PP5P/8 w - - 0 1",
+   "中文讲解": "第 9 节「一条基本原则」的棋图（原书 p.35），为本节起始图。局面材料：白王兵3 vs 黑王兵3；白方行棋。本图作用：掌握“一子守两兵”（一个单位抵两个）的以少制多原则。。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 22 起始局面；行棋方与原文首着 1 P-R4 一致，且与社区 LaTeX 版同图）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG022",
+   "图号": "Fig.22",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "一个经典残局",
+   "章节标题": "10. A CLASSICAL ENDING",
+   "页码": 37,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page37",
+   "例号或对局号": "",
+   "piece_placement": "8/6p1/7p/8/5k2/8/6KP/8",
+   "FEN": "8/6p1/7p/8/5k2/8/6KP/8 w - - 0 1",
+   "中文讲解": "第 10 节「一个经典残局」的棋图（原书 p.37），为本节起始图。局面材料：白王兵 vs 黑王兵2；白方行棋。本图作用：学会三兵对两兵（单翼）的取胜三步法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 23 起始局面；行棋方与原文首着 1 K-Kt3 一致，兵力 3 兵对 2 兵与原文描述相符）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG023",
+   "图号": "Fig.23",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "一个经典残局",
+   "章节标题": "10. A CLASSICAL ENDING",
+   "页码": 38,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page38",
+   "例号或对局号": "Example 23",
+   "piece_placement": "8/6p1/8/7p/8/7k/7P/6K1",
+   "FEN": "8/6p1/8/7p/8/7k/7P/6K1 b - - 1 7",
+   "中文讲解": "第 10 节「一个经典残局」的棋图（原书 p.38），对应 Example 23。局面材料：白王兵 vs 黑王兵2；黑方行棋。本图作用：学会三兵对两兵（单翼）的取胜三步法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/bJB0s7Ua"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG024",
+   "图号": "Fig.24",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "一个经典残局",
+   "章节标题": "10. A CLASSICAL ENDING",
+   "页码": 38,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page38",
+   "例号或对局号": "Example 23",
+   "piece_placement": "8/8/8/6p1/7p/7k/7P/6K1",
+   "FEN": "8/8/8/6p1/7p/7k/7P/6K1 b - - 1 9",
+   "中文讲解": "第 10 节「一个经典残局」的棋图（原书 p.38），对应 Example 23。局面材料：白王兵 vs 黑王兵2；黑方行棋。本图作用：学会三兵对两兵（单翼）的取胜三步法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/bJB0s7Ua"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG025",
+   "图号": "Fig.25",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "如何获得通路兵",
+   "章节标题": "11. OBTAINING A PASSED PAWN",
+   "页码": 40,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page40",
+   "例号或对局号": "",
+   "piece_placement": "8/ppp4k/8/PPP5/8/8/8/7K",
+   "FEN": "8/ppp4k/8/PPP5/8/8/8/7K w - - 0 1",
+   "中文讲解": "第 11 节「如何获得通路兵」的棋图（原书 p.40），为本节起始图。局面材料：白王兵3 vs 黑王兵3；白方行棋。本图作用：在三兵对三兵的结构里。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 24 起始局面；行棋方与首着 1 P-Kt6 一致，且与社区 LaTeX 版同图）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG026",
+   "图号": "Fig.26",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "如何判断哪个兵先升变",
+   "章节标题": "12. HOW TO FIND OUT WHICH PAWN WILL BE FIRST TO QUEEN",
+   "页码": 41,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page41",
+   "例号或对局号": "Example 25",
+   "piece_placement": "8/p5kp/8/1P6/8/1K6/P7/8",
+   "FEN": "8/p5kp/8/1P6/8/1K6/P7/8 w - - 0 1",
+   "中文讲解": "第 12 节「如何判断哪个兵先升变」的棋图（原书 p.41），对应 Example 25。局面材料：白王兵2 vs 黑王兵2；白方行棋。本图作用：用“数步数”的方法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/Hceh4jks"
+   ],
+   "校验状态": "已校验（PGN 主线重放 + 社区 LaTeX 双源一致）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG027",
+   "图号": "Fig.27",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "对王（Opposition）",
+   "章节标题": "13. THE OPPOSITION",
+   "页码": 43,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page43",
+   "例号或对局号": "",
+   "piece_placement": "8/8/4k3/1p5p/1P2K2P/8/8/8",
+   "FEN": "8/8/4k3/1p5p/1P2K2P/8/8/8 w - - 0 1",
+   "中文讲解": "第 13 节「对王（Opposition）」的棋图（原书 p.43），为本节起始图。局面材料：白王兵2 vs 黑王兵2；白方行棋。本图作用：理解对王及其各种形态（直线、斜线、远距离）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 26 起始局面；行棋方与首着 1 K-Q4 一致，且与社区 LaTeX 版同图）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG028",
+   "图号": "Fig.28",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "对王（Opposition）",
+   "章节标题": "13. THE OPPOSITION",
+   "页码": 44,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page44",
+   "例号或对局号": "Example 26",
+   "piece_placement": "8/8/3k4/1p5p/1P1K3P/8/8/8",
+   "FEN": "8/8/3k4/1p5p/1P1K3P/8/8/8 w - - 2 2",
+   "中文讲解": "第 13 节「对王（Opposition）」的棋图（原书 p.44），对应 Example 26。局面材料：白王兵2 vs 黑王兵2；白方行棋。本图作用：理解对王及其各种形态（直线、斜线、远距离）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/unjAdMku"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG029",
+   "图号": "Fig.29",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "对王（Opposition）",
+   "章节标题": "13. THE OPPOSITION",
+   "页码": 44,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page44",
+   "例号或对局号": "Example 26",
+   "piece_placement": "8/8/3k4/1p5p/1P1K3P/8/8/8",
+   "FEN": "8/8/3k4/1p5p/1P1K3P/8/8/8 w - - 2 2",
+   "中文讲解": "第 13 节「对王（Opposition）」的棋图（原书 p.44），对应 Example 26。局面材料：白王兵2 vs 黑王兵2；白方行棋。本图作用：理解对王及其各种形态（直线、斜线、远距离）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/unjAdMku"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG030",
+   "图号": "Fig.30",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "对王（Opposition）",
+   "章节标题": "13. THE OPPOSITION",
+   "页码": 45,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page45",
+   "例号或对局号": "Example 26",
+   "piece_placement": "8/8/3k4/1p5p/1P1K3P/8/8/8",
+   "FEN": "8/8/3k4/1p5p/1P1K3P/8/8/8 w - - 2 2",
+   "中文讲解": "第 13 节「对王（Opposition）」的棋图（原书 p.45），对应 Example 26。局面材料：白王兵2 vs 黑王兵2；白方行棋。本图作用：理解对王及其各种形态（直线、斜线、远距离）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/unjAdMku"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG031",
+   "图号": "Fig.31",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "对王（Opposition）",
+   "章节标题": "13. THE OPPOSITION",
+   "页码": 48,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page48",
+   "例号或对局号": "Example 28",
+   "piece_placement": "8/8/8/4p1p1/8/5P2/6K1/3k4",
+   "FEN": "8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1",
+   "中文讲解": "第 13 节「对王（Opposition）」的棋图（原书 p.48），对应 Example 28。局面材料：白王兵 vs 黑王兵2；白方行棋。本图作用：理解对王及其各种形态（直线、斜线、远距离）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/c6ueEPvx"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG032",
+   "图号": "Fig.32",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 50,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page50",
+   "例号或对局号": "",
+   "piece_placement": "k7/8/1K1NN3/8/8/8/8/8",
+   "FEN": "k7/8/1K1NN3/8/8/8/8/8 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.50），为本节起始图。局面材料：白王马2 vs 黑王；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已验证（棋子摆放取自社区 LaTeX 版；双马对单王与原文“双马不能杀单王”相符）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG033",
+   "图号": "Fig.33",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 50,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page50",
+   "例号或对局号": "Example 29",
+   "piece_placement": "k7/8/1K1N4/7p/7N/8/8/8",
+   "FEN": "k7/8/1K1N4/7p/7N/8/8/8 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.50），对应 Example 29。局面材料：白王马2 vs 黑王兵；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/jg9qKMlb"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG034",
+   "图号": "Fig.34",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 51,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page51",
+   "例号或对局号": "Example 30",
+   "piece_placement": "7k/8/8/6K1/8/3B4/7P/8",
+   "FEN": "7k/8/8/6K1/8/3B4/7P/8 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.51），对应 Example 30。局面材料：白王象兵 vs 黑王；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/kIHDzwyJ"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG035",
+   "图号": "Fig.35",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 52,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page52",
+   "例号或对局号": "Example 30",
+   "piece_placement": "7k/8/8/6K1/8/3B4/7P/8",
+   "FEN": "7k/8/8/6K1/8/3B4/7P/8 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.52），对应 Example 30。局面材料：白王象兵 vs 黑王；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/kIHDzwyJ"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG036",
+   "图号": "Fig.36",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 53,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page53",
+   "例号或对局号": "Example 32",
+   "piece_placement": "4k3/3n4/2p5/1pPp4/pP1P4/P7/8/2B1K3",
+   "FEN": "4k3/3n4/2p5/1pPp4/pP1P4/P7/8/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.53），对应 Example 32。局面材料：白王象兵4 vs 黑王马兵4；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 33 起始局面；行棋方与原文一致）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG037",
+   "图号": "Fig.37",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 54,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page54",
+   "例号或对局号": "Example 33",
+   "piece_placement": "4k3/3n4/2p5/1pPp4/pP1P4/P7/8/2B1K3",
+   "FEN": "4k3/3n4/2p5/1pPp4/pP1P4/P7/8/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.54），对应 Example 33。局面材料：白王象兵4 vs 黑王马兵4；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/MZQ4wfdn"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG038",
+   "图号": "Fig.38",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 55,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page55",
+   "例号或对局号": "Example 34",
+   "piece_placement": "4k3/3n1ppp/8/8/8/8/5PPP/2B1K3",
+   "FEN": "4k3/3n1ppp/8/8/8/8/5PPP/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.55），对应 Example 34。局面材料：白王象兵3 vs 黑王马兵3；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/iXVTnuAH"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG039",
+   "图号": "Fig.39",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 56,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page56",
+   "例号或对局号": "Example 35",
+   "piece_placement": "4k3/pppn1ppp/8/8/8/8/PPP2PPP/2B1K3",
+   "FEN": "4k3/pppn1ppp/8/8/8/8/PPP2PPP/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.56），对应 Example 35。局面材料：白王象兵6 vs 黑王马兵6；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/Y7ijidbY"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG040",
+   "图号": "Fig.40",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 56,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page56",
+   "例号或对局号": "Example 35",
+   "piece_placement": "4k3/pppn1ppp/8/8/8/8/PPP2PPP/2B1K3",
+   "FEN": "4k3/pppn1ppp/8/8/8/8/PPP2PPP/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.56），对应 Example 35。局面材料：白王象兵6 vs 黑王马兵6；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/Y7ijidbY"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG041",
+   "图号": "Fig.41",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 57,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page57",
+   "例号或对局号": "Example 36",
+   "piece_placement": "4k3/pppn1pp1/8/8/8/8/1PP2PPP/2B1K3",
+   "FEN": "4k3/pppn1pp1/8/8/8/8/1PP2PPP/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.57），对应 Example 36。局面材料：白王象兵5 vs 黑王马兵5；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/smScmNAm"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG042",
+   "图号": "Fig.42",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "马与象的相对价值",
+   "章节标题": "14. THE RELATIVE VALUE OF KNIGHT AND BISHOP",
+   "页码": 58,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page58",
+   "例号或对局号": "Example 38",
+   "piece_placement": "4k3/p1pn1p2/8/8/8/8/2P2P1P/2B1K3",
+   "FEN": "4k3/p1pn1p2/8/8/8/8/2P2P1P/2B1K3 w - - 0 1",
+   "中文讲解": "第 14 节「马与象的相对价值」的棋图（原书 p.58），对应 Example 38。局面材料：白王象兵3 vs 黑王马兵3；白方行棋。本图作用：通过大量具体局面。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/yFoI0min"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG043",
+   "图号": "Fig.43",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "如何用马象杀王",
+   "章节标题": "15. HOW TO MATE WITH A KNIGHT AND A BISHOP",
+   "页码": 59,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page59",
+   "例号或对局号": "",
+   "piece_placement": "4k3/8/8/8/8/8/8/2B1K1N1",
+   "FEN": "4k3/8/8/8/8/8/8/2B1K1N1 w - - 0 1",
+   "中文讲解": "第 15 节「如何用马象杀王」的棋图（原书 p.59），为本节起始图。局面材料：白王象马 vs 黑王；白方行棋。本图作用：掌握马象杀王的两个阶段：先把王逼到与象同色的角。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 39 起始局面；象在 c1 故杀点在 a1/h8，与原文“须在 QR1 或 KR8 成杀”相符，整条主线可自该局面完整重放）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG044",
+   "图号": "Fig.44",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "如何用马象杀王",
+   "章节标题": "15. HOW TO MATE WITH A KNIGHT AND A BISHOP",
+   "页码": 60,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page60",
+   "例号或对局号": "Example 39",
+   "piece_placement": "8/3k4/8/8/8/8/4K3/2B3N1",
+   "FEN": "8/3k4/8/8/8/8/4K3/2B3N1 w - - 2 2",
+   "中文讲解": "第 15 节「如何用马象杀王」的棋图（原书 p.60），对应 Example 39。局面材料：白王象马 vs 黑王；白方行棋。本图作用：掌握马象杀王的两个阶段：先把王逼到与象同色的角。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/z27iWUFm"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG045",
+   "图号": "Fig.45",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "后对车",
+   "章节标题": "16. QUEEN AGAINST ROOK",
+   "页码": 62,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page62",
+   "例号或对局号": "",
+   "piece_placement": "1k6/1r6/2K5/Q7/8/8/8/8",
+   "FEN": "1k6/1r6/2K5/Q7/8/8/8/8 w - - 0 1",
+   "中文讲解": "第 16 节「后对车」的棋图（原书 p.62），为本节起始图。局面材料：白王后 vs 黑王车；白方行棋。本图作用：学会后对车这一最难的无兵残局的通法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（棋子摆放取自社区 LaTeX 版；原文 1 Q-K5ch Ka8 2 Q-R1ch K-Kt1 3 Q-R5 可自该局面合法走通并回到同一局面）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG046",
+   "图号": "Fig.46",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "后对车",
+   "章节标题": "16. QUEEN AGAINST ROOK",
+   "页码": 64,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page64",
+   "例号或对局号": "",
+   "piece_placement": "8/k7/2K5/4Q3/8/8/8/1r6",
+   "FEN": "8/k7/2K5/4Q3/8/8/8/1r6 w - - 0 1",
+   "中文讲解": "第 16 节「后对车」的棋图（原书 p.64），为本节起始图。局面材料：白王后 vs 黑王车；白方行棋。本图作用：学会后对车这一最难的无兵残局的通法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 41 起始局面；行棋方与首着 1 Q-K5ch 一致）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG047",
+   "图号": "Fig.47",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "后对车",
+   "章节标题": "16. QUEEN AGAINST ROOK",
+   "页码": 64,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page64",
+   "例号或对局号": "Example 42",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 16 节「后对车」的棋图（原书 p.64），对应 Example 42。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG048",
+   "图号": "Fig.48",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "不用马的攻击",
+   "章节标题": "17. ATTACKING WITHOUT THE AID OF KNIGHTS",
+   "页码": 68,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page68",
+   "例号或对局号": "",
+   "piece_placement": "2kr4/ppp1qp2/4bQ2/8/3P2r1/N1P5/PP4P1/R1B2RK1",
+   "FEN": "2kr4/ppp1qp2/4bQ2/8/3P2r1/N1P5/PP4P1/R1B2RK1 b - - 0 1",
+   "中文讲解": "第 17 节「不用马的攻击」的棋图（原书 p.68），为本节起始图。局面材料：白王后车2象马兵5 vs 黑王后车2象兵4；黑方行棋。本图作用：看不靠马、只靠后车象与兵就能完成的强攻。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 43 起始局面；黑方行棋与原文 1...QR-Kt1 一致）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG049",
+   "图号": "Fig.49",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "不用马的攻击",
+   "章节标题": "17. ATTACKING WITHOUT THE AID OF KNIGHTS",
+   "页码": 69,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page69",
+   "例号或对局号": "Example 43",
+   "piece_placement": "2k3r1/ppp1qp2/5Q2/8/2NP4/2P5/PP3R2/R1B2Kr1",
+   "FEN": "2k3r1/ppp1qp2/5Q2/8/2NP4/2P5/PP3R2/R1B2Kr1 w - - 1 5",
+   "中文讲解": "第 17 节「不用马的攻击」的棋图（原书 p.69），对应 Example 43。局面材料：白王后车2象马兵4 vs 黑王后车2兵4；白方行棋。本图作用：看不靠马、只靠后车象与兵就能完成的强攻。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/aFY4GjAM"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG050",
+   "图号": "Fig.50",
+   "部": "第一部",
+   "章": "第一部 第二章",
+   "小节": "不用马的攻击",
+   "章节标题": "17. ATTACKING WITHOUT THE AID OF KNIGHTS",
+   "页码": 70,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page70",
+   "例号或对局号": "Example 43",
+   "piece_placement": "2k3r1/ppp1qp2/5Q2/8/2NP4/2P5/PP3R2/R1B2Kr1",
+   "FEN": "2k3r1/ppp1qp2/5Q2/8/2NP4/2P5/PP3R2/R1B2Kr1 w - - 1 5",
+   "中文讲解": "第 17 节「不用马的攻击」的棋图（原书 p.70），对应 Example 43。局面材料：白王后车2象马兵4 vs 黑王后车2兵4；白方行棋。本图作用：看不靠马、只靠后车象与兵就能完成的强攻。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/aFY4GjAM"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG051",
+   "图号": "Fig.51",
+   "部": "第一部",
+   "章": "第一部 第三章",
+   "小节": "以马为主力的攻击",
+   "章节标题": "18. ATTACKING WITH KNIGHTS AS A PROMINENT FORCE",
+   "页码": 71,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page71",
+   "例号或对局号": "",
+   "piece_placement": "4r2r/p1pb1ppk/2ppn2p/1q3N1N/4PPP1/1P2Q3/4R2P/2R3K1",
+   "FEN": "4r2r/p1pb1ppk/2ppn2p/1q3N1N/4PPP1/1P2Q3/4R2P/2R3K1 w - - 0 1",
+   "中文讲解": "第 18 节「以马为主力的攻击」的棋图（原书 p.71），为本节起始图。局面材料：白王后车2马2兵5 vs 黑王后车2象马兵7；白方行棋。本图作用：理解马在攻击中的独特作用。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "已推定（图为 Example 46 起始局面；白方行棋与原文 1 Kt(B5)xKtP 一致）",
+   "校验等级": "B"
+  },
+  {
+   "ID": "FIG052",
+   "图号": "Fig.52",
+   "部": "第一部",
+   "章": "第一部 第三章",
+   "小节": "以马为主力的攻击",
+   "章节标题": "18. ATTACKING WITH KNIGHTS AS A PROMINENT FORCE",
+   "页码": 72,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page72",
+   "例号或对局号": "Example 46",
+   "piece_placement": "7r/p1p1rkn1/2pp3p/1q2P3/4NPP1/1P2Q3/4R2P/2R3K1",
+   "FEN": "7r/p1p1rkn1/2pp3p/1q2P3/4NPP1/1P2Q3/4R2P/2R3K1 b - - 2 6",
+   "中文讲解": "第 18 节「以马为主力的攻击」的棋图（原书 p.72），对应 Example 46。局面材料：白王后车2马兵5 vs 黑王后车2马兵5；黑方行棋。本图作用：理解马在攻击中的独特作用。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/P5pZs6pw"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG053",
+   "图号": "Fig.53",
+   "部": "第一部",
+   "章": "第一部 第三章",
+   "小节": "以间接攻击取胜",
+   "章节标题": "19. WINNING BY INDIRECT ATTACK",
+   "页码": 73,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page73",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 19 节「以间接攻击取胜」的棋图（原书 p.73），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG054",
+   "图号": "Fig.54",
+   "部": "第一部",
+   "章": "第一部 第三章",
+   "小节": "以间接攻击取胜",
+   "章节标题": "19. WINNING BY INDIRECT ATTACK",
+   "页码": 75,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page75",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 19 节「以间接攻击取胜」的棋图（原书 p.75），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG055",
+   "图号": "Fig.55",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "集中火力的直接攻击",
+   "章节标题": "21. DIRECT ATTACKS EN MASSE",
+   "页码": 79,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page79",
+   "例号或对局号": "Example 50",
+   "piece_placement": "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1",
+   "FEN": "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 1",
+   "中文讲解": "第 21 节「集中火力的直接攻击」的棋图（原书 p.79），对应 Example 50。局面材料：白王后车2象马2兵6 vs 黑王后车2象马2兵6；白方行棋。本图作用：懂得直接攻王必须“有足够的兵力保证成功”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/YZvcgIn9"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG056",
+   "图号": "Fig.56",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "集中火力的直接攻击",
+   "章节标题": "21. DIRECT ATTACKS EN MASSE",
+   "页码": 80,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page80",
+   "例号或对局号": "Example 51",
+   "piece_placement": "r1bq1k1r/b5pp/1nRN4/4p3/1P2P1n1/5NB1/P4PPP/3Q1RK1",
+   "FEN": "r1bq1k1r/b5pp/1nRN4/4p3/1P2P1n1/5NB1/P4PPP/3Q1RK1 w - - 0 21",
+   "中文讲解": "第 21 节「集中火力的直接攻击」的棋图（原书 p.80），对应 Example 51。局面材料：白王后车2象马2兵6 vs 黑王后车2象2马2兵3；白方行棋。本图作用：懂得直接攻王必须“有足够的兵力保证成功”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/p7rptCNd"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG057",
+   "图号": "Fig.57",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "威胁性攻击的力量",
+   "章节标题": "22. THE FORCE OF THE THREATENED ATTACK",
+   "页码": 83,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page83",
+   "例号或对局号": "Example 52",
+   "piece_placement": "r1bqkb1r/ppp2ppp/4pn2/4N3/3P4/8/PPP2PPP/R1BQKB1R",
+   "FEN": "r1bqkb1r/ppp2ppp/4pn2/4N3/3P4/8/PPP2PPP/R1BQKB1R b KQkq - 1 7",
+   "中文讲解": "第 22 节「威胁性攻击的力量」的棋图（原书 p.83），对应 Example 52。局面材料：白王后车2象2马兵7 vs 黑王后车2象2马兵7；黑方行棋。本图作用：通过一盘完整的对局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/U5uTXIQy"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG058",
+   "图号": "Fig.58",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "威胁性攻击的力量",
+   "章节标题": "22. THE FORCE OF THE THREATENED ATTACK",
+   "页码": 84,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page84",
+   "例号或对局号": "Example 52",
+   "piece_placement": "r1bqk2r/ppp2ppp/3bpn2/4N3/3P4/5Q2/PPP2PPP/R1B1KB1R",
+   "FEN": "r1bqk2r/ppp2ppp/3bpn2/4N3/3P4/5Q2/PPP2PPP/R1B1KB1R b KQkq - 3 8",
+   "中文讲解": "第 22 节「威胁性攻击的力量」的棋图（原书 p.84），对应 Example 52。局面材料：白王后车2象2马兵7 vs 黑王后车2象2马兵7；黑方行棋。本图作用：通过一盘完整的对局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/U5uTXIQy"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG059",
+   "图号": "Fig.59",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "威胁性攻击的力量",
+   "章节标题": "22. THE FORCE OF THE THREATENED ATTACK",
+   "页码": 86,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page86",
+   "例号或对局号": "Example 52",
+   "piece_placement": "6k1/4r3/pp1qRrpQ/2pB4/2P2p2/8/PP3PP1/4R1K1",
+   "FEN": "6k1/4r3/pp1qRrpQ/2pB4/2P2p2/8/PP3PP1/4R1K1 b - - 0 33",
+   "中文讲解": "第 22 节「威胁性攻击的力量」的棋图（原书 p.86），对应 Example 52。局面材料：白王后车2象兵5 vs 黑王后车2兵5；黑方行棋。本图作用：通过一盘完整的对局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/U5uTXIQy"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG060",
+   "图号": "Fig.60",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "威胁性攻击的力量",
+   "章节标题": "22. THE FORCE OF THE THREATENED ATTACK",
+   "页码": 87,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page87",
+   "例号或对局号": "Example 52",
+   "piece_placement": "6k1/4r3/pp1qRrpQ/2pB4/2P2p2/8/PP3PP1/4R1K1",
+   "FEN": "6k1/4r3/pp1qRrpQ/2pB4/2P2p2/8/PP3PP1/4R1K1 b - - 0 33",
+   "中文讲解": "第 22 节「威胁性攻击的力量」的棋图（原书 p.87），对应 Example 52。局面材料：白王后车2象兵5 vs 黑王后车2兵5；黑方行棋。本图作用：通过一盘完整的对局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/U5uTXIQy"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG061",
+   "图号": "Fig.61",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "放弃主动权",
+   "章节标题": "23. RELINQUISHING THE INITIATIVE",
+   "页码": 91,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page91",
+   "例号或对局号": "Example 53",
+   "piece_placement": "1rb2qk1/p1p4p/3b4/2p1p3/2Pn1p2/1P3N2/P2R1PPP/R2Q1NK1",
+   "FEN": "1rb2qk1/p1p4p/3b4/2p1p3/2Pn1p2/1P3N2/P2R1PPP/R2Q1NK1 w - - 0 24",
+   "中文讲解": "第 23 节「放弃主动权」的棋图（原书 p.91），对应 Example 53。局面材料：白王后车2马2兵6 vs 黑王后车象2马兵6；白方行棋。本图作用：学会在拿到物质优势后。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/EjZV2iZT"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG062",
+   "图号": "Fig.62",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "放弃主动权",
+   "章节标题": "23. RELINQUISHING THE INITIATIVE",
+   "页码": 91,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page91",
+   "例号或对局号": "Example 53",
+   "piece_placement": "1r3qk1/pbp4p/3b4/4p2Q/2Pp1p2/1P6/P2R1PPP/R4NK1",
+   "FEN": "1r3qk1/pbp4p/3b4/4p2Q/2Pp1p2/1P6/P2R1PPP/R4NK1 w - - 2 26",
+   "中文讲解": "第 23 节「放弃主动权」的棋图（原书 p.91），对应 Example 53。局面材料：白王后车2马兵6 vs 黑王后车象2兵6；白方行棋。本图作用：学会在拿到物质优势后。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/EjZV2iZT"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG063",
+   "图号": "Fig.63",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "放弃主动权",
+   "章节标题": "23. RELINQUISHING THE INITIATIVE",
+   "页码": 92,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page92",
+   "例号或对局号": "Example 53",
+   "piece_placement": "5qk1/pb5p/4r3/2p1R2Q/2Pp1p2/1P3P2/P5PP/5NK1",
+   "FEN": "5qk1/pb5p/4r3/2p1R2Q/2Pp1p2/1P3P2/P5PP/5NK1 b - - 0 30",
+   "中文讲解": "第 23 节「放弃主动权」的棋图（原书 p.92），对应 Example 53。局面材料：白王后车马兵6 vs 黑王后车象兵5；黑方行棋。本图作用：学会在拿到物质优势后。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/EjZV2iZT"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG064",
+   "图号": "Fig.64",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "放弃主动权",
+   "章节标题": "23. RELINQUISHING THE INITIATIVE",
+   "页码": 93,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page93",
+   "例号或对局号": "Example 53",
+   "piece_placement": "8/8/7k/5R2/6PP/5K2/r7/8",
+   "FEN": "8/8/7k/5R2/6PP/5K2/r7/8 b - - 0 52",
+   "中文讲解": "第 23 节「放弃主动权」的棋图（原书 p.93），对应 Example 53。局面材料：白王车兵2 vs 黑王车；黑方行棋。本图作用：学会在拿到物质优势后。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/EjZV2iZT"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG065",
+   "图号": "Fig.65",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "把子力从战场上割开",
+   "章节标题": "24. CUTTING OFF PIECES FROM THE SCENE OF ACTION",
+   "页码": 97,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page97",
+   "例号或对局号": "Example 54",
+   "piece_placement": "r1bq1rk1/ppp2pp1/3b1n1p/2p1p3/4P2B/2NP1N2/PPP2PPP/R2Q1RK1",
+   "FEN": "r1bq1rk1/ppp2pp1/3b1n1p/2p1p3/4P2B/2NP1N2/PPP2PPP/R2Q1RK1 w - - 0 10",
+   "中文讲解": "第 24 节「把子力从战场上割开」的棋图（原书 p.97），对应 Example 54。局面材料：白王后车2象马2兵8 vs 黑王后车2象2马兵8；白方行棋。本图作用：理解“切断”这一手段：让对方的子力彼此失去联系。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/GCOMMUrM"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG066",
+   "图号": "Fig.66",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "把子力从战场上割开",
+   "章节标题": "24. CUTTING OFF PIECES FROM THE SCENE OF ACTION",
+   "页码": 97,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page97",
+   "例号或对局号": "Example 54",
+   "piece_placement": "r1bq1rk1/ppp2p2/3b1N1p/2p1p1p1/4P2B/3P1N2/PPP2PPP/R2Q1RK1",
+   "FEN": "r1bq1rk1/ppp2p2/3b1N1p/2p1p1p1/4P2B/3P1N2/PPP2PPP/R2Q1RK1 b - - 0 11",
+   "中文讲解": "第 24 节「把子力从战场上割开」的棋图（原书 p.97），对应 Example 54。局面材料：白王后车2象马2兵8 vs 黑王后车2象2兵8；黑方行棋。本图作用：理解“切断”这一手段：让对方的子力彼此失去联系。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/GCOMMUrM"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG067",
+   "图号": "Fig.67",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "把子力从战场上割开",
+   "章节标题": "24. CUTTING OFF PIECES FROM THE SCENE OF ACTION",
+   "页码": 98,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page98",
+   "例号或对局号": "Example 54",
+   "piece_placement": "r4rk1/ppp5/3b1p1p/2p1p1p1/4P3/3P1PBP/PPP2P2/R4RK1",
+   "FEN": "r4rk1/ppp5/3b1p1p/2p1p1p1/4P3/3P1PBP/PPP2P2/R4RK1 w - - 0 16",
+   "中文讲解": "第 24 节「把子力从战场上割开」的棋图（原书 p.98），对应 Example 54。局面材料：白王车2象兵8 vs 黑王车2象兵8；白方行棋。本图作用：理解“切断”这一手段：让对方的子力彼此失去联系。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/GCOMMUrM"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG068",
+   "图号": "Fig.68",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "逐着评注一盘棋中的动机",
+   "章节标题": "25. A PLAYER'S MOTIVES CRITICISED IN A SPECIMEN GAME",
+   "页码": 100,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page100",
+   "例号或对局号": "Example 55",
+   "piece_placement": "r1b1kb1r/pp1n1ppp/2p1pn2/q2p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R",
+   "FEN": "r1b1kb1r/pp1n1ppp/2p1pn2/q2p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq - 1 7",
+   "中文讲解": "第 25 节「逐着评注一盘棋中的动机」的棋图（原书 p.100），对应 Example 55。局面材料：白王后车2象2马2兵8 vs 黑王后车2象2马2兵8；白方行棋。本图作用：学习如何追问每一步背后的“动机”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/VdSywS6q"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG069",
+   "图号": "Fig.69",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "逐着评注一盘棋中的动机",
+   "章节标题": "25. A PLAYER'S MOTIVES CRITICISED IN A SPECIMEN GAME",
+   "页码": 102,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page102",
+   "例号或对局号": "Example 55",
+   "piece_placement": "r1b2rk1/pp3ppp/2p1pb2/q7/2BPP3/PQP2N2/5PPP/R4RK1",
+   "FEN": "r1b2rk1/pp3ppp/2p1pb2/q7/2BPP3/PQP2N2/5PPP/R4RK1 b - - 0 14",
+   "中文讲解": "第 25 节「逐着评注一盘棋中的动机」的棋图（原书 p.102），对应 Example 55。局面材料：白王后车2象马兵7 vs 黑王后车2象2兵7；黑方行棋。本图作用：学习如何追问每一步背后的“动机”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/VdSywS6q"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG070",
+   "图号": "Fig.70",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "逐着评注一盘棋中的动机",
+   "章节标题": "25. A PLAYER'S MOTIVES CRITICISED IN A SPECIMEN GAME",
+   "页码": 105,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page105",
+   "例号或对局号": "Example 55",
+   "piece_placement": "4r1k1/p1q4p/1p1r1pp1/2bP1b2/P1P2P2/1Q2pNP1/1R2B2P/3R2K1",
+   "FEN": "4r1k1/p1q4p/1p1r1pp1/2bP1b2/P1P2P2/1Q2pNP1/1R2B2P/3R2K1 b - - 4 31",
+   "中文讲解": "第 25 节「逐着评注一盘棋中的动机」的棋图（原书 p.105），对应 Example 55。局面材料：白王后车2象马兵6 vs 黑王后车2象2兵6；黑方行棋。本图作用：学习如何追问每一步背后的“动机”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/VdSywS6q"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG071",
+   "图号": "Fig.71",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "逐着评注一盘棋中的动机",
+   "章节标题": "25. A PLAYER'S MOTIVES CRITICISED IN A SPECIMEN GAME",
+   "页码": 107,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page107",
+   "例号或对局号": "Example 55",
+   "piece_placement": "6k1/p6p/1p3R2/2bP4/P1b2Np1/6P1/4p2P/5qRK",
+   "FEN": "6k1/p6p/1p3R2/2bP4/P1b2Np1/6P1/4p2P/5qRK w - - 2 45",
+   "中文讲解": "第 25 节「逐着评注一盘棋中的动机」的棋图（原书 p.107），对应 Example 55。局面材料：白王车2马兵4 vs 黑王后象2兵5；白方行棋。本图作用：学习如何追问每一步背后的“动机”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/VdSywS6q"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG072",
+   "图号": "Fig.72",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "逐着评注一盘棋中的动机",
+   "章节标题": "25. A PLAYER'S MOTIVES CRITICISED IN A SPECIMEN GAME",
+   "页码": 108,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page108",
+   "例号或对局号": "Example 55",
+   "piece_placement": "6k1/p6p/1p3R2/2bP4/P1b2Np1/6P1/4p2P/5qRK",
+   "FEN": "6k1/p6p/1p3R2/2bP4/P1b2Np1/6P1/4p2P/5qRK w - - 2 45",
+   "中文讲解": "第 25 节「逐着评注一盘棋中的动机」的棋图（原书 p.108），对应 Example 55。局面材料：白王车2马兵4 vs 黑王后象2兵5；白方行棋。本图作用：学习如何追问每一步背后的“动机”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/VdSywS6q"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG073",
+   "图号": "Fig.73",
+   "部": "第一部",
+   "章": "第一部 第四章",
+   "小节": "逐着评注一盘棋中的动机",
+   "章节标题": "25. A PLAYER'S MOTIVES CRITICISED IN A SPECIMEN GAME",
+   "页码": 109,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page109",
+   "例号或对局号": "Example 55",
+   "piece_placement": "6k1/p6p/1p3R2/2bP4/P1b2Np1/6P1/4p2P/5qRK",
+   "FEN": "6k1/p6p/1p3R2/2bP4/P1b2Np1/6P1/4p2P/5qRK w - - 2 45",
+   "中文讲解": "第 25 节「逐着评注一盘棋中的动机」的棋图（原书 p.109），对应 Example 55。局面材料：白王车2马兵4 vs 黑王后象2兵5；白方行棋。本图作用：学习如何追问每一步背后的“动机”。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/VdSywS6q"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG074",
+   "图号": "Fig.74",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "从另一翼突然袭击",
+   "章节标题": "26. THE SUDDEN ATTACK FROM A DIFFERENT SIDE",
+   "页码": 111,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page111",
+   "例号或对局号": "Example 56",
+   "piece_placement": "6k1/p4p1p/1p4p1/3r4/2r5/P1P4P/2R2PP1/2R1K3",
+   "FEN": "6k1/p4p1p/1p4p1/3r4/2r5/P1P4P/2R2PP1/2R1K3 b - - 0 1",
+   "中文讲解": "第 26 节「从另一翼突然袭击」的棋图（原书 p.111），对应 Example 56。局面材料：白王车2兵5 vs 黑王车2兵5；黑方行棋。本图作用：学会在残局中把攻击重心从一翼快速转到另一翼。。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/Q0dfHRU8"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG075",
+   "图号": "Fig.75",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "从另一翼突然袭击",
+   "章节标题": "26. THE SUDDEN ATTACK FROM A DIFFERENT SIDE",
+   "页码": 113,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page113",
+   "例号或对局号": "Example 57",
+   "piece_placement": "2r2rk1/p1pp1p1p/2p2p2/8/8/2PP1P2/PP3P1P/R3R1K1",
+   "FEN": "2r2rk1/p1pp1p1p/2p2p2/8/8/2PP1P2/PP3P1P/R3R1K1 w - - 0 1",
+   "中文讲解": "第 26 节「从另一翼突然袭击」的棋图（原书 p.113），对应 Example 57。局面材料：白王车2兵7 vs 黑王车2兵7；白方行棋。本图作用：学会在残局中把攻击重心从一翼快速转到另一翼。。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/LHFn5sse"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG076",
+   "图号": "Fig.76",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "从另一翼突然袭击",
+   "章节标题": "26. THE SUDDEN ATTACK FROM A DIFFERENT SIDE",
+   "页码": 116,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page116",
+   "例号或对局号": "Example 57",
+   "piece_placement": "8/1kp4p/p1p1pr2/K1Pp1pRP/PP1P1P2/8/5P2/8",
+   "FEN": "8/1kp4p/p1p1pr2/K1Pp1pRP/PP1P1P2/8/5P2/8 w - - 1 28",
+   "中文讲解": "第 26 节「从另一翼突然袭击」的棋图（原书 p.116），对应 Example 57。局面材料：白王车兵7 vs 黑王车兵7；白方行棋。本图作用：学会在残局中把攻击重心从一翼快速转到另一翼。。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/LHFn5sse"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG077",
+   "图号": "Fig.77",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "从另一翼突然袭击",
+   "章节标题": "26. THE SUDDEN ATTACK FROM A DIFFERENT SIDE",
+   "页码": 118,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page118",
+   "例号或对局号": "Example 57",
+   "piece_placement": "1k6/2p1R2P/2P1p3/2Kp1p2/8/8/8/1r6",
+   "FEN": "1k6/2p1R2P/2P1p3/2Kp1p2/8/8/8/1r6 b - - 2 41",
+   "中文讲解": "第 26 节「从另一翼突然袭击」的棋图（原书 p.118），对应 Example 57。局面材料：白王车兵2 vs 黑王车兵4；黑方行棋。本图作用：学会在残局中把攻击重心从一翼快速转到另一翼。。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/LHFn5sse"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG078",
+   "图号": "Fig.78",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "安全局面的危险",
+   "章节标题": "27. THE DANGER OF A SAFE POSITION",
+   "页码": 120,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page120",
+   "例号或对局号": "Example 58",
+   "piece_placement": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+   "FEN": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "中文讲解": "第 27 节「安全局面的危险」的棋图（原书 p.120），对应 Example 58。局面材料：白王后车2象2马2兵8 vs 黑王后车2象2马2兵8；白方行棋。本图作用：警惕“看起来安全”的局面：优势方的松懈往往比劣势更危险。。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/NvICJfwb"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG079",
+   "图号": "Fig.79",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "单车与兵的残局",
+   "章节标题": "28. ENDINGS WITH ONE ROOK AND PAWNS",
+   "页码": 122,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page122",
+   "例号或对局号": "Example 59",
+   "piece_placement": "8/7R/8/2k2P2/1p6/3r4/5PKP/8",
+   "FEN": "8/7R/8/2k2P2/1p6/3r4/5PKP/8 w - - 0 1",
+   "中文讲解": "第 28 节「单车与兵的残局」的棋图（原书 p.122），对应 Example 59。局面材料：白王车兵3 vs 黑王车兵；白方行棋。本图作用：掌握最常见的一类残局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/fu265ajQ"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG080",
+   "图号": "Fig.80",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "单车与兵的残局",
+   "章节标题": "28. ENDINGS WITH ONE ROOK AND PAWNS",
+   "页码": 124,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page124",
+   "例号或对局号": "Example 59",
+   "piece_placement": "3r4/5P2/8/7R/1pk5/8/5PKP/8",
+   "FEN": "3r4/5P2/8/7R/1pk5/8/5PKP/8 w - - 3 4",
+   "中文讲解": "第 28 节「单车与兵的残局」的棋图（原书 p.124），对应 Example 59。局面材料：白王车兵3 vs 黑王车兵；白方行棋。本图作用：掌握最常见的一类残局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/fu265ajQ"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG081",
+   "图号": "Fig.81",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "单车与兵的残局",
+   "章节标题": "28. ENDINGS WITH ONE ROOK AND PAWNS",
+   "页码": 125,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page125",
+   "例号或对局号": "Example 59",
+   "piece_placement": "3r4/5P2/8/7R/1pk5/8/5PKP/8",
+   "FEN": "3r4/5P2/8/7R/1pk5/8/5PKP/8 w - - 3 4",
+   "中文讲解": "第 28 节「单车与兵的残局」的棋图（原书 p.125），对应 Example 59。局面材料：白王车兵3 vs 黑王车兵；白方行棋。本图作用：掌握最常见的一类残局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/fu265ajQ"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG082",
+   "图号": "Fig.82",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "单车与兵的残局",
+   "章节标题": "28. ENDINGS WITH ONE ROOK AND PAWNS",
+   "页码": 126,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page126",
+   "例号或对局号": "Example 59",
+   "piece_placement": "3r4/5P2/8/7R/1pk5/8/5PKP/8",
+   "FEN": "3r4/5P2/8/7R/1pk5/8/5PKP/8 w - - 3 4",
+   "中文讲解": "第 28 节「单车与兵的残局」的棋图（原书 p.126），对应 Example 59。局面材料：白王车兵3 vs 黑王车兵；白方行棋。本图作用：掌握最常见的一类残局。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/fu265ajQ"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG083",
+   "图号": "Fig.83",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "一个困难的残局：双车与兵",
+   "章节标题": "29. A DIFFICULT ENDING: TWO ROOKS AND PAWNS",
+   "页码": 128,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page128",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 29 节「一个困难的残局：双车与兵」的棋图（原书 p.128），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG084",
+   "图号": "Fig.84",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "一个困难的残局：双车与兵",
+   "章节标题": "29. A DIFFICULT ENDING: TWO ROOKS AND PAWNS",
+   "页码": 130,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page130",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 29 节「一个困难的残局：双车与兵」的棋图（原书 p.130），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG085",
+   "图号": "Fig.85",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "一个困难的残局：双车与兵",
+   "章节标题": "29. A DIFFICULT ENDING: TWO ROOKS AND PAWNS",
+   "页码": 132,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page132",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 29 节「一个困难的残局：双车与兵」的棋图（原书 p.132），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG086",
+   "图号": "Fig.86",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "一个困难的残局：双车与兵",
+   "章节标题": "29. A DIFFICULT ENDING: TWO ROOKS AND PAWNS",
+   "页码": 133,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page133",
+   "例号或对局号": "Example 61",
+   "piece_placement": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+   "FEN": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+   "中文讲解": "第 29 节「一个困难的残局：双车与兵」的棋图（原书 p.133），对应 Example 61。局面材料：白王后车2象2马2兵8 vs 黑王后车2象2马2兵8；白方行棋。本图作用：比较双车兵残局的通法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/u2qkNqEr"
+   ],
+   "校验状态": "已校验（该例起始局面，FEN 取自 PGN 章节头）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG087",
+   "图号": "Fig.87",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "一个困难的残局：双车与兵",
+   "章节标题": "29. A DIFFICULT ENDING: TWO ROOKS AND PAWNS",
+   "页码": 136,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page136",
+   "例号或对局号": "Example 61",
+   "piece_placement": "r2qkb1r/1pp2ppp/p1p2n2/4p3/4P1b1/2N2N2/PPPP1PPP/R1BQ1RK1",
+   "FEN": "r2qkb1r/1pp2ppp/p1p2n2/4p3/4P1b1/2N2N2/PPPP1PPP/R1BQ1RK1 w kq - 2 7",
+   "中文讲解": "第 29 节「一个困难的残局：双车与兵」的棋图（原书 p.136），对应 Example 61。局面材料：白王后车2象马2兵8 vs 黑王后车2象2马兵8；白方行棋。本图作用：比较双车兵残局的通法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/uL7pPw98/u2qkNqEr"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG088",
+   "图号": "Fig.88",
+   "部": "第一部",
+   "章": "第一部 第五章",
+   "小节": "车象兵对车马兵",
+   "章节标题": "30. ROOK, BISHOP AND PAWNS v. ROOK, KNIGHT AND PAWNS",
+   "页码": 139,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page139",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 30 节「车象兵对车马兵」的棋图（原书 p.139），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG089",
+   "图号": "Fig.89",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "关于兵的几个要点",
+   "章节标题": "31. SOME SALIENT POINTS ABOUT PAWNS",
+   "页码": 143,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page143",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 31 节「关于兵的几个要点」的棋图（原书 p.143），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG090",
+   "图号": "Fig.90",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "关于兵的几个要点",
+   "章节标题": "31. SOME SALIENT POINTS ABOUT PAWNS",
+   "页码": 144,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page144",
+   "例号或对局号": "",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 31 节「关于兵的几个要点」的棋图（原书 p.144），为本节起始图。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG091",
+   "图号": "Fig.91",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "西班牙开局的一些可能演变",
+   "章节标题": "32. SOME POSSIBLE DEVELOPMENTS FROM A RUY LOPEZ",
+   "页码": 147,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page147",
+   "例号或对局号": "Example 65",
+   "piece_placement": "2r3k1/1q3p1p/p1p1r1p1/1pRpP3/3P4/Q7/PP3PPP/2R3K1",
+   "FEN": "2r3k1/1q3p1p/p1p1r1p1/1pRpP3/3P4/Q7/PP3PPP/2R3K1 b - - 7 5",
+   "中文讲解": "第 32 节「西班牙开局的一些可能演变」的棋图（原书 p.147），对应 Example 65。局面材料：白王后车2兵7 vs 黑王后车2兵7；黑方行棋。本图作用：把前面讲的兵形与中心原则。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/tEAAsRtB"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG092",
+   "图号": "Fig.92",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "西班牙开局的一些可能演变",
+   "章节标题": "32. SOME POSSIBLE DEVELOPMENTS FROM A RUY LOPEZ",
+   "页码": 148,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page148",
+   "例号或对局号": "Example 65",
+   "piece_placement": "2r3k1/1q3p1p/p1p1r1p1/1pRpP3/3P4/Q7/PP3PPP/2R3K1",
+   "FEN": "2r3k1/1q3p1p/p1p1r1p1/1pRpP3/3P4/Q7/PP3PPP/2R3K1 b - - 7 5",
+   "中文讲解": "第 32 节「西班牙开局的一些可能演变」的棋图（原书 p.148），对应 Example 65。局面材料：白王后车2兵7 vs 黑王后车2兵7；黑方行棋。本图作用：把前面讲的兵形与中心原则。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/tEAAsRtB"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG093",
+   "图号": "Fig.93",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "西班牙开局的一些可能演变",
+   "章节标题": "32. SOME POSSIBLE DEVELOPMENTS FROM A RUY LOPEZ",
+   "页码": 148,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page148",
+   "例号或对局号": "Example 66",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 32 节「西班牙开局的一些可能演变」的棋图（原书 p.148），对应 Example 66。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG094",
+   "图号": "Fig.94",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "西班牙开局的一些可能演变",
+   "章节标题": "32. SOME POSSIBLE DEVELOPMENTS FROM A RUY LOPEZ",
+   "页码": 149,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page149",
+   "例号或对局号": "Example 66",
+   "piece_placement": null,
+   "FEN": null,
+   "中文讲解": "第 32 节「西班牙开局的一些可能演变」的棋图（原书 p.149），对应 Example 66。该图缺少可靠底本（社区 PGN 未收此局面，且未逐格读图），暂只登记图号、页码与所属小节，棋子摆放留待核对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://gutenberg.pglaf.org/3/3/8/7/33870/33870-h/33870-h.htm"
+   ],
+   "校验状态": "待核对（缺可靠底本）",
+   "校验等级": "C"
+  },
+  {
+   "ID": "FIG095",
+   "图号": "Fig.95",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "“洞”的影响",
+   "章节标题": "33. THE INFLUENCE OF A \"HOLE\"",
+   "页码": 152,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page152",
+   "例号或对局号": "Example 67",
+   "piece_placement": "1r2b1k1/pp2q1pp/1np1pr2/2NnNp2/3P4/3BP3/PP3PPP/2RQR1K1",
+   "FEN": "1r2b1k1/pp2q1pp/1np1pr2/2NnNp2/3P4/3BP3/PP3PPP/2RQR1K1 w - - 6 17",
+   "中文讲解": "第 33 节「“洞”的影响」的棋图（原书 p.152），对应 Example 67。局面材料：白王后车2象马2兵7 vs 黑王后车2象马2兵7；白方行棋。本图作用：理解弱格（hole）如何被对手长期占据。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/weWNBXfb"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG096",
+   "图号": "Fig.96",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "“洞”的影响",
+   "章节标题": "33. THE INFLUENCE OF A \"HOLE\"",
+   "页码": 154,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page154",
+   "例号或对局号": "Example 67",
+   "piece_placement": "4b2k/ppr1q1pp/1np1p2r/2NnNp2/3P4/P2BPPQ1/1P4PP/2R1R1K1",
+   "FEN": "4b2k/ppr1q1pp/1np1p2r/2NnNp2/3P4/P2BPPQ1/1P4PP/2R1R1K1 w - - 1 21",
+   "中文讲解": "第 33 节「“洞”的影响」的棋图（原书 p.154），对应 Example 67。局面材料：白王后车2象马2兵7 vs 黑王后车2象马2兵7；白方行棋。本图作用：理解弱格（hole）如何被对手长期占据。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/weWNBXfb"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG097",
+   "图号": "Fig.97",
+   "部": "第一部",
+   "章": "第一部 第六章",
+   "小节": "“洞”的影响",
+   "章节标题": "33. THE INFLUENCE OF A \"HOLE\"",
+   "页码": 155,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page155",
+   "例号或对局号": "Example 67",
+   "piece_placement": "5qb1/ppr1n1k1/2p1BNr1/4P1P1/3PN1P1/P7/1P5Q/2R3K1",
+   "FEN": "5qb1/ppr1n1k1/2p1BNr1/4P1P1/3PN1P1/P7/1P5Q/2R3K1 b - - 0 38",
+   "中文讲解": "第 33 节「“洞”的影响」的棋图（原书 p.155），对应 Example 67。局面材料：白王后车象马2兵6 vs 黑王后车2象马兵3；黑方行棋。本图作用：理解弱格（hole）如何被对手长期占据。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/weWNBXfb"
+   ],
+   "校验状态": "已校验（依原书主线重放至该着；图与该例的对应按版面顺序推定）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG098",
+   "图号": "Fig.98",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 1 局 后翼弃兵（1909 年对抗赛）",
+   "章节标题": "GAME 1. QUEEN'S GAMBIT DECLINED",
+   "页码": 161,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page161",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r1b2rk1/p3qppp/1p3n2/2pp4/P2P4/Q1PBPN2/5PPP/R3K2R",
+   "FEN": "r1b2rk1/p3qppp/1p3n2/2pp4/P2P4/Q1PBPN2/5PPP/R3K2R w KQ - 0 14",
+   "中文讲解": "第 1 局示范对局的棋图（原书 p.161），是主线第 26 个半回合（第 13 回合）之后的局面。局面材料：白王后车2象马兵7 vs 黑王后车2象马兵7；白方行棋。复盘重点：作者执黑。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/54O0RI0B"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG099",
+   "图号": "Fig.99",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 1 局 后翼弃兵（1909 年对抗赛）",
+   "章节标题": "GAME 1. QUEEN'S GAMBIT DECLINED",
+   "页码": 162,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page162",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r4rk1/pbqn1ppp/1p6/P1pp4/3P4/Q1PBPN2/5PPP/RR4K1",
+   "FEN": "r4rk1/pbqn1ppp/1p6/P1pp4/3P4/Q1PBPN2/5PPP/RR4K1 w - - 5 17",
+   "中文讲解": "第 1 局示范对局的棋图（原书 p.162），是主线第 32 个半回合（第 16 回合）之后的局面。局面材料：白王后车2象马兵7 vs 黑王后车2象马兵7；白方行棋。复盘重点：作者执黑。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/54O0RI0B"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG100",
+   "图号": "Fig.100",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 2 局 后翼弃兵（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 2. QUEEN'S GAMBIT DECLINED",
+   "页码": 164,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page164",
+   "例号或对局号": "GAME02",
+   "piece_placement": "2rqk1nr/pp2bppp/2n1b3/2pp4/3P4/2N2NP1/PP2PPBP/R1BQ1RK1",
+   "FEN": "2rqk1nr/pp2bppp/2n1b3/2pp4/3P4/2N2NP1/PP2PPBP/R1BQ1RK1 w k - 5 9",
+   "中文讲解": "第 2 局示范对局的棋图（原书 p.164），是主线第 16 个半回合（第 8 回合）之后的局面。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；白方行棋。复盘重点：Rubinstein 变例：白以 P-KKt3、B-Kt2 的布置孤立黑方 QP，再把子力逐渐压向它。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/L3LoqPvD"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG101",
+   "图号": "Fig.101",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 2 局 后翼弃兵（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 2. QUEEN'S GAMBIT DECLINED",
+   "页码": 165,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page165",
+   "例号或对局号": "GAME02",
+   "piece_placement": "2r2rk1/pp4pp/2n1pq2/2bp4/8/2N3PB/PP2PP1P/R2Q1RK1",
+   "FEN": "2r2rk1/pp4pp/2n1pq2/2bp4/8/2N3PB/PP2PP1P/R2Q1RK1 w - - 0 15",
+   "中文讲解": "第 2 局示范对局的棋图（原书 p.165），是主线第 28 个半回合（第 14 回合）之后的局面。局面材料：白王后车2象马兵6 vs 黑王后车2象马兵6；白方行棋。复盘重点：Rubinstein 变例：白以 P-KKt3、B-Kt2 的布置孤立黑方 QP，再把子力逐渐压向它。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/L3LoqPvD"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG102",
+   "图号": "Fig.102",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 2 局 后翼弃兵（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 2. QUEEN'S GAMBIT DECLINED",
+   "页码": 165,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page165",
+   "例号或对局号": "GAME02",
+   "piece_placement": "2r2rk1/pp4pp/2n1p2q/2bN4/8/6PB/PP2PP1P/R2Q1RK1",
+   "FEN": "2r2rk1/pp4pp/2n1p2q/2bN4/8/6PB/PP2PP1P/R2Q1RK1 w - - 1 16",
+   "中文讲解": "第 2 局示范对局的棋图（原书 p.165），是主线第 30 个半回合（第 15 回合）之后的局面。局面材料：白王后车2象马兵6 vs 黑王后车2象马兵5；白方行棋。复盘重点：Rubinstein 变例：白以 P-KKt3、B-Kt2 的布置孤立黑方 QP，再把子力逐渐压向它。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/L3LoqPvD"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG103",
+   "图号": "Fig.103",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 2 局 后翼弃兵（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 2. QUEEN'S GAMBIT DECLINED",
+   "页码": 167,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page167",
+   "例号或对局号": "GAME02",
+   "piece_placement": "8/pp1k2pp/2n5/5R2/2B5/3P2P1/Pr3PKP/8",
+   "FEN": "8/pp1k2pp/2n5/5R2/2B5/3P2P1/Pr3PKP/8 b - - 8 30",
+   "中文讲解": "第 2 局示范对局的棋图（原书 p.167），是主线第 59 个半回合（第 30 回合）之后的局面。局面材料：白王车象兵5 vs 黑王车马兵4；黑方行棋。复盘重点：Rubinstein 变例：白以 P-KKt3、B-Kt2 的布置孤立黑方 QP，再把子力逐渐压向它。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/L3LoqPvD"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG104",
+   "图号": "Fig.104",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 2 局 后翼弃兵（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 2. QUEEN'S GAMBIT DECLINED",
+   "页码": 168,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page168",
+   "例号或对局号": "GAME02",
+   "piece_placement": "8/8/1kn5/3B3R/pp5P/3P2P1/Pr3PK1/8",
+   "FEN": "8/8/1kn5/3B3R/pp5P/3P2P1/Pr3PK1/8 b - - 5 38",
+   "中文讲解": "第 2 局示范对局的棋图（原书 p.168），是主线第 75 个半回合（第 38 回合）之后的局面。局面材料：白王车象兵5 vs 黑王车马兵2；黑方行棋。复盘重点：Rubinstein 变例：白以 P-KKt3、B-Kt2 的布置孤立黑方 QP，再把子力逐渐压向它。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/L3LoqPvD"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG105",
+   "图号": "Fig.105",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 3 局 不规则防御（1913 年哈瓦那）",
+   "章节标题": "GAME 3. IRREGULAR DEFENCE",
+   "页码": 170,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page170",
+   "例号或对局号": "GAME03",
+   "piece_placement": "r3kn1r/pp2bppp/2p2n2/q3p1Bb/4N3/3BPN1P/PPP1QPP1/R2R2K1",
+   "FEN": "r3kn1r/pp2bppp/2p2n2/q3p1Bb/4N3/3BPN1P/PPP1QPP1/R2R2K1 b kq - 1 12",
+   "中文讲解": "第 3 局示范对局的棋图（原书 p.170），是主线第 23 个半回合（第 12 回合）之后的局面。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；黑方行棋。复盘重点：1 P-Q4 Kt-KB3 2 Kt-KB3 P-Q3 3 B-Kt5 QKt-Q2 4 P-K3 P-K4 的不规则布置。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/KtKZB7dY"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG106",
+   "图号": "Fig.106",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 3 局 不规则防御（1913 年哈瓦那）",
+   "章节标题": "GAME 3. IRREGULAR DEFENCE",
+   "页码": 172,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page172",
+   "例号或对局号": "GAME03",
+   "piece_placement": "r6r/ppq2pp1/2p1nkp1/4p3/1P2Q3/4PN1P/P1P2PP1/R2R2K1",
+   "FEN": "r6r/ppq2pp1/2p1nkp1/4p3/1P2Q3/4PN1P/P1P2PP1/R2R2K1 w - - 2 19",
+   "中文讲解": "第 3 局示范对局的棋图（原书 p.172），是主线第 36 个半回合（第 18 回合）之后的局面。局面材料：白王后车2马兵7 vs 黑王后车2马兵7；白方行棋。复盘重点：1 P-Q4 Kt-KB3 2 Kt-KB3 P-Q3 3 B-Kt5 QKt-Q2 4 P-K3 P-K4 的不规则布置。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/KtKZB7dY"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG107",
+   "图号": "Fig.107",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 3 局 不规则防御（1913 年哈瓦那）",
+   "章节标题": "GAME 3. IRREGULAR DEFENCE",
+   "页码": 173,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page173",
+   "例号或对局号": "GAME03",
+   "piece_placement": "3n4/ppq2pp1/2p2k2/4p1p1/1PP1Q3/4PN1P/P4PP1/6K1",
+   "FEN": "3n4/ppq2pp1/2p2k2/4p1p1/1PP1Q3/4PN1P/P4PP1/6K1 w - - 0 24",
+   "中文讲解": "第 3 局示范对局的棋图（原书 p.173），是主线第 46 个半回合（第 23 回合）之后的局面。局面材料：白王后马兵7 vs 黑王后马兵7；白方行棋。复盘重点：1 P-Q4 Kt-KB3 2 Kt-KB3 P-Q3 3 B-Kt5 QKt-Q2 4 P-K3 P-K4 的不规则布置。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/KtKZB7dY"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG108",
+   "图号": "Fig.108",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 4 局 法国防御（1913 年圣彼得堡）",
+   "章节标题": "GAME 4. FRENCH DEFENCE",
+   "页码": 177,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page177",
+   "例号或对局号": "GAME04",
+   "piece_placement": "1k1r2r1/pbpn1p1p/1p2pp2/5q2/2PP4/3RQNP1/P1P1BP1P/2KR4",
+   "FEN": "1k1r2r1/pbpn1p1p/1p2pp2/5q2/2PP4/3RQNP1/P1P1BP1P/2KR4 w - - 5 17",
+   "中文讲解": "第 4 局示范对局的棋图（原书 p.177），是主线第 32 个半回合（第 16 回合）之后的局面。局面材料：白王后车2象马兵7 vs 黑王后车2象马兵7；白方行棋。复盘重点：当时流行 5 P-K5，作者认为 5 PxP 更强。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/QPxrX2Cz"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG109",
+   "图号": "Fig.109",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 4 局 法国防御（1913 年圣彼得堡）",
+   "章节标题": "GAME 4. FRENCH DEFENCE",
+   "页码": 178,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page178",
+   "例号或对局号": "GAME04",
+   "piece_placement": "3rrq2/pk1n1p1p/1pp1pp2/2P5/3P1P2/3RQNP1/P1P4P/2KR4",
+   "FEN": "3rrq2/pk1n1p1p/1pp1pp2/2P5/3P1P2/3RQNP1/P1P4P/2KR4 w - - 2 23",
+   "中文讲解": "第 4 局示范对局的棋图（原书 p.178），是主线第 44 个半回合（第 22 回合）之后的局面。局面材料：白王后车2马兵7 vs 黑王后车2马兵7；白方行棋。复盘重点：当时流行 5 P-K5，作者认为 5 PxP 更强。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/QPxrX2Cz"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG110",
+   "图号": "Fig.110",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 4 局 法国防御（1913 年圣彼得堡）",
+   "章节标题": "GAME 4. FRENCH DEFENCE",
+   "页码": 179,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page179",
+   "例号或对局号": "GAME04",
+   "piece_placement": "k1r1rq2/p4p1p/2p1pp2/N1Pn4/3Q1P2/3R2P1/P1P4P/2KR4",
+   "FEN": "k1r1rq2/p4p1p/2p1pp2/N1Pn4/3Q1P2/3R2P1/P1P4P/2KR4 w - - 3 28",
+   "中文讲解": "第 4 局示范对局的棋图（原书 p.179），是主线第 54 个半回合（第 27 回合）之后的局面。局面材料：白王后车2马兵6 vs 黑王后车2马兵6；白方行棋。复盘重点：当时流行 5 P-K5，作者认为 5 PxP 更强。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/QPxrX2Cz"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG111",
+   "图号": "Fig.111",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 4 局 法国防御（1913 年圣彼得堡）",
+   "章节标题": "GAME 4. FRENCH DEFENCE",
+   "页码": 180,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page180",
+   "例号或对局号": "GAME04",
+   "piece_placement": "kr6/p2Pqp1p/2p2p2/2P5/5P2/1N1p2P1/P1r4P/1K1R2Q1",
+   "FEN": "kr6/p2Pqp1p/2p2p2/2P5/5P2/1N1p2P1/P1r4P/1K1R2Q1 w - - 5 35",
+   "中文讲解": "第 4 局示范对局的棋图（原书 p.180），是主线第 68 个半回合（第 34 回合）之后的局面。局面材料：白王后车马兵6 vs 黑王后车2兵6；白方行棋。复盘重点：当时流行 5 P-K5，作者认为 5 PxP 更强。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/QPxrX2Cz"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG112",
+   "图号": "Fig.112",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 5 局 西班牙开局（1914 年圣彼得堡）",
+   "章节标题": "GAME 5. RUY LOPEZ",
+   "页码": 183,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page183",
+   "例号或对局号": "GAME05",
+   "piece_placement": "r1b1r1k1/1pp1n1pp/p1pb1p2/5P2/4P3/1NN5/PPP3PP/R1B2RK1",
+   "FEN": "r1b1r1k1/1pp1n1pp/p1pb1p2/5P2/4P3/1NN5/PPP3PP/R1B2RK1 b - - 0 12",
+   "中文讲解": "第 5 局示范对局的棋图（原书 p.183），是主线第 23 个半回合（第 12 回合）之后的局面。局面材料：白王车2象马2兵7 vs 黑王车2象2马兵7；黑方行棋。复盘重点：拉斯克 4 BxKt 早早兑换，作者解释黑方的想法：王应留在较弱的一翼，以便日后对抗白方兵的推进。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/XSgnbZvn"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG113",
+   "图号": "Fig.113",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 5 局 西班牙开局（1914 年圣彼得堡）",
+   "章节标题": "GAME 5. RUY LOPEZ",
+   "页码": 184,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page184",
+   "例号或对局号": "GAME05",
+   "piece_placement": "r1b1r1k1/2p1n1pp/pppb1p2/5P2/4PB2/1NN5/PPP3PP/R4RK1",
+   "FEN": "r1b1r1k1/2p1n1pp/pppb1p2/5P2/4PB2/1NN5/PPP3PP/R4RK1 b - - 1 13",
+   "中文讲解": "第 5 局示范对局的棋图（原书 p.184），是主线第 25 个半回合（第 13 回合）之后的局面。局面材料：白王车2象马2兵7 vs 黑王车2象2马兵7；黑方行棋。复盘重点：拉斯克 4 BxKt 早早兑换，作者解释黑方的想法：王应留在较弱的一翼，以便日后对抗白方兵的推进。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/XSgnbZvn"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG114",
+   "图号": "Fig.114",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 5 局 西班牙开局（1914 年圣彼得堡）",
+   "章节标题": "GAME 5. RUY LOPEZ",
+   "页码": 186,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page186",
+   "例号或对局号": "GAME05",
+   "piece_placement": "4r1k1/1b1rn1pp/ppppNp2/5P2/4P3/2N5/PPP3PP/3R1RK1",
+   "FEN": "4r1k1/1b1rn1pp/ppppNp2/5P2/4P3/2N5/PPP3PP/3R1RK1 b - - 5 17",
+   "中文讲解": "第 5 局示范对局的棋图（原书 p.186），是主线第 33 个半回合（第 17 回合）之后的局面。局面材料：白王车2马2兵7 vs 黑王车2象马兵7；黑方行棋。复盘重点：拉斯克 4 BxKt 早早兑换，作者解释黑方的想法：王应留在较弱的一翼，以便日后对抗白方兵的推进。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/XSgnbZvn"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG115",
+   "图号": "Fig.115",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 6 局 法国防御（1916 年莱斯纪念赛）",
+   "章节标题": "GAME 6. FRENCH DEFENCE",
+   "页码": 190,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page190",
+   "例号或对局号": "GAME06",
+   "piece_placement": "r1b2k1r/pp3pp1/2n1p2p/q3P3/4Q3/2p5/P1P1NPPP/R1B2RK1",
+   "FEN": "r1b2k1r/pp3pp1/2n1p2p/q3P3/4Q3/2p5/P1P1NPPP/R1B2RK1 w - - 1 15",
+   "中文讲解": "第 6 局示范对局的棋图（原书 p.190），是主线第 28 个半回合（第 14 回合）之后的局面。局面材料：白王后车2象马兵6 vs 黑王后车2象马兵7；白方行棋。复盘重点：作者说自己最喜欢 4...B-Kt5 这个变化，因为它给黑更多争取主动权的机会。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/g3Mz8gvI"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG116",
+   "图号": "Fig.116",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 6 局 法国防御（1916 年莱斯纪念赛）",
+   "章节标题": "GAME 6. FRENCH DEFENCE",
+   "页码": 192,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page192",
+   "例号或对局号": "GAME06",
+   "piece_placement": "2r3r1/pp1b1p1k/4p1pp/3nP2P/1q1NQP2/2p4R/P1P2BP1/R5K1",
+   "FEN": "2r3r1/pp1b1p1k/4p1pp/3nP2P/1q1NQP2/2p4R/P1P2BP1/R5K1 b - - 2 24",
+   "中文讲解": "第 6 局示范对局的棋图（原书 p.192），是主线第 47 个半回合（第 24 回合）之后的局面。局面材料：白王后车2象马兵6 vs 黑王后车2象马兵7；黑方行棋。复盘重点：作者说自己最喜欢 4...B-Kt5 这个变化，因为它给黑更多争取主动权的机会。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/g3Mz8gvI"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG117",
+   "图号": "Fig.117",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 6 局 法国防御（1916 年莱斯纪念赛）",
+   "章节标题": "GAME 6. FRENCH DEFENCE",
+   "页码": 193,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page193",
+   "例号或对局号": "GAME06",
+   "piece_placement": "2r5/pp1b3k/4pnrp/8/1q1NQP2/2p4R/P1P2BP1/R5K1",
+   "FEN": "2r5/pp1b3k/4pnrp/8/1q1NQP2/2p4R/P1P2BP1/R5K1 w - - 0 27",
+   "中文讲解": "第 6 局示范对局的棋图（原书 p.193），是主线第 52 个半回合（第 26 回合）之后的局面。局面材料：白王后车2象马兵4 vs 黑王后车2象马兵5；白方行棋。复盘重点：作者说自己最喜欢 4...B-Kt5 这个变化，因为它给黑更多争取主动权的机会。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/g3Mz8gvI"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG118",
+   "图号": "Fig.118",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 6 局 法国防御（1916 年莱斯纪念赛）",
+   "章节标题": "GAME 6. FRENCH DEFENCE",
+   "页码": 193,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page193",
+   "例号或对局号": "GAME06",
+   "piece_placement": "2r5/pp1b4/5nrk/5p2/1Q3P2/2p5/P1P2BP1/R5K1",
+   "FEN": "2r5/pp1b4/5nrk/5p2/1Q3P2/2p5/P1P2BP1/R5K1 b - - 0 29",
+   "中文讲解": "第 6 局示范对局的棋图（原书 p.193），是主线第 57 个半回合（第 29 回合）之后的局面。局面材料：白王后车象兵4 vs 黑王车2象马兵4；黑方行棋。复盘重点：作者说自己最喜欢 4...B-Kt5 这个变化，因为它给黑更多争取主动权的机会。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/g3Mz8gvI"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG119",
+   "图号": "Fig.119",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 7 局 西班牙开局（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 7. RUY LOPEZ",
+   "页码": 198,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page198",
+   "例号或对局号": "GAME07",
+   "piece_placement": "r3r1k1/2p1qppp/p1n1bn2/1pb1p1B1/4P3/2P1NN2/PPB1QPPP/R4RK1",
+   "FEN": "r3r1k1/2p1qppp/p1n1bn2/1pb1p1B1/4P3/2P1NN2/PPB1QPPP/R4RK1 w - - 7 15",
+   "中文讲解": "第 7 局示范对局的棋图（原书 p.198），是主线第 28 个半回合（第 14 回合）之后的局面。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；白方行棋。复盘重点：白 5 P-Q3 是一种非常坚实的布置，作者自注当时因为不熟悉各种开局变化而偏爱这类下法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/N8oDH1qL"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG120",
+   "图号": "Fig.120",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 7 局 西班牙开局（1911 年圣塞巴斯蒂安）",
+   "章节标题": "GAME 7. RUY LOPEZ",
+   "页码": 199,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page199",
+   "例号或对局号": "GAME07",
+   "piece_placement": "rn2rk2/2p2ppQ/p2b1q2/3Pp3/P7/5N2/1PB2PPP/R4RK1",
+   "FEN": "rn2rk2/2p2ppQ/p2b1q2/3Pp3/P7/5N2/1PB2PPP/R4RK1 w - - 1 22",
+   "中文讲解": "第 7 局示范对局的棋图（原书 p.199），是主线第 42 个半回合（第 21 回合）之后的局面。局面材料：白王后车2象马兵6 vs 黑王后车2象马兵5；白方行棋。复盘重点：白 5 P-Q3 是一种非常坚实的布置，作者自注当时因为不熟悉各种开局变化而偏爱这类下法。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/N8oDH1qL"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG121",
+   "图号": "Fig.121",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 8 局 中心开局（1913 年柏林）",
+   "章节标题": "GAME 8. CENTRE GAME",
+   "页码": 202,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page202",
+   "例号或对局号": "GAME08",
+   "piece_placement": "r1bq2k1/pppp1ppp/2n5/8/1b2rB2/6Q1/PPP2PPP/2KR1BNR",
+   "FEN": "r1bq2k1/pppp1ppp/2n5/8/1b2rB2/6Q1/PPP2PPP/2KR1BNR b - - 1 10",
+   "中文讲解": "第 8 局示范对局的棋图（原书 p.202），是主线第 19 个半回合（第 10 回合）之后的局面。局面材料：白王后车2象2马兵6 vs 黑王后车2象2马兵7；黑方行棋。复盘重点：2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Ci9jnecj"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG122",
+   "图号": "Fig.122",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 8 局 中心开局（1913 年柏林）",
+   "章节标题": "GAME 8. CENTRE GAME",
+   "页码": 203,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page203",
+   "例号或对局号": "GAME08",
+   "piece_placement": "r1b3k1/ppp2ppp/3p1q2/8/1b1nr3/3BB1QN/PPP2PPP/2KR3R",
+   "FEN": "r1b3k1/ppp2ppp/3p1q2/8/1b1nr3/3BB1QN/PPP2PPP/2KR3R b - - 3 13",
+   "中文讲解": "第 8 局示范对局的棋图（原书 p.203），是主线第 25 个半回合（第 13 回合）之后的局面。局面材料：白王后车2象2马兵6 vs 黑王后车2象2马兵7；黑方行棋。复盘重点：2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Ci9jnecj"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG123",
+   "图号": "Fig.123",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 8 局 中心开局（1913 年柏林）",
+   "章节标题": "GAME 8. CENTRE GAME",
+   "页码": 204,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page204",
+   "例号或对局号": "GAME08",
+   "piece_placement": "r5k1/ppp2ppp/3p1q2/6N1/1b4Q1/3Br3/PPP1nPPP/2KR3R",
+   "FEN": "r5k1/ppp2ppp/3p1q2/6N1/1b4Q1/3Br3/PPP1nPPP/2KR3R w - - 1 16",
+   "中文讲解": "第 8 局示范对局的棋图（原书 p.204），是主线第 30 个半回合（第 15 回合）之后的局面。局面材料：白王后车2象马兵6 vs 黑王后车2象马兵7；白方行棋。复盘重点：2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Ci9jnecj"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG124",
+   "图号": "Fig.124",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 8 局 中心开局（1913 年柏林）",
+   "章节标题": "GAME 8. CENTRE GAME",
+   "页码": 205,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page205",
+   "例号或对局号": "GAME08",
+   "piece_placement": "r5k1/pp1q1ppp/2p5/2bp1P2/4Q3/2P5/PP1R2PP/2K1R3",
+   "FEN": "r5k1/pp1q1ppp/2p5/2bp1P2/4Q3/2P5/PP1R2PP/2K1R3 w - - 0 25",
+   "中文讲解": "第 8 局示范对局的棋图（原书 p.205），是主线第 48 个半回合（第 24 回合）之后的局面。局面材料：白王后车2兵6 vs 黑王后车象兵7；白方行棋。复盘重点：2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Ci9jnecj"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG125",
+   "图号": "Fig.125",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 8 局 中心开局（1913 年柏林）",
+   "章节标题": "GAME 8. CENTRE GAME",
+   "页码": 207,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page207",
+   "例号或对局号": "GAME08",
+   "piece_placement": "3r4/p4ppk/5b1p/2pp1P2/qp4P1/2P5/PP1R2QP/1K1R4",
+   "FEN": "3r4/p4ppk/5b1p/2pp1P2/qp4P1/2P5/PP1R2QP/1K1R4 w - - 0 36",
+   "中文讲解": "第 8 局示范对局的棋图（原书 p.207），是主线第 70 个半回合（第 35 回合）之后的局面。局面材料：白王后车2兵6 vs 黑王后车象兵7；白方行棋。复盘重点：2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Ci9jnecj"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG126",
+   "图号": "Fig.126",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 8 局 中心开局（1913 年柏林）",
+   "章节标题": "GAME 8. CENTRE GAME",
+   "页码": 208,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page208",
+   "例号或对局号": "GAME08",
+   "piece_placement": "8/p4ppk/3Q1b1p/3R1P2/q1p3P1/Pr6/1P1R3P/1K6",
+   "FEN": "8/p4ppk/3Q1b1p/3R1P2/q1p3P1/Pr6/1P1R3P/1K6 b - - 3 41",
+   "中文讲解": "第 8 局示范对局的棋图（原书 p.208），是主线第 81 个半回合（第 41 回合）之后的局面。局面材料：白王后车2兵5 vs 黑王后车象兵5；黑方行棋。复盘重点：2...PxP 3 QxP 之后黑用 Kt-QB3、B-Kt5、O-O、R-K1 施加压力，计划是先赢 KP 取得物质优势以抵消白方的局面优势。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Ci9jnecj"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG127",
+   "图号": "Fig.127",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 9 局 后翼弃兵（1913 年柏林）",
+   "章节标题": "GAME 9. QUEEN'S GAMBIT DECLINED",
+   "页码": 211,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page211",
+   "例号或对局号": "GAME09",
+   "piece_placement": "2r3k1/1b2bppp/p4n2/1p1p2B1/3N4/4P3/PP2NPPP/3R2K1",
+   "FEN": "2r3k1/1b2bppp/p4n2/1p1p2B1/3N4/4P3/PP2NPPP/3R2K1 w - - 1 20",
+   "中文讲解": "第 9 局示范对局的棋图（原书 p.211），是主线第 38 个半回合（第 19 回合）之后的局面。局面材料：白王车象马2兵6 vs 黑王车象2马兵6；白方行棋。复盘重点：9 B-Kt5 是作者自称“灵机一动”的一步，他说这大概是自己的发明：既未违反原则，又能改变局面的常规走向。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/wKrwlYG5"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG128",
+   "图号": "Fig.128",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 9 局 后翼弃兵（1913 年柏林）",
+   "章节标题": "GAME 9. QUEEN'S GAMBIT DECLINED",
+   "页码": 212,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page212",
+   "例号或对局号": "GAME09",
+   "piece_placement": "2r5/1b2kp1p/p4np1/1p1p2B1/3N4/4PP2/PP4PP/3R2K1",
+   "FEN": "2r5/1b2kp1p/p4np1/1p1p2B1/3N4/4PP2/PP4PP/3R2K1 b - - 0 23",
+   "中文讲解": "第 9 局示范对局的棋图（原书 p.212），是主线第 45 个半回合（第 23 回合）之后的局面。局面材料：白王车象马兵6 vs 黑王车象马兵6；黑方行棋。复盘重点：9 B-Kt5 是作者自称“灵机一动”的一步，他说这大概是自己的发明：既未违反原则，又能改变局面的常规走向。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/wKrwlYG5"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG129",
+   "图号": "Fig.129",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 9 局 后翼弃兵（1913 年柏林）",
+   "章节标题": "GAME 9. QUEEN'S GAMBIT DECLINED",
+   "页码": 213,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page213",
+   "例号或对局号": "GAME09",
+   "piece_placement": "7r/1b3p2/p3k1p1/1p1p4/5B1P/4PP2/PP1R2P1/6K1",
+   "FEN": "7r/1b3p2/p3k1p1/1p1p4/5B1P/4PP2/PP1R2P1/6K1 w - - 2 29",
+   "中文讲解": "第 9 局示范对局的棋图（原书 p.213），是主线第 56 个半回合（第 28 回合）之后的局面。局面材料：白王车象兵6 vs 黑王车象兵5；白方行棋。复盘重点：9 B-Kt5 是作者自称“灵机一动”的一步，他说这大概是自己的发明：既未违反原则，又能改变局面的常规走向。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/wKrwlYG5"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG130",
+   "图号": "Fig.130",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 9 局 后翼弃兵（1913 年柏林）",
+   "章节标题": "GAME 9. QUEEN'S GAMBIT DECLINED",
+   "页码": 214,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page214",
+   "例号或对局号": "GAME09",
+   "piece_placement": "2b5/5p2/p3k1p1/1p1p4/5B1P/4PP2/PP3KP1/8",
+   "FEN": "2b5/5p2/p3k1p1/1p1p4/5B1P/4PP2/PP3KP1/8 b - - 1 31",
+   "中文讲解": "第 9 局示范对局的棋图（原书 p.214），是主线第 61 个半回合（第 31 回合）之后的局面。局面材料：白王象兵6 vs 黑王象兵5；黑方行棋。复盘重点：9 B-Kt5 是作者自称“灵机一动”的一步，他说这大概是自己的发明：既未违反原则，又能改变局面的常规走向。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/wKrwlYG5"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG131",
+   "图号": "Fig.131",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 10 局 彼得罗夫防御（1914 年圣彼得堡）",
+   "章节标题": "GAME 10. PETROFF DEFENCE",
+   "页码": 216,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page216",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r3k2r/pppnbpp1/3pbq1p/1Q6/3P4/2NB1N2/PPP2PPP/R3K2R",
+   "FEN": "r3k2r/pppnbpp1/3pbq1p/1Q6/3P4/2NB1N2/PPP2PPP/R3K2R b KQkq - 4 12",
+   "中文讲解": "第 10 局示范对局的棋图（原书 p.216），是主线第 23 个半回合（第 12 回合）之后的局面。局面材料：白王后车2象马2兵7 vs 黑王后车2象2马兵7；黑方行棋。复盘重点：7 B-Kt5 是摩尔菲的老着，作者说这一步很妙：若黑兑后，出子就要落后一步，白只要走得准确就能让黑陷于局促。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/AnFzEBXu"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG132",
+   "图号": "Fig.132",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 10 局 彼得罗夫防御（1914 年圣彼得堡）",
+   "章节标题": "GAME 10. PETROFF DEFENCE",
+   "页码": 218,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page218",
+   "例号或对局号": "GAME01",
+   "piece_placement": "1r3rk1/p2nbpq1/3pb2p/3N2p1/3pQ3/1P1B1N1P/P1P2PP1/R4RK1",
+   "FEN": "1r3rk1/p2nbpq1/3pb2p/3N2p1/3pQ3/1P1B1N1P/P1P2PP1/R4RK1 b - - 1 18",
+   "中文讲解": "第 10 局示范对局的棋图（原书 p.218），是主线第 35 个半回合（第 18 回合）之后的局面。局面材料：白王后车2象马2兵6 vs 黑王后车2象2马兵6；黑方行棋。复盘重点：7 B-Kt5 是摩尔菲的老着，作者说这一步很妙：若黑兑后，出子就要落后一步，白只要走得准确就能让黑陷于局促。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/AnFzEBXu"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG133",
+   "图号": "Fig.133",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 11 局 西班牙开局（1914 年圣彼得堡）",
+   "章节标题": "GAME 11. RUY LOPEZ",
+   "页码": 222,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page222",
+   "例号或对局号": "GAME01",
+   "piece_placement": "2kr3r/1pp1qppp/p1p4n/4p3/4P1b1/2NPPN2/PPP3PP/R3QRK1",
+   "FEN": "2kr3r/1pp1qppp/p1p4n/4p3/4P1b1/2NPPN2/PPP3PP/R3QRK1 w - - 5 11",
+   "中文讲解": "第 11 局示范对局的棋图（原书 p.222），是主线第 20 个半回合（第 10 回合）之后的局面。局面材料：白王后车2马2兵8 vs 黑王后车2象马兵8；白方行棋。复盘重点：5 Kt-B3 是作者与 Alekhine 讨论过的着法，Alekhine 当时认为它优于通常的 P-Q4，后来自己也在对拉斯克的棋中用了它，并且取得了优势局（只因漏着才输）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/VaFPrSQW"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG134",
+   "图号": "Fig.134",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 11 局 西班牙开局（1914 年圣彼得堡）",
+   "章节标题": "GAME 11. RUY LOPEZ",
+   "页码": 223,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page223",
+   "例号或对局号": "GAME01",
+   "piece_placement": "2kr3r/2p2npp/1p3p2/pPqNp3/2P1P3/3PPR2/6PP/1R2Q1K1",
+   "FEN": "2kr3r/2p2npp/1p3p2/pPqNp3/2P1P3/3PPR2/6PP/1R2Q1K1 b - - 0 18",
+   "中文讲解": "第 11 局示范对局的棋图（原书 p.223），是主线第 35 个半回合（第 18 回合）之后的局面。局面材料：白王后车2马兵7 vs 黑王后车2马兵7；黑方行棋。复盘重点：5 Kt-B3 是作者与 Alekhine 讨论过的着法，Alekhine 当时认为它优于通常的 P-Q4，后来自己也在对拉斯克的棋中用了它，并且取得了优势局（只因漏着才输）。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/VaFPrSQW"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG135",
+   "图号": "Fig.135",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 12 局 法国防御（1918 年纽约）",
+   "章节标题": "GAME 12. FRENCH DEFENCE",
+   "页码": 225,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page225",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r1bqk2r/ppp1bppp/4pn2/8/3P4/3B1N2/PPP2PPP/R1BQK2R",
+   "FEN": "r1bqk2r/ppp1bppp/4pn2/8/3P4/3B1N2/PPP2PPP/R1BQK2R w KQkq - 2 8",
+   "中文讲解": "第 12 局示范对局的棋图（原书 p.225），是主线第 14 个半回合（第 7 回合）之后的局面。局面材料：白王后车2象2马兵7 vs 黑王后车2象2马兵7；白方行棋。复盘重点：4 B-Q3 不是最受推崇的一步，但作者认为完全自然、无可厚非；黑 4...PxP 之后通常应 P-QB4。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/pdm04bmf"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG136",
+   "图号": "Fig.136",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 12 局 法国防御（1918 年纽约）",
+   "章节标题": "GAME 12. FRENCH DEFENCE",
+   "页码": 226,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page226",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r1bq1rk1/ppp2p2/4pbpp/8/3PQ2P/3B1N2/PPP2PP1/R3K2R",
+   "FEN": "r1bq1rk1/ppp2p2/4pbpp/8/3PQ2P/3B1N2/PPP2PP1/R3K2R b KQ - 0 12",
+   "中文讲解": "第 12 局示范对局的棋图（原书 p.226），是主线第 23 个半回合（第 12 回合）之后的局面。局面材料：白王后车2象马兵7 vs 黑王后车2象2兵7；黑方行棋。复盘重点：4 B-Q3 不是最受推崇的一步，但作者认为完全自然、无可厚非；黑 4...PxP 之后通常应 P-QB4。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/pdm04bmf"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG137",
+   "图号": "Fig.137",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 12 局 法国防御（1918 年纽约）",
+   "章节标题": "GAME 12. FRENCH DEFENCE",
+   "页码": 228,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page228",
+   "例号或对局号": "GAME01",
+   "piece_placement": "4r1k1/p4pb1/1p2q1pp/2pRP3/P1P1Q2P/5N2/1PK2PP1/8",
+   "FEN": "4r1k1/p4pb1/1p2q1pp/2pRP3/P1P1Q2P/5N2/1PK2PP1/8 w - - 1 28",
+   "中文讲解": "第 12 局示范对局的棋图（原书 p.228），是主线第 54 个半回合（第 27 回合）之后的局面。局面材料：白王后车马兵7 vs 黑王后车象兵6；白方行棋。复盘重点：4 B-Q3 不是最受推崇的一步，但作者认为完全自然、无可厚非；黑 4...PxP 之后通常应 P-QB4。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/pdm04bmf"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG138",
+   "图号": "Fig.138",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 12 局 法国防御（1918 年纽约）",
+   "章节标题": "GAME 12. FRENCH DEFENCE",
+   "页码": 229,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page229",
+   "例号或对局号": "GAME01",
+   "piece_placement": "4rk2/p4pb1/1p2q1pp/2pRP3/P1P1Q1PP/1P1K1N2/5P2/8",
+   "FEN": "4rk2/p4pb1/1p2q1pp/2pRP3/P1P1Q1PP/1P1K1N2/5P2/8 w - - 5 35",
+   "中文讲解": "第 12 局示范对局的棋图（原书 p.229），是主线第 68 个半回合（第 34 回合）之后的局面。局面材料：白王后车马兵7 vs 黑王后车象兵6；白方行棋。复盘重点：4 B-Q3 不是最受推崇的一步，但作者认为完全自然、无可厚非；黑 4...PxP 之后通常应 P-QB4。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/pdm04bmf"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG139",
+   "图号": "Fig.139",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 12 局 法国防御（1918 年纽约）",
+   "章节标题": "GAME 12. FRENCH DEFENCE",
+   "页码": 230,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page230",
+   "例号或对局号": "GAME01",
+   "piece_placement": "4rk2/p4pb1/1p2q1pp/2pRP3/P1P1Q1PP/1P3NK1/5P2/8",
+   "FEN": "4rk2/p4pb1/1p2q1pp/2pRP3/P1P1Q1PP/1P3NK1/5P2/8 w - - 13 39",
+   "中文讲解": "第 12 局示范对局的棋图（原书 p.230），是主线第 76 个半回合（第 38 回合）之后的局面。局面材料：白王后车马兵7 vs 黑王后车象兵6；白方行棋。复盘重点：4 B-Q3 不是最受推崇的一步，但作者认为完全自然、无可厚非；黑 4...PxP 之后通常应 P-QB4。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/pdm04bmf"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG140",
+   "图号": "Fig.140",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 13 局 西班牙开局（1918 年纽约）",
+   "章节标题": "GAME 13. RUY LOPEZ",
+   "页码": 233,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page233",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2qr1k1/pppb1pb1/2np1npp/1B6/4P2B/2N2N2/PPPQ1PPP/2KRR3",
+   "FEN": "r2qr1k1/pppb1pb1/2np1npp/1B6/4P2B/2N2N2/PPPQ1PPP/2KRR3 b - - 5 12",
+   "中文讲解": "第 13 局示范对局的棋图（原书 p.233），是主线第 23 个半回合（第 12 回合）之后的局面。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；黑方行棋。复盘重点：黑用 P-QR3、B-Q2、P-KKt3、B-Kt2 的布置应对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Vr3580Df"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG141",
+   "图号": "Fig.141",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 13 局 西班牙开局（1918 年纽约）",
+   "章节标题": "GAME 13. RUY LOPEZ",
+   "页码": 234,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page234",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2qr1k1/1pp2pb1/p1npb2p/3N2pn/4P3/2PB1NB1/PP1Q1PPP/2KRR3",
+   "FEN": "r2qr1k1/1pp2pb1/p1npb2p/3N2pn/4P3/2PB1NB1/PP1Q1PPP/2KRR3 b - - 0 16",
+   "中文讲解": "第 13 局示范对局的棋图（原书 p.234），是主线第 31 个半回合（第 16 回合）之后的局面。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；黑方行棋。复盘重点：黑用 P-QR3、B-Q2、P-KKt3、B-Kt2 的布置应对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Vr3580Df"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG142",
+   "图号": "Fig.142",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 13 局 西班牙开局（1918 年纽约）",
+   "章节标题": "GAME 13. RUY LOPEZ",
+   "页码": 235,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page235",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2qr1k1/1pp3b1/p1npb2p/3N2pn/4Pp1P/2PB1NB1/PP1Q1PP1/2KRR3",
+   "FEN": "r2qr1k1/1pp3b1/p1npb2p/3N2pn/4Pp1P/2PB1NB1/PP1Q1PP1/2KRR3 w - - 0 18",
+   "中文讲解": "第 13 局示范对局的棋图（原书 p.235），是主线第 34 个半回合（第 17 回合）之后的局面。局面材料：白王后车2象2马2兵7 vs 黑王后车2象2马2兵7；白方行棋。复盘重点：黑用 P-QR3、B-Q2、P-KKt3、B-Kt2 的布置应对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Vr3580Df"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG143",
+   "图号": "Fig.143",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 13 局 西班牙开局（1918 年纽约）",
+   "章节标题": "GAME 13. RUY LOPEZ",
+   "页码": 236,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page236",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2q2k1/1pp2bb1/p2p1n2/3Nr1p1/4Pp2/2PB4/PP1Q1PPB/1K1R3R",
+   "FEN": "r2q2k1/1pp2bb1/p2p1n2/3Nr1p1/4Pp2/2PB4/PP1Q1PPB/1K1R3R w - - 2 23",
+   "中文讲解": "第 13 局示范对局的棋图（原书 p.236），是主线第 44 个半回合（第 22 回合）之后的局面。局面材料：白王后车2象2马兵6 vs 黑王后车2象2马兵6；白方行棋。复盘重点：黑用 P-QR3、B-Q2、P-KKt3、B-Kt2 的布置应对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Vr3580Df"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG144",
+   "图号": "Fig.144",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 13 局 西班牙开局（1918 年纽约）",
+   "章节标题": "GAME 13. RUY LOPEZ",
+   "页码": 237,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page237",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2q2k1/1p3bb1/p1pp4/3N2p1/4rP2/2P5/PP1Q1P1B/1K1R3R",
+   "FEN": "r2q2k1/1p3bb1/p1pp4/3N2p1/4rP2/2P5/PP1Q1P1B/1K1R3R w - - 0 26",
+   "中文讲解": "第 13 局示范对局的棋图（原书 p.237），是主线第 50 个半回合（第 25 回合）之后的局面。局面材料：白王后车2象马兵5 vs 黑王后车2象2兵5；白方行棋。复盘重点：黑用 P-QR3、B-Q2、P-KKt3、B-Kt2 的布置应对。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/Vr3580Df"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG145",
+   "图号": "Fig.145",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 14 局 后翼弃兵（1918 年纽约）",
+   "章节标题": "GAME 14. QUEEN'S GAMBIT DECLINED",
+   "页码": 239,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page239",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2r2k1/pb1nqppp/1pp1p3/8/2BPP3/2Q2N2/PP3PPP/2R1R1K1",
+   "FEN": "r2r2k1/pb1nqppp/1pp1p3/8/2BPP3/2Q2N2/PP3PPP/2R1R1K1 w - - 3 15",
+   "中文讲解": "第 14 局示范对局的棋图（原书 p.239），是主线第 28 个半回合（第 14 回合）之后的局面。局面材料：白王后车2象马兵7 vs 黑王后车2象马兵7；白方行棋。复盘重点：这一局是全书压轴。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/J9eylB73"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG146",
+   "图号": "Fig.146",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 14 局 后翼弃兵（1918 年纽约）",
+   "章节标题": "GAME 14. QUEEN'S GAMBIT DECLINED",
+   "页码": 240,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page240",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2r2k1/pb2qppp/1pp1p3/2nP4/2B1P3/2Q2N2/PP3PPP/2R1R1K1",
+   "FEN": "r2r2k1/pb2qppp/1pp1p3/2nP4/2B1P3/2Q2N2/PP3PPP/2R1R1K1 w - - 1 16",
+   "中文讲解": "第 14 局示范对局的棋图（原书 p.240），是主线第 30 个半回合（第 15 回合）之后的局面。局面材料：白王后车2象马兵7 vs 黑王后车2象马兵7；白方行棋。复盘重点：这一局是全书压轴。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/J9eylB73"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG147",
+   "图号": "Fig.147",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 14 局 后翼弃兵（1918 年纽约）",
+   "章节标题": "GAME 14. QUEEN'S GAMBIT DECLINED",
+   "页码": 241,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page241",
+   "例号或对局号": "GAME01",
+   "piece_placement": "r2r2k1/pb3ppp/1pp1q3/8/3NP3/2Q5/PP3PPP/2R1R1K1",
+   "FEN": "r2r2k1/pb3ppp/1pp1q3/8/3NP3/2Q5/PP3PPP/2R1R1K1 b - - 1 18",
+   "中文讲解": "第 14 局示范对局的棋图（原书 p.241），是主线第 35 个半回合（第 18 回合）之后的局面。局面材料：白王后车2马兵6 vs 黑王后车2象兵6；黑方行棋。复盘重点：这一局是全书压轴。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/J9eylB73"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG148",
+   "图号": "Fig.148",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 14 局 后翼弃兵（1918 年纽约）",
+   "章节标题": "GAME 14. QUEEN'S GAMBIT DECLINED",
+   "页码": 243,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page243",
+   "例号或对局号": "GAME01",
+   "piece_placement": "4r1k1/pb3p1p/1pN5/4P1p1/8/2R5/PP1r1PPP/1R4K1",
+   "FEN": "4r1k1/pb3p1p/1pN5/4P1p1/8/2R5/PP1r1PPP/1R4K1 w - - 0 23",
+   "中文讲解": "第 14 局示范对局的棋图（原书 p.243），是主线第 44 个半回合（第 22 回合）之后的局面。局面材料：白王车2马兵6 vs 黑王车2象兵5；白方行棋。复盘重点：这一局是全书压轴。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/J9eylB73"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG149",
+   "图号": "Fig.149",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 14 局 后翼弃兵（1918 年纽约）",
+   "章节标题": "GAME 14. QUEEN'S GAMBIT DECLINED",
+   "页码": 244,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page244",
+   "例号或对局号": "GAME01",
+   "piece_placement": "8/pb3pkp/2N3r1/1p2P3/1P5p/P1R5/r4PP1/2R2K2",
+   "FEN": "8/pb3pkp/2N3r1/1p2P3/1P5p/P1R5/r4PP1/2R2K2 w - - 3 29",
+   "中文讲解": "第 14 局示范对局的棋图（原书 p.244），是主线第 56 个半回合（第 28 回合）之后的局面。局面材料：白王车2马兵5 vs 黑王车2象兵5；白方行棋。复盘重点：这一局是全书压轴。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/J9eylB73"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  },
+  {
+   "ID": "FIG150",
+   "图号": "Fig.150",
+   "部": "第二部",
+   "章": "第二部 示范对局",
+   "小节": "第 14 局 后翼弃兵（1918 年纽约）",
+   "章节标题": "GAME 14. QUEEN'S GAMBIT DECLINED",
+   "页码": 245,
+   "锚点": "https://www.gutenberg.org/cache/epub/33870/pg33870-images.html#page245",
+   "例号或对局号": "GAME01",
+   "piece_placement": "8/1b3pkp/p1N3r1/1p2P3/1P6/P1R3Pp/r4P2/2R3K1",
+   "FEN": "8/1b3pkp/p1N3r1/1p2P3/1P6/P1R3Pp/r4P2/2R3K1 w - - 0 31",
+   "中文讲解": "第 14 局示范对局的棋图（原书 p.245），是主线第 60 个半回合（第 30 回合）之后的局面。局面材料：白王车2马兵5 vs 黑王车2象兵5；白方行棋。复盘重点：这一局是全书压轴。",
+   "来源": [
+    "Project Gutenberg eBook #33870《Chess Fundamentals》(1921)",
+    "https://lichess.org/study/k3M5fqR7/J9eylB73"
+   ],
+   "校验状态": "已校验（按原书着法表的回合号逐着重放，位置取自 PGN 主线）",
+   "校验等级": "A"
+  }
+ ]
+}

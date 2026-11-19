@@ -1,0 +1,1201 @@
+[Event "Capablanca Chess Fundimentals Part 1: Example 1"]
+[Date "2021.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 1"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/jmEPtCP6"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "7k/8/8/8/8/8/8/R6K w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.16"]
+[UTCTime "14:03:42"]
+[Orientation "white"]
+
+1. Ra7 Kg8 2. Kg2 Kf8 3. Kf3 Ke8 4. Ke4 Kd8 5. Kd5 Kc8 (5... Ke8 6. Kd6 Kf8 7. Ke6 Kg8 8. Kf6 Kh8 9. Kg6 Kg8 10. Ra8#) 6. Kc6 (6. Kd6) 6... Kb8 7. Rf7 Ka8 8. Kb6 Kb8 9. Rf8# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 2"]
+[Date "2021.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 2"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/osu05yiE"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/8/8/4k3/8/8/8/4K2R w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.16"]
+[UTCTime "13:57:17"]
+[Orientation "white"]
+
+1. Ke2 Kd5 2. Ke3 Kc4 (2... Ke5 3. Rh5+) 3. Rh5 Kc3 (3... Kb3 4. Kd3) 4. Rh4 Kc2 5. Rc4+ Kb3 6. Kd3 Kb2 7. Rb4+ Ka3 8. Kc3 Ka2 9. Ra4+ Kb1 10. Ra3 Kc1 11. Ra1# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 3"]
+[Date "2021.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 3"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/AQxwqqPM"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "7k/8/8/8/8/8/8/2B1KB2 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.16"]
+[UTCTime "13:52:35"]
+[Orientation "white"]
+
+1. Bd3 Kg7 2. Bg5 Kf7 3. Bf5 Kg7 4. Kf2 Kf7 5. Kg3 Kg7 6. Kh4 Kf7 7. Kh5 Kg7 8. Bg6 Kg8 9. Kh6 Kf8 10. Bh5 Kg8 11. Be7 Kh8 12. Bg4 Kg8 13. Be6+ Kh8 14. Bf6# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 4"]
+[Date "2021.02.15"]
+[Result "*"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 4"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/yNwKjiMK"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.02.15"]
+[UTCTime "10:28:33"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 5"]
+[Date "2021.02.15"]
+[Result "*"]
+[Variant "From Position"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 5"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/0Mamgapy"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/8/8/8/4k3/8/3KP3/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.15"]
+[UTCTime "10:27:12"]
+[Orientation "white"]
+
+1. e3 Ke5 2. Kd3 Kd5 3. e4+ Ke5 4. Ke3 Ke6 5. Kd4 Kd6 6. e5+ Ke6 7. Ke4 Ke7 8. Kf5 Kf7 9. e6+ Ke7 10. Ke5 Ke8 11. Kf6 Kf8 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 6"]
+[Date "2021.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 6"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/DmXixB7g"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/8/5k2/8/5K2/8/4P3/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.16"]
+[UTCTime "12:22:30"]
+[Orientation "white"]
+
+1. Ke4 Ke6 2. e3 Kf6 3. Kd5 Ke7 (3... Kf5 4. e4+) 4. Ke5 Kd7 5. Kf6 Ke8 6. e4 Kd7 7. e5 (7. Kf7 Kd6 8. Kf6) 7... Ke8 8. Ke6 Kf8 9. Kd7 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 7"]
+[Date "2021.02.16"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 7"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/BRj2olPF"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "5k2/6p1/4K1P1/5P2/8/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.16"]
+[UTCTime "12:53:44"]
+[Orientation "white"]
+
+1. Kd7 Kg8 2. Ke7 Kh8 3. f6 gxf6 (3... Kg8 4. f7+ Kh8 5. f8=Q#) 4. Kf7 f5 5. g7+ Kh7 6. g8=Q+ Kh6 7. Qg6# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 8"]
+[Date "2021.02.17"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 8"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/TomqrSMe"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/6p1/3k4/8/3K1PP1/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.17"]
+[UTCTime "09:03:22"]
+[Orientation "white"]
+
+1. Ke4 Ke6 (1... g6 2. Kd4 Ke6 3. Kc5 Kf6 4. Kd6 Kf7 5. g5 Kg7 6. Ke7 Kg8 7. Kf6 Kh7 8. Kf7) 2. f5+ Kf6 3. Kf4 g6 4. g5+ Kf7 5. f6 Ke6 6. Ke4 Kf7 7. Ke5 Kf8 8. f7 Kxf7 9. Kd6 Kf8 10. Ke6 Kg7 11. Ke7 Kg8 12. Kf6 Kh7 13. Kf7 Kh8 14. Kxg6 Kg8 15. Kh6 (15. Kf6 Kh7 16. g6+ Kh8) 15... Kh8 16. g6 Kg8 17. g7 Kf7 18. Kh7 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 9"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 9"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/NZtls7NX"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/6pp/3k4/8/3K1PPP/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "09:02:53"]
+[Orientation "white"]
+
+1. f5 Ke7 (1... g6 2. g5) 2. Ke4 Kf7 3. g5 Ke7 4. h5 g6 5. hxg6 hxg6 6. f6+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 10"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 10"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/jeqNZjR6"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/p6p/4k3/8/4K3/8/P5PP/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "09:27:15"]
+[Orientation "white"]
+
+1. g4 a5 2. a4 Kf6 3. h4 Ke6 (3... Kg6) 4. g5 Kf7 5. Kf5 Kg7 6. h5 Kf7 (6... h6 7. g6) 7. Ke5 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 11"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 11"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/z3pIDyiG"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "5rk1/1b3p1p/ppq3p1/2p5/8/1P1P1R1Q/PBP3PP/7K b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "10:00:53"]
+[Orientation "white"]
+
+1... Re8 2. Qxh7+ Kxh7 3. Rh3+ Kg8 4. Rh8# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 12"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 12"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/mr7KrKXV"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "5rk1/1bq1bp1p/p1n3p1/1p6/3N4/1P1PR2Q/PBP3PP/7K w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "10:23:57"]
+[Orientation "white"]
+
+1. Nxc6 Bg5 (1... Qxc6 2. Qxh7+ Kxh7 3. Rh3+) 2. Ne7+ Qxe7 (2... Bxe7 3. Qxh7+ Kxh7 4. Rh3+) 3. Rxe7 Bxe7 4. Qd7 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 13"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 13"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/l5R1mjDe"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "2q2rk1/1b3ppp/pp6/2p5/2P1N3/PP1Q4/1B3PPP/7K w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "11:14:02"]
+[Orientation "white"]
+
+1. Nf6+ gxf6 2. Qg3+ Kh8 (2... Qg4 3. Qxg4+ Kh8 4. Bxf6#) 3. Bxf6# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 14"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 14"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/9Q0VXmOD"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "2q1rrk1/1bpn1ppp/pp1p4/1B6/4N3/1P1QR3/PBP2PPP/6K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "11:41:00"]
+[Orientation "white"]
+
+1. Bxd7 Qxd7 2. Nf6+ gxf6 3. Rg3+ Kh8 4. Bxf6# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 15"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 15"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/C6VDsDYY"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "r3qrk1/1pp2ppp/p1np4/3Q4/8/P2B1N2/1PP2PPP/3R2K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "11:58:52"]
+[Orientation "white"]
+
+1. Bxh7+ Kxh7 (1... Kh8 2. Qh5 g6 3. Qh6) 2. Qh5+ Kg8 3. Ng5 Qe4 4. Nxe4 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 16"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 16"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/wxp2baYW"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "2nb1rk1/1pqrnppp/p2p4/2pQ1N2/6P1/1P1B1N1P/P3RP2/3R2K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.18"]
+[UTCTime "12:35:00"]
+[Orientation "white"]
+
+1. Nxe7+ Bxe7 2. Rxe7 Nxe7 3. Bxh7+ Kxh7 (3... Kh8 4. Qh5 g6 5. Bxg6+ Kg7 6. Qh7+ Kf6 7. g5+ Ke6 8. Bxf7+ Rxf7 9. Qe4#) 4. Qh5+ Kg8 5. Ng5 Rc8 6. Qh7+ Kf8 7. Qh8+ Ng8 8. Nh7+ Ke7 9. Re1+ Kd8 10. Qxg8# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 17"]
+[Date "2021.02.18"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C49"]
+[Opening "Four Knights Game: Spanish Variation, Symmetrical Variation"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 17"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/huFGEkku"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.02.18"]
+[UTCTime "23:23:10"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 18"]
+[Date "2021.02.19"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense: Hanham Variation"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 18"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/DkvMGgCS"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.02.19"]
+[UTCTime "03:27:56"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 h6 (4... Be7 5. dxe5 Nxe5 (5... dxe5 6. Qd5) 6. Nxe5 dxe5 7. Qh5) 5. Nc3 Ngf6 6. Be3 Be7 7. Qe2 c6 8. Rd1 Qc7 9. O-O *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 19"]
+[Date "2021.02.19"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C41"]
+[Opening "Philidor Defense"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 19"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/HBuy2MuV"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.02.19"]
+[UTCTime "04:25:52"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 (4... dxe5) 5. Qxf3 dxe5 6. Bc4 Qf6 (6... Nf6 7. Qb3) 7. Qb3 b6 8. Nc3 c6 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 20"]
+[Date "2021.02.19"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 20"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/NJwd3J3t"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "r2qkbnr/ppp2pp1/2np3p/4p3/2BPP1b1/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.19"]
+[UTCTime "13:03:20"]
+[Orientation "white"]
+
+1. dxe5 Nxe5 2. Nxe5 Bxd1 3. Bxf7+ Ke7 4. Nd5# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 21"]
+[Date "2021.02.19"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 21"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/iK3bpFG1"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "rn1qkbnr/ppp1ppp1/7p/8/2B3b1/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.19"]
+[UTCTime "13:18:07"]
+[Orientation "white"]
+
+1... Nc6 2. Bxf7+ (2. Ne5 Bxd1 3. Bxf7#) 2... Kxf7 3. Ne5+ Kf6 4. Nxg4+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 22"]
+[Date "2021.02.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 22"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/kSAwj8cp"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/p5p1/7p/6k1/8/7K/PP5P/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.02.26"]
+[UTCTime "00:35:22"]
+[Orientation "white"]
+
+1. a4 a5 2. Kg2 (2. Kg3 Kf5 3. Kh4 g6 4. b4 axb4 5. a5 b3 6. a6 b2 7. a7 b1=Q 8. a8=Q Qb4+ 9. Kg3 Qf4+ 10. Kg2 Qe4+ 11. Qxe4+ Kxe4) 2... Kf4 3. b4 axb4 4. a5 b3 5. a6 b2 6. a7 b1=Q 7. a8=Q Qe4+ 8. Qxe4+ Kxe4 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 23"]
+[Date "2021.04.24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 23"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/bJB0s7Ua"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/6p1/7p/8/5k2/8/6KP/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.24"]
+[UTCTime "02:54:39"]
+[Orientation "white"]
+
+1. Kh3 Ke3 2. Kg2 Kf4 3. Kf2 Kg5 4. Kg2 Kh4 5. Kg1 Kh3 6. Kh1 h5 7. Kg1 h4 8. Kh1 g5 9. Kg1 g4 10. Kh1 g3 11. hxg3 (11. Kg1 g2) 11... hxg3 12. Kg1 g2 13. Kf2 Kh2 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 24"]
+[Date "2021.04.24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 24"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/snOST4GF"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/ppp4k/8/PPP5/8/8/8/7K w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.24"]
+[UTCTime "03:38:35"]
+[Orientation "white"]
+
+1. b6 axb6 (1... cxb6 2. a6) 2. c6 bxc6 3. a6 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 25"]
+[Date "2021.04.24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 25"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/Hceh4jks"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/p5kp/8/1P6/8/1K6/P7/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.24"]
+[UTCTime "04:05:03"]
+[Orientation "white"]
+
+1. a4 h5 2. a5 h4 3. b6 axb6 4. a6 b5 5. a7 b4 6. a8=Q *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 26"]
+[Date "2021.04.24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 26"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/unjAdMku"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/8/4k3/1p5p/1P2K2P/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.24"]
+[UTCTime "04:38:58"]
+[Orientation "white"]
+
+1. Kd4 Kd6 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 27"]
+[Date "2021.04.24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 27"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/4TSFsFqB"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/8/8/1p5p/1P5P/8/8/4K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.24"]
+[UTCTime "09:50:07"]
+[Orientation "white"]
+
+1. Ke2 Ke7 2. Ke3 Ke6 3. Ke4 Kf6 4. Kf4 Kg6 5. Ke5 Kg7 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 28"]
+[Date "2021.04.24"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 28"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/c6ueEPvx"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.24"]
+[UTCTime "11:28:16"]
+[Orientation "white"]
+
+1. Kh1! Kd2 (1... g4 2. Kg2 Kd2 3. fxg4 e4) 2. Kh2 Kd3 3. Kh3! Ke2 4. Kg2 Ke3 5. Kg3 Kd4 6. Kg4 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 29"]
+[Date "2021.04.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 29"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/jg9qKMlb"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "k7/8/1K1N4/7p/7N/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.25"]
+[UTCTime "23:06:14"]
+[Orientation "white"]
+
+{ [%cal Gh4f5] } 1. Nf3 h4 2. Ne5 h3 3. Nc6 h2 4. Nb5 h1=Q 5. Nc7# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 30"]
+[Date "2021.04.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 30"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/kIHDzwyJ"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "7k/8/8/6K1/8/3B4/7P/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.25"]
+[UTCTime "23:15:33"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 31"]
+[Date "2021.04.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 31"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/D6KjQ9H1"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/8/5Np1/8/8/7p/5K2/7k b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.25"]
+[UTCTime "23:20:19"]
+[Orientation "white"]
+
+1... Kh2 2. Ng4+ Kh1 3. Kf1 g5 4. Kf2 h2 5. Ne3 g4 6. Nf1 g3+ 7. Nxg3# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 33"]
+[Date "2021.04.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 33"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/MZQ4wfdn"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/3n4/2p5/1pPp4/pP1P4/P7/8/2B1K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.25"]
+[UTCTime "23:53:16"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 34"]
+[Date "2021.04.25"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 34"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/iXVTnuAH"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/3n1ppp/8/8/8/8/5PPP/2B1K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.25"]
+[UTCTime "23:55:21"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 35"]
+[Date "2021.04.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 35"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/Y7ijidbY"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/pppn1ppp/8/8/8/8/PPP2PPP/2B1K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.26"]
+[UTCTime "00:06:38"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 36"]
+[Date "2021.04.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 36"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/smScmNAm"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/pppn1pp1/8/8/8/8/1PP2PPP/2B1K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.26"]
+[UTCTime "00:03:18"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 37"]
+[Date "2021.04.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 37"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/5HoA0OdF"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/pppn1p2/8/8/8/8/2P2PPP/2B1K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.26"]
+[UTCTime "00:05:52"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 38"]
+[Date "2021.04.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 38"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/yFoI0min"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/p1pn1p2/8/8/8/8/2P2P1P/2B1K3 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.26"]
+[UTCTime "03:15:31"]
+[Orientation "white"]
+
+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 39"]
+[Date "2021.04.26"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 39"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/z27iWUFm"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4k3/8/8/8/8/8/8/2B1K1N1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.04.26"]
+[UTCTime "03:20:52"]
+[Orientation "white"]
+
+1. Ke2 Kd7 2. Kd3 Kc6 3. Bf4 Kd5 4. Ne2 Kc5 5. Nc3 Kb4 6. Kd4 Ka5 7. Kc5 Ka6 8. Kc6 Ka7 9. Nd5 Ka8 10. Nb6+ Ka7 11. Bc7 Ka6 12. Bb8 Ka5 13. Nd5 Ka4 14. Kc5! (14. Be5 Kb3 15. Ne3) 14... Kb3 15. Nb4 Kc3 16. Bf4 Kb3 17. Be5 Ka4 18. Kc4 Ka5 19. Bc7+ Ka4 20. Nd3 Ka3 21. Bb6 Ka4 22. Nb2+ Ka3 23. Kc3 Ka2 24. Kc2 Ka3 25. Bc5+ Ka2 26. Nd3 Ka1 27. Bb4 Ka2 28. Nc1+ Ka1 29. Bc3# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 40"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 40"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/qLDrXuEj"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "1k6/1r6/2K5/Q7/8/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "05:14:45"]
+[Orientation "white"]
+
+1. Qe5+ Ka7 2. Qa1+ Kb8 3. Qa5 Rb3 (3... Rb1 4. Qe5+ Ka7) 4. Qe5+ Ka8! 5. Qh8+ Ka7 6. Qg7+ Ka8 7. Qg8+ Rb8 8. Qa2# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 41"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 41"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/hdviecZW"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/k7/2K5/4Q3/8/8/8/1r6 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "05:34:54"]
+[Orientation "white"]
+
+1. Qc7+ Ka6 2. Qc8+ Ka7 3. Qd7+ Kb8 4. Qe8+ Ka7 5. Qf7+ Kb8 6. Qg8+ Ka7 7. Qa2+ Kb8 8. Qxb1+ Kc8 9. Qb7+ Kd8 10. Qd7# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 42a"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 42a"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/V81OPoL1"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "05:48:54"]
+[Orientation "white"]
+
+1. Qe5+ Kf8 2. Kg6 Rd7 3. Qe6 (3. Qc5+ Ke8 4. Kf6 Rd6+) 3... Rg7+ 4. Kf6 Rf7+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 42b"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 42b"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/bsm9l6VM"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "05:37:55"]
+[Orientation "white"]
+
+1. Qg5+ Kh8 (1... Kh7 2. Qg6+ Kh8 3. Kh6!) 2. Qe5+ Kh7! 3. Kg5 Ra7! (3... Rg7+ 4. Kf6) 4. Qe4+ Kg8 5. Qc4+ Kh7 6. Kf6 Rg7 7. Qh4+ Kg8 8. Qh5 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 42c"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 42c"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/TcFVsgWg"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/5rk1/8/5Q1K/8/8/8/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "06:12:12"]
+[Orientation "white"]
+
+1. Qg5+ Kf8 2. Qd8+ Kg7 3. Kg5 Rf3 (3... Kh7 4. Qd4 Rg7+ 5. Kf6) 4. Qd4+ Kf8 5. Kg6 (5. Qd6+ Kg7 6. Qe5+ Kf8 7. Kg6) 5... Rg3+ 6. Kf6 Rf3+ 7. Ke6 Rh3 8. Qf4+ *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 43"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 43"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/aFY4GjAM"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "2kr4/ppp1qp2/4bQ2/8/3P2r1/N1P5/PP4P1/R1B2RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "11:36:04"]
+[Orientation "white"]
+
+{ [%cal Ge7f8] } 1... Rdg8! 2. Rf2 (2. Qxe7 Rxg2+ 3. Kh1 Bd5) 2... Rxg2+ 3. Kf1 Bc4+ 4. Nxc4 Rg1# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 44"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 44"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/nx2vfBuD"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "kr2r3/pRp3pp/Q1P5/5R2/Pp1qp3/3p3P/6PK/8 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "12:05:02"]
+[Orientation "white"]
+
+1... e3 2. Rxa7+ (2. Ra5 Qf4+) 2... Qxa7 3. Ra5 Rb7 4. Qxb7# *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 45"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 45"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/tO7NJrnV"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "3q1kn1/r5p1/1ppr1pQn/p2ppP2/P3P2R/1BPPB3/1P3PK1/7R w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "12:15:24"]
+[Orientation "white"]
+
+1. Rxh6! gxh6 2. Bxh6+ Ke7 (2... Nxh6 { Computer Suggests variation stronger than Capablanca's line for Black } 3. Rxh6 Rf7 4. Rh8+ Ke7 5. Rxd8 Rxd8) 3. Qh7+ Ke8 4. Qxg8+ Kd7 5. Qh7+ Qe7 6. Bf8 Qxh7 7. Rxh7+ Ke8 8. Rxa7 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 46"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 46"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/P5pZs6pw"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "4r2r/p1pb1ppk/2ppn2p/1q3N1N/4PPP1/1P2Q3/4R2P/2R3K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "12:37:35"]
+[Orientation "white"]
+
+1. Nfxg7 Nxg7 (1... Nc5) 2. Nf6+ Kg6 3. Nxd7 f6 4. e5 Kf7 5. Nxf6 Re7 6. Ne4 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 47"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 47"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/LiARHHfv"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "12:54:35"]
+[Orientation "white"]
+
+1. Bxh7+ Kxh7 2. Ng5+ Kg6 (2... Kh6 3. Nxf7+) (2... Kg8 3. Qh5) 3. Qg4 f5 4. Qg3 Kh6 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 48"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 48"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/ultQn4oA"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "2r1r1k1/2p2pbp/2ppq1p1/8/2n1P3/2N2P2/PPPBQ1PP/1R3RK1 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "13:22:26"]
+[Orientation "white"]
+
+1... Ra8 2. h4 (2. b3 Nxd2 3. Qxd2 Ra3) 2... Nxd2 3. Qxd2 Qc4 4. Rfd1 Reb8 { [%cal Gb8b2] } (4... Bxc3) 5. Qe3 Rb4 { [%cal Gg7d4] } 6. Qg5 Bd4+ 7. Kh1 Rab8 { [%csl Rc3][%cal Gd4c3,Rb2c3,Gb4b1] } 8. Rxd4 Qxd4 9. Rd1 Qc4 { [%cal Gb4b2] } *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 49"]
+[Date "2021.05.01"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 49"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/y65Qlpnc"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "r4rk1/p3q1pp/1pb5/2pn1p2/8/3BPN2/PP2QPPP/2RR2K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.01"]
+[UTCTime "13:47:51"]
+[Orientation "white"]
+
+1. Nd4! cxd4 2. Rxc6 Nb4 { [%cal Gd3c4] } 3. Bc4+ Kh8 4. Re6 d3 5. Rxd3 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 50"]
+[Date "2021.05.04"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 50"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/YZvcgIn9"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "r1bq1rk1/pp2nppp/4p3/2n5/8/2NBPN2/PP3PPP/R2Q1RK1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.04"]
+[UTCTime "12:42:02"]
+[Orientation "white"]
+
+1. Bxh7+ Kxh7 2. Ng5+ Kg6 3. Qg4 f5! (3... e5 4. Ne6+ Kf6 5. f4! e4 6. Qg5+ Kxe6 7. Qe5+ Kd7 8. Rfd1+ Nd3 9. Nxe4 Kc6 (9... Ke8 10. Nd6+ Qxd6 11. Qxd6) 10. Rxd3 Qxd3 11. Rc1+ Kb6 (11... Kd7 { [%cal Gc1c7,Gd7d8] } 12. Rc7+ Kd8 13. Qxe7#) 12. Qc7+ Ka6 13. Nc5+ Kb5 14. a4+ Kb4 15. Nxd3+ Kxa4 16. Ra1+ Kb3 17. Ra3#) 4. Qg3 Kh6 5. Qh4+ Kg6 6. Qh7+ Kf6 (6... Kxg5 7. Qxg7+ Kh5 8. f4 Ng8 9. Rf3 Ne4 10. Rh3+ Qh4 11. Nxe4 e5 12. Ng3#) 7. e4 Ng6 8. exf5 exf5 9. Rad1 Nd3 10. Qh3 Ndf4 11. Qg3 Qc7 12. Rfe1 Ne2+ (12... Be6 13. Rxe6+ Nxe6 14. Nd5#) 13. Rxe2 Qxg3 14. Nh7+ Kf7 15. hxg3 Rh8 16. Ng5+ Kf6 17. f4 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 51"]
+[Date "2021.05.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 51"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/p7rptCNd"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "r1bq1k1r/b5pp/1nRN4/4p3/1P2P1n1/5NB1/P4PPP/3Q1RK1 w - - 0 21"]
+[SetUp "1"]
+[UTCDate "2021.05.05"]
+[UTCTime "13:36:14"]
+[Orientation "white"]
+
+21. Bh4 Qd7 22. Nxc8 Qxc6 23. Qd8+ Qe8 (23... Kf7 24. Nd6+ Ke6 (24... Kg6 25. Qg5#) 25. Ng5#) 24. Be7+ Kf7 25. Nd6+ Kg6 26. Nh4+ Kh5 (26... Kh6 27. Ndf5+ Kh5 28. Ng3+ Kh6 29. Bg5#) 27. Nxe8 Rxd8 28. Nxg7+ Kh6 29. Ngf5+ Kh5 30. h3! *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 53"]
+[Date "2021.05.05"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "C10"]
+[Opening "French Defense: Rubinstein Variation, Capablanca Line"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 53"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/xRV9zUvp"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.05.05"]
+[UTCTime "16:00:21"]
+[Orientation "white"]
+
+1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Nxf6+ Nxf6 7. Ne5 Bd6 8. Qf3 c6 9. c3 O-O 10. Bg5 Be7 11. Bd3 Ne8 12. Qh3 f5 13. Bxe7 Qxe7 14. O-O Rf6 15. Rfe1 Nd6 16. Re2 Bd7 17. Rae1 Re8 18. c4 Nf7 19. d5 Nxe5 20. Rxe5 g6 21. Qh4 Kg7 22. Qd4 c5 23. Qc3 b6 24. dxe6 Bc8 25. Be2 Bxe6 26. Bf3 Kf7 27. Bd5 Qd6 28. Qe3 Re7 29. Qh6 Kg8 30. h4 a6 31. h5 f4 32. hxg6 hxg6 33. Rxe6 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 52"]
+[Date "2021.05.05"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "C10"]
+[Opening "French Defense: Rubinstein Variation, Capablanca Line"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 52"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/U5uTXIQy"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.05.05"]
+[UTCTime "16:00:49"]
+[Orientation "white"]
+
+{ Played at the Havana International Masters Tournament, 1913. (French Defence.) White: J. R. Capablanca. Black: R. Blanco. } 1. e4 { [%eval 0.05] } 1... e6 { [%eval 0.13] } 2. d4 { [%eval 0.0] } 2... d5 { [%eval 0.0] } 3. Nc3 { [%eval 0.0] } 3... dxe4 { [%eval 0.28] } 4. Nxe4 { [%eval 0.0] } 4... Nd7 { [%eval 0.33] } 5. Nf3 { [%eval 0.13] } 5... Ngf6 { [%eval 0.5] } 6. Nxf6+ { [%eval 0.53] } 6... Nxf6 { [%eval 0.25] } 7. Ne5 { [%eval 0.0] [%cal Gb7b6,Gb7b5] } 7... Bd6 { [%eval 0.28] } 8. Qf3 { [%eval 0.3] } (8. Bg5 { [%cal Gg5f6] }) 8... c6?! { [%eval 0.94] } { Inaccuracy. O-O was best. } (8... c5 { [%csl Ye1][%cal Gd6e5,Gd8a5] }) (8... O-O 9. Bg5 Be7 10. c3 c5 11. dxc5 Qc7 12. Nc4 Qxc5 13. Be3 Qc7 14. Qg3 Qxg3 15. hxg3) 9. c3 { [%eval 0.91] } 9... O-O { [%eval 1.39] } 10. Bg5 { [%eval 1.38] } 10... Be7 { [%eval 1.45] } 11. Bd3 { [%eval 1.66] } 11... Ne8?! { [%eval 2.61] } { Inaccuracy. c5 was best. } (11... Nd5 12. Qh3 g6 (12... h6 13. Bxh6)) (11... c5 12. dxc5) 12. Qh3 { [%eval 2.41] } 12... f5 { [%eval 2.61] } 13. Bxe7 { [%eval 2.6] } 13... Qxe7 { [%eval 2.79] } 14. O-O?! { [%eval 1.87] } { Inaccuracy. O-O-O was best. } (14. O-O-O Nf6 15. Bc2 a5 16. g4 g6 17. Qh4 Nd5 18. g5 c5 19. dxc5 Qxc5 20. Qg3 b5) 14... Rf6 { [%eval 2.41] } 15. Rfe1 { [%eval 2.32] } 15... Nd6 { [%eval 2.4] } 16. Re2 { [%eval 2.59] } 16... Bd7 { [%eval 2.38] } 17. Rae1 { [%eval 2.71] } 17... Re8 { [%eval 2.62] } 18. c4?! { [%eval 2.0] } { Inaccuracy. Bc2 was best. } (18. Bc2 Nf7) 18... Nf7 { [%eval 2.27] } 19. d5?! { [%eval 1.65] } { Inaccuracy. Nxf7 was best. } (19. Nxf7 Qxf7) (19. Nxd7 Qxd7 20. Bxf5 Ng5 21. Qg4 Rxf5 22. h4 h5 23. Qxf5 exf5 24. Rxe8+ Kh7 25. hxg5 Qxd4) 19... Nxe5 { [%eval 1.87] } 20. Rxe5 { [%eval 2.04] } 20... g6 { [%eval 2.37] } 21. Qh4 { [%eval 2.21] } 21... Kg7 { [%eval 2.54] } 22. Qd4 { [%eval 2.5] } 22... c5 { [%eval 2.51] } 23. Qc3 { [%eval 2.74] } 23... b6 { [%eval 2.74] } 24. dxe6 { [%eval 2.7] } 24... Bc8?! { [%eval 4.17] } { Inaccuracy. Bc6 was best. } (24... Bc6 25. Be2) 25. Be2? { [%eval 2.19] } { Mistake. Bc2 was best. } (25. Bc2) 25... Bxe6?? { [%eval 4.74] } { Blunder. Qd6 was best. } (25... Qd6) 26. Bf3 { [%eval 4.67] } 26... Kf7 { [%eval 4.43] } 27. Bd5 { [%eval 5.03] } 27... Qd6 { [%eval 4.68] } 28. Qe3 { [%eval 4.31] } 28... Re7?! { [%eval 5.62] } { Inaccuracy. f4 was best. } (28... f4 29. Qh3 h5 30. Qh4 Re7 31. Qg5 Kg7 32. h4 Qd7 33. g3 fxg3 34. f4) 29. Qh6 { [%eval 5.62] } 29... Kg8 { [%eval 5.46] } 30. h4 { [%eval 5.58] } 30... a6 { [%eval 5.71] } 31. h5 { [%eval 5.31] } 31... f4 { [%eval 5.59] } 32. hxg6 { [%eval 5.5] } 32... hxg6 { [%eval 5.84] } 33. Rxe6 { [%eval 5.46] } { 1-0 Black resigns. } 1-0
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 53"]
+[Date "2021.05.06"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "C66"]
+[Opening "Ruy Lopez: Berlin Defense, Improved Steinitz Defense"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 53"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/EjZV2iZT"]
+[Annotator "https://lichess.org/@/links_147"]
+[UTCDate "2021.05.06"]
+[UTCTime "12:42:34"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. Bxc6+ bxc6 6. d4 Be7 7. Nc3 (7. dxe5) 7... Nd7 8. dxe5 dxe5 9. Qe2 O-O 10. Rd1 Bd6 11. Bg5 Qe8 12. Nh4 g6 13. Bh6 Nc5 14. Rd2 Rb8 15. Nd1 Rb4 16. c4 Ne6 17. Bxf8 Qxf8 18. Ne3 (18. Nf3) 18... Nd4 19. Qd1 c5 20. b3 Rb8 21. Nf3 f5 22. exf5 gxf5 23. Nf1 f4 24. Nxd4 cxd4 25. Qh5 Bb7 26. Re1 c5 27. f3 Re8 28. Rde2 Re6 29. Rxe5 Bxe5 30. Rxe5 Rh6 31. Qe8 Qxe8 32. Rxe8+ Kf7 33. Re5 Rc6 34. Nd2 (34. Rf5+) 34... Kf6 35. Rd5 Re6 36. Ne4+ Ke7 37. Rxc5 d3! 38. Kf2 Bxe4 39. fxe4 Rxe4 40. Rd5 Re3 41. b4! Re4 42. Rxd3 Rxc4 43. Rh3 Rxb4 44. Rxh7+ Kf6 45. Rxa7 Kf5 46. Kf3 Rb2 47. Ra5+ Kf6 48. Ra4 Kg5 49. Rxf4 Rxa2 50. h4+ Kh5 51. Rf5+ Kh6 52. g4 { 1-0 Black resigns. } 1-0
+
+
+[Event "Hastings"]
+[Site "Hastings ENG"]
+[Date "1919.08.15"]
+[Round "5"]
+[White "William Winter"]
+[Black "Jose Raul Capablanca"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "C49"]
+[Opening "Four Knights Game: Spanish Variation, Nimzowitsch Variation"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 54"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/GCOMMUrM"]
+[Annotator "https://lichess.org/@/links_147"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. Bxc6 dxc6 7. d3 Bd6 8. Bg5 h6 9. Bh4 c5 10. Nd5 g5 11. Nxf6+ Qxf6 12. Bg3 Bg4 13. h3 Bxf3 14. Qxf3 Qxf3 15. gxf3 f6 16. Kg2 a5 17. a4 Kf7 18. Rh1 Ke6 19. h4 Rfb8 20. hxg5 hxg5 21. b3 c6 22. Ra2 b5 23. Rha1 c4 24. axb5 cxb3 25. cxb3 Rxb5 26. Ra4 Rxb3 27. d4 Rb5 28. Rc4 Rb4 29. Rxc6 Rxd4 { 0-1 White resigns. } 0-1
+
+
+[Event "London-ch corr"]
+[Site "England"]
+[Date "1919.??.??"]
+[White "Frederick Forrest Lawrie Alexander"]
+[Black "George Alan Thomas"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "D52"]
+[Opening "Queen's Gambit Declined: Cambridge Springs Defense, Capablanca Variation"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 55"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/VdSywS6q"]
+[Annotator "https://lichess.org/@/links_147"]
+[Orientation "white"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Nbd7 5. Bg5 c6 6. e3 Qa5 7. Bxf6 Nxf6 8. a3 Ne4 9. Qb3 Be7 10. Bd3 Nxc3 11. bxc3 dxc4 12. Bxc4 Bf6 13. O-O O-O 14. e4 e5 15. d5 Qc7 16. Bd3 b6 17. c4 Bb7 18. Rfc1 Be7 19. Rc2 Bc5 20. Qb2 f6 21. Rb1 Rad8 22. a4 Ba6 23. Rd1 Rfe8 24. Qb3 Rd6 25. Nh4 g6 26. Be2 cxd5 27. exd5 e4 28. g3 e3 29. f4 Bc8 30. Nf3 Bf5 31. Rb2 Re4 32. Kg2 Qc8 33. Ng1 g5 34. fxg5 (34. Bf3 gxf4 35. Bxe4 Bxe4+) 34... fxg5 35. Rf1 g4 36. Bd3 Rf6 37. Ne2 Qf8 38. Rbb1 (38. Nf4 e2! (38... Qh6 39. Qc2 Qh3+!!) 39. Nxe2 Rxe2+ 40. Rxe2 Be4+!! 41. Bxe4! Rxf1) 38... Qh6 39. Qc2 Qh3+ 40. Kh1 Rxc4 (40... Rh6 41. Ng1 Qxg3 42. Qg2) 41. Qxc4 (41. Rxf5) 41... Bxd3 (41... Rh6 42. d6+) 42. Rxf6 (42. Qxd3 Rh6) 42... Bxc4 43. Nf4 e2 44. Rg1 Qf1 { 0-1 White resigns. } 0-1
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 56"]
+[Date "2021.05.11"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 56"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/Q0dfHRU8"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "6k1/p4p1p/1p4p1/3r4/2r5/P1P4P/2R2PP1/2R1K3 b - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.11"]
+[UTCTime "15:30:08"]
+[Orientation "white"]
+
+1... Re4+ 2. Re2 Ra4 3. Ra2 h5 4. Rd1 Rda5 5. Rda1 h4 6. Kd2 Kg7 7. Kc2 Rg5 8. Rg1 (8. Kb3 Raa5 9. g3) 8... Rf4 9. Kd3 Rf3+ 10. Ke2 (10. gxf3 Rxg1) 10... Rxh3 *
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 57"]
+[Date "2021.05.28"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 57"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/LHFn5sse"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "2r2rk1/p1pp1p1p/2p2p2/8/8/2PP1P2/PP3P1P/R3R1K1 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.28"]
+[UTCTime "07:15:03"]
+[Orientation "white"]
+
+1. Re4 Rfe8 2. Rae1 Re6 3. R1e3 Rce8 4. Kf1 Kf8 (4... d5 5. Rg4+ Kf8) (4... f5 5. Rd4! Rxe3? 6. fxe3 Rxe3 7. Kf2 Re7 8. Rh4 { [%cal Gh4h7] }) 5. Ke2 Ke7 6. Ra4 Ra8 7. Ra5! d5 8. c4! Kd6 (8... d4 9. Re4 Kd6 10. b4! Re5 11. Ra6) 9. c5+ Kd7 10. d4 f5 11. Rxe6 fxe6 { [%cal Ga5a6] } 12. f4 Kc8 13. Kd2 (13. Ra3 Rb8 14. b3 Kb7 15. b4 Ka8 16. Rb3) 13... Kb7 14. Ra3 Rg8 15. Rh3 Rg7 16. Ke2 Ka6 17. Rh6 Re7 18. Kd3 Kb7 19. a4 Kc8 20. Rh5 Kd7 21. Rg5 Rf7 22. Kc3 Kc8 23. Kb4 Rf6 24. Ka5 Kb7 25. h4 a6 26. h5 Rh6 27. b4 Rf6 28. b5 (28. Rg7) 28... axb5 29. axb5 Rf8! 30. Rg7 Ra8+ 31. Kb4 cxb5 32. Kxb5 Ra2 33. c6+ Kb8 34. Rxh7 Rb2+ 35. Ka5 Ra2+ 36. Kb4 Rxf2 37. Re7 Rxf4 (37... Rb2+ { [%cal Gb2g2] }) 38. h6! Rxd4+ 39. Kb5 Rd1 40. h7 Rb1+ 41. Kc5 Rc1+ 42. Kd4 Rd1+ 43. Ke5 Re1+ 44. Kf6 Rh1 45. Re8+ Ka7 46. h8=Q Rxh8 47. Rxh8 Kb6 48. Kxe6 Kxc6 49. Kxf5 Kc5 50. Ke5 *
+
+
+[Event "Havana"]
+[Site "Havana CUB"]
+[Date "1913.03.01"]
+[Round "11"]
+[White "Frank James Marshall"]
+[Black "Abraham Kupchik"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "C21"]
+[Opening "Danish Gambit Declined: Sörensen Defense"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 58"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/NvICJfwb"]
+[Annotator "https://lichess.org/@/links_147"]
+[Orientation "white"]
+
+1. e4 e5 2. d4 exd4 3. c3 d5 4. exd5 Qxd5 5. cxd4 Nc6 6. Nf3 Bg4 7. Be2 Nf6 8. h3 Bb4+ 9. Nc3 Bxf3 10. Bxf3 Qc4 11. Bxc6+ bxc6 12. Qe2+ Qxe2+ 13. Kxe2 O-O 14. Be3 Rfe8 15. Rac1 c5 16. dxc5 Bxc5 17. Nb5 Bxe3 18. fxe3 Rab8 19. Nxc7 Rxb2+ 20. Kf3 Re5 21. Nd5 Rf5+ 22. Kg3 Rg5+ 23. Kf4 h6 24. Rc8+ Kh7 25. Nxf6+ gxf6 26. g4 Rxa2 (26... Rf2+ 27. Kg3 (27. Ke4 Re5+ 28. Kd3 Rxa2) 27... Rxa2) 27. Rd1 Ra4+ (27... f5) 28. Rd4 Raa5 (28... Rga5) 29. Rdd8 Rg7 (29... f5 30. Rh8+ Kg6 31. Rcg8+ Kf6 32. Rxh6+ Rg6 33. g5+ Ke7 34. Rhxg6 fxg6 35. Rg7+ Ke8 36. Rxg6) 30. h4 h5 31. Rh8+ { 1-0 Black resigns. } 31... Kg6 32. gxh5+ Rxh5 33. Rxh5 Kxh5 34. Rh8+ Rh7 (34... Kg6 35. h5#) 35. Rxh7+ Kg6 36. Rh8 f5 37. h5+ Kg7 38. Ra8 Kf6 39. Rxa7 Ke6 40. h6 f6 41. h7 Kd5 42. h8=Q Kc4 43. Qc8+ Kd3 44. Rd7+ Ke2 45. Qc2+ Kf1 46. Rd1# 1-0
+
+
+[Event "Capablanca Chess Fundimentals Part 1: Example 59"]
+[Date "2021.05.30"]
+[Result "*"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 59"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/fu265ajQ"]
+[Annotator "https://lichess.org/@/links_147"]
+[FEN "8/7R/8/2k2P2/1p6/3r4/5PKP/8 w - - 0 1"]
+[SetUp "1"]
+[UTCDate "2021.05.30"]
+[UTCTime "08:10:28"]
+[Orientation "white"]
+
+1. f6 Rd6! 2. f7 (2. Rc7+ Kd4! (2... Kb6 3. f7 Rg6+ 4. Kf1 Rf6 5. Re7! Kc5 6. Ke2 b3 7. Re3 b2 8. Rb3 Rxf7 9. Rxb2 Rh7 10. Rd2 Rxh2 11. Ke3) 3. f7 Rg6+ 4. Kf1 Rf6 5. Rb7 Kc3) 2... Rd8! (2... Rg6+ 3. Kf3 Rf6+ 4. Ke2 Re6+ 5. Kd3 Rf6 6. Rh5+ Kb6 7. Rh6) (2... Rf6 3. Rg7! Kc4 4. h4 b3 5. Rg4+ Kc3 6. Rg3+) 3. Rh5+ Kc4 *
+
+
+[Event "NYSCA ch"]
+[Site "New York, NY USA"]
+[Date "1910.02.26"]
+[Round "4"]
+[White "Jose Raul Capablanca"]
+[Black "Alfred Kreymborg"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "D02"]
+[Opening "Queen's Pawn Game: London System"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 60"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/juGhCXMk"]
+[Annotator "https://lichess.org/@/links_147"]
+[Orientation "white"]
+
+1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 c5 5. c3 Nc6 6. Bd3 Bd6 7. Bxd6 Qxd6 8. Nbd2 e5 9. dxe5 Nxe5 10. Nxe5 Qxe5 11. Bb5+ Bd7 12. Qa4 Qc7 13. O-O-O O-O 14. Bxd7 Nxd7 15. Nf3 Qc6 16. Qxc6 bxc6 17. Nd2 Ne5 18. Kc2 c4 19. Rhf1 f5 20. Nf3 Nxf3 21. gxf3 { [%csl Yb3][%cal Ga7a5,Ga5a4] } 21... Rae8 22. Rd4 { [%cal Rf5f4,Yb2b3] } 22... Rf6 { [%cal Gf6g6,Gg6g2] } 23. b3 cxb3+ 24. axb3 Kf7 25. Kd3 Re7 { [%cal Gf1a1] } 26. Ra1 Ke6 { [%cal Gg7g5] } 27. Ra6 Rc7 28. Rda4 g5 29. h4 (29. Rxa7 Rxa7 30. Rxa7 Rh6 { [%csl Rh2] }) 29... g4 (29... gxh4 30. Rxh4 h6 31. b4 { [%cal Gb4b5] }) 30. Ke2 gxf3+ (30... h5 { [%cal Gf3f4] }) 31. Kxf3 Rff7 { [%cal Gb3b4] } 32. Ke2 Kd6 33. b4 Rb7 34. h5 (34. f4 Rg7 35. h5 Rg2+ 36. Kd3 Rh2 37. Rxa7 Rxa7 38. Rxa7 Rxh5 39. Ra6) 34... h6 (34... f4 35. exf4 Rbe7+! 36. Kf1 Rxf4 37. Rxa7 Re3!) 35. f4 Rg7 36. Kd3 Rge7 37. Ra1 Rg7 38. Kd4 Rg2 39. R6a2 { [%cal Gg2g7] } 39... Rbg7 40. Kd3 Rxa2 41. Rxa2 Re7 (41... Rg1 42. Ra6 Rd1+ 43. Kc2 Rh1 44. b5 Rxh5 45. Rxc6+ Kd7 46. Ra6) 42. Rg2 Re6 43. Rg7 Re7 44. Rg8 c5 45. Rg6+ Re6 46. bxc5+ Kd7 47. Rg7+ Kc6 48. Rxa7 Kxc5 49. Rf7 { 1-0 Black resigns. } 1-0
+
+
+[Event "American National"]
+[Site "New York, NY USA"]
+[Date "1913.01.22"]
+[Round "3"]
+[White "Jose Raul Capablanca"]
+[Black "David Janowski"]
+[Result "1-0"]
+[Variant "Standard"]
+[ECO "C48"]
+[Opening "Four Knights Game: Spanish Variation, Ranken Variation"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 61"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/u2qkNqEr"]
+[Annotator "https://lichess.org/@/links_147"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. O-O Bg4 7. h3 Bh5 8. Qe2 Bd6 9. d3 Qe7 10. Nd1 O-O-O 11. Ne3 Bg6 12. Nh4 Rhg8 13. Nef5 Qe6 14. f4 Bxf5 15. Nxf5 exf4 16. Bxf4 Bc5+ 17. Be3 Bf8 18. Qf2 Rd7 19. Bc5 Bxc5 20. Qxc5 Kb8 21. Rf2 Ne8 22. Raf1 f6 23. b3 Nd6 24. Rf4 Nxf5 25. Qxf5 Qxf5 26. Rxf5 Re8 27. g4 { [%cal Gg4g5] } 27... b6 28. b4 Kb7 29. Kf2 b5 { [%cal Ga6a5] } 30. a4 Rd4 31. Rb1 Re5 32. Ke3 Rd7 33. a5 Re6 (33... Rxf5 34. gxf5) 34. Rbf1 Rde7 35. g5 fxg5 36. Rxg5 Rh6 37. Rg3 Rhe6 38. h4 g6 39. Rg5 h6 (39... Re5 40. Rf8 Re8 41. Rxe5) 40. Rg4 Rg7 41. d4 Kb8 42. Rf8+ Kb7 43. e5 g5 44. Ke4 Ree7 45. hxg5 hxg5 46. Rf5 Kc8 47. Rgxg5 Rh7 48. Rh5 Kd7 49. Rxh7 Rxh7 50. Rf8 Rh4+ 51. Kd3 Rh3+ 52. Kd2 c5 53. bxc5 Ra3 54. d5 { 1-0 Black resigns. } 1-0
+
+
+[Event "Lasker - Marshall World Championship Match"]
+[Site "USA"]
+[Date "1907.01.26"]
+[Round "1"]
+[White "Frank James Marshall"]
+[Black "Emanuel Lasker"]
+[Result "0-1"]
+[Variant "Standard"]
+[ECO "C65"]
+[Opening "Ruy Lopez: Berlin Defense, Nyholm Attack"]
+[StudyName "Capablanca Chess Fundimentals Part 1"]
+[ChapterName "Example 62"]
+[ChapterURL "https://lichess.org/study/uL7pPw98/LXm0sKJK"]
+[Annotator "https://lichess.org/@/links_147"]
+[Orientation "white"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d4 exd4 5. O-O Be7 6. e5 Ne4 7. Nxd4 O-O 8. Nf5 d5 9. Bxc6 bxc6 10. Nxe7+ Qxe7 11. Re1 Qh4 12. Be3 f6 13. f3 fxe5 14. fxe4 d4 15. g3 Qf6 16. Bxd4 exd4 17. Rf1 Qxf1+ 18. Qxf1 Rxf1+ 19. Kxf1 Rb8 20. b3 Rb5 21. c4 Rh5 22. Kg1 c5 23. Nd2 Kf7 24. Rf1+ Ke7 25. a3 Rh6 26. h4 Ra6 27. Ra1 Bg4 28. Kf2 Ke6 29. a4 (29. Nf3 Bxf3 30. Kxf3 Ke5 31. Ke2 { [%cal Re5e4,Ga6f6] }) 29... Ke5 30. Kg2 Rf6 31. Re1 d3 32. Rf1 Kd4 33. Rxf6 gxf6 34. Kf2 c6 35. a5 a6 36. Nb1 Kxe4 37. Ke1 Be2 38. Nd2+ Ke3 39. Nb1 f5 40. Nd2 h5 41. Nb1 Kf3 42. Nc3 Kxg3 43. Na4 f4 44. Nxc5 f3 45. Ne4+ Kf4 46. Nd6 c5 47. b4 cxb4 48. c5 b3 49. Nc4 Kg3 50. Ne3 b2 { 0-1 White resigns. } 0-1
+
+

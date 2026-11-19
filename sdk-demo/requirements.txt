@@ -1,0 +1,7 @@
+-r ../requirements.txt
+codebuddy-agent-sdk==0.3.303
+beautifulsoup4
+Pillow
+numpy
+onnxruntime
+av

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>象棋教练 · 国际象棋练习与复盘</title>
+<link rel="stylesheet" href="/static/styles.css?v=20261116-workbuddy" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" id="brand">
+    <span class="brand-mark">♞</span>
+    <span class="brand-text">棋课</span>
+    <span class="brand-sub">题库 · 复盘</span>
+  </div>
+  <nav class="nav" id="nav">
+    <a href="#/home" data-nav="home">首页</a>
+    <a href="#/learning" data-nav="learning">学习助手</a>
+    <a href="#/coach" data-nav="coach">AI 推荐</a>
+    <a href="#/courses" data-nav="courses">教程</a>
+    <a href="#/library" data-nav="library">题库</a>
+    <a href="#/review" data-nav="review">复盘</a>
+    <a href="#/favorites" data-nav="favorites">我的收藏</a>
+    <a href="#/settings" data-nav="settings">设置</a>
+  </nav>
+  <div class="who" id="who"></div>
+</header>
+
+<main id="app" class="app"></main>
+
+<footer class="foot">
+  <span>题库：Lichess Puzzle Database（CC0）· 讲解为本项目原创</span>
+  <span id="dbinfo"></span>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="/static/vendor/chess.min.js"></script>
+<script src="/static/js/board.js"></script>
+<script src="/static/js/app.js?v=20261118-fundamentals"></script>
+</body>
+</html>
+

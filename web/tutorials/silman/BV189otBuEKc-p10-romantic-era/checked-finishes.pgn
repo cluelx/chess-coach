@@ -1,0 +1,23 @@
+[Event "Blackburne vs NN: opening the a-file"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=10&t=546"]
+[Date "1863.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "1-0"]
+[FEN "r3B2r/pQ6/1Bp2p1p/k3q3/1b2P3/2N5/P5PP/6K1 b - - 0 23"]
+[SetUp "1"]
+
+23... axb6 24. Qxa8# 1-0
+
+[Event "Napoleon vs The Turk: four pieces attack"]
+[Site "https://www.bilibili.com/video/BV189otBuEKc/?p=10&t=1958"]
+[Date "1809.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[FEN "r3k2r/ppp2ppp/3p4/2b1p3/3nP2q/PB4Pn/1PPP1P1K/RNB1QR2 b - - 0 13"]
+[SetUp "1"]
+
+13... Nf3+ 14. Kg2 Nf4+ 15. Kxf3 Qh5+ 16. g4 Qh3# 0-1

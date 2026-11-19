@@ -1,0 +1,170 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>棋局教练</title>
+<style>
+body{font:16px system-ui;margin:2rem;background:#17212b;color:#edf2f6}main{display:grid;grid-template-columns:minmax(320px,520px) 1fr;gap:2rem}button,select,textarea{font:inherit;margin:.25rem;padding:.4rem}textarea{width:95%;box-sizing:border-box}#board{touch-action:none;cursor:pointer}#board svg{display:block;width:100%;height:auto}#moves button{font-size:.85em}button.active{background:#f9cc66}pre{white-space:pre-wrap}section{min-width:0}#tree{max-height:240px;overflow:auto}p{line-height:1.55}
+</style><h1>棋局教练</h1><main><section>
+<div id="board"></div><button id="back">上一步</button><button id="next">下一步</button><button id="root">回到起点</button><button id="flip">翻转</button>
+<div id="moves"></div></section><section>
+<textarea id="input" rows="3" placeholder="粘贴 PGN 或 FEN"></textarea><input id="file" type="file" accept=".pgn,.txt"><button id="pgn">导入 PGN</button><button id="fen">导入 FEN</button><select id="game"></select>
+<div id="tree"></div><pre id="comment"></pre>
+<button id="analyze">分析当前局面</button><button id="last">讲解上一手</button>
+<p id="status" role="status"></p><div id="report"></div>
+<button id="scan">讲解整盘棋</button><button id="hint">给我提示</button><button id="cancel">取消等待</button>
+<textarea id="question" rows="2" maxlength="1200" placeholder="例如：为什么不能吃这个兵？"></textarea><button id="ask">追问</button>
+<div id="chat"></div>
+</section></main>
+<script>
+const el=id=>document.getElementById(id);
+const initial={title:"起始局面",root:{fen:"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",move:"起始局面",children:[]}};
+let games=[initial], index=0, node=initial.root, flipped=false, legal={}, selected=null, renderId=0, analysisId=0;
+const parents=new WeakMap();
+try {const saved=JSON.parse(localStorage.getItem("coach-games"));if(saved?.length) games=saved;}catch{}
+function save(){localStorage.setItem("coach-games",JSON.stringify(games));}
+async function api(path,data){
+ const response=await fetch(path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+ const result=await response.json(); if(!response.ok) throw Error(result.error); return result;
+}
+function message(s){el("status").textContent=s;}
+function button(target,label,fn){const b=document.createElement("button");b.textContent=label;b.onclick=fn;target.append(b);return b;}
+async function show(target){
+ node=target;selected=null;legal={};const ticket=++renderId;
+ el("tree").replaceChildren();
+ function tree(n,p,depth){
+  if(p)parents.set(n,p);
+  const row=document.createElement("div");row.style.paddingLeft=Math.min(depth,10)*8+"px";
+  button(row,n.move,()=>run(()=>show(n))).classList.toggle("active",n===node);
+  el("tree").append(row);
+  n.children.forEach((c,i)=>tree(c,n,depth+(i>0?1:0)));
+ }
+ tree(games[index].root,null,0);
+ el("comment").textContent=node.comment||"";
+ el("last").disabled=!parents.has(node);
+ const result=await api("/board",{fen:node.fen,flip:flipped,last:node.uci});
+ if(ticket!==renderId)return;
+ el("board").innerHTML=result.svg;legal=result.moves;
+ el("moves").replaceChildren();
+ Object.entries(legal).forEach(([uci,san])=>button(el("moves"),san,()=>run(()=>play(uci))));
+}
+async function play(uci){
+ const from=node;
+ let child=from.children.find(n=>n.move===legal[uci]);
+ if(!child){child=await api("/move",{fen:from.fen,move:uci});child.uci=uci;from.children.push(child);save();}
+ if(node===from)await show(child);
+}
+function square(e){
+ const r=el("board").getBoundingClientRect();
+ let x=Math.floor((e.clientX-r.left)*8/r.width), y=Math.floor((e.clientY-r.top)*8/r.height);
+ if(x<0||x>7||y<0||y>7)return null;
+ return "abcdefgh"[flipped?7-x:x]+(flipped?y+1:8-y);
+}
+function moveBetween(a,b){
+ const options=Object.keys(legal).filter(u=>u.slice(0,4)===a+b);
+ if(options.length===1)run(()=>play(options[0]));
+ else if(options.length>1)message("请选择下方带升变棋子名称的走法。");
+ return options.length>0;
+}
+let drag;
+el("board").onpointerdown=e=>{drag=square(e);el("board").setPointerCapture(e.pointerId);};
+el("board").onpointerup=e=>{
+ const end=square(e);
+ if(!end||!drag)return;
+ if(end!==drag){moveBetween(drag,end);selected=null;}
+ else if(selected&&selected!==end&&moveBetween(selected,end))selected=null;
+ else selected=end;
+};
+function historyOf(target){
+ const moves=[];
+ while(parents.has(target)){moves.unshift(target.move);target=parents.get(target);}
+ return {start:target.fen,history:moves};
+}
+let pending;
+function begin(){
+ pending?.abort();
+ pending=new AbortController();
+ return pending;
+}
+async function request(path,data,controller){
+ const response=await fetch(path,{method:"POST",signal:controller.signal,
+  headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+ const result=await response.json();
+ if(!response.ok)throw Error(result.error);
+ return result;
+}
+function follow(base,steps){
+ for(const step of steps){
+  let child=base.children.find(n=>n.move===step.san);
+  if(!child){child={fen:step.fen,move:step.san,uci:step.uci,children:[]};base.children.push(child);}
+  base=child;
+ }
+ save();return base;
+}
+function lineButtons(panel,base,lines){
+ for(const line of lines){
+  const row=document.createElement("p");
+  row.textContent=(line.actual?"所比较的走法 · ":"")+line.score+" ";
+  line.steps.forEach((step,i)=>button(row,step.san,()=>run(()=>show(follow(base,line.steps.slice(0,i+1))))));
+  panel.append(row);
+ }
+}
+async function coach(mode){
+ const game=games[index], target=node, controller=begin(), ticket=++analysisId;
+ const question=el("question").value.trim();
+ if(mode==="ask"&&!question){message("请输入问题。");return;}
+ message(mode==="hint"?"正在准备提示…":"正在获取局面证据和讲解…");
+ const result=await request("/coach",{...historyOf(target),mode,question,
+  context:(game.chat||[]).filter(item=>JSON.stringify(item.history)===JSON.stringify(historyOf(target).history)).map(item=>item.question)},controller);
+ if(ticket!==analysisId||game!==games[index])return;
+ const base=result.anchor?follow(game.root,result.anchor):target;
+ const panel=el("report");panel.replaceChildren();
+ const paragraph=document.createElement("pre");
+ paragraph.textContent=result.text;
+ panel.append(paragraph);
+ button(panel,"查看讲解起点",()=>run(()=>show(base)));
+ lineButtons(panel,base,result.lines);
+ game.chat=[...(game.chat||[]),{question:mode==="ask"?question:({last:"讲解上一手",hint:"提示",current:"分析局面"})[mode],
+  text:result.text,history:historyOf(target).history}].slice(-40);
+ save();showChat();
+ message(result.notice||"讲解完成。");
+}
+function showChat(){
+ el("chat").replaceChildren();
+ for(const item of (games[index].chat||[])){
+  const row=document.createElement("details"), title=document.createElement("summary"), body=document.createElement("p");
+  title.textContent=(item.history.join(" ")||"起始局面")+" · "+item.question;
+  body.textContent=item.text;row.append(title,body);el("chat").append(row);
+ }
+}
+async function scan(){
+ const game=games[index], controller=begin(), ticket=++analysisId, nodes=[game.root];
+ while(nodes.at(-1).children[0]?.original)nodes.push(nodes.at(-1).children[0]);
+ if(nodes.length<2){message("请先导入完整 PGN。");return;}
+ message("正在扫描原谱并复核转折点…");
+ const points=await request("/scan",{...historyOf(nodes.at(-1))},controller);
+ if(ticket!==analysisId||game!==games[index])return;
+ const panel=el("report");panel.replaceChildren();
+ for(const point of points){
+  button(panel,"第 "+point.ply+" 半回合 · "+point.move,()=>run(()=>show(nodes[point.ply])));
+  const lesson=document.createElement("p");lesson.textContent=point.lesson;panel.append(lesson);
+  lineButtons(panel,nodes[point.ply-1],point.lines);
+ }
+ message(points.length?"已列出候选转折点。点击走法查看，再用「讲解上一手」深入分析。":"浅层扫描没有找到达到阈值的转折点。");
+}
+async function run(fn){try{await fn();}catch(e){if(e.name!=="AbortError")message(e.message);}}
+function menu(){el("game").replaceChildren(...games.map((g,i)=>new Option(g.title,i)));el("game").value=index;showChat();}
+async function load(kind){games=await api("/import",{kind,text:el("input").value});index=0;++analysisId;el("report").replaceChildren();menu();save();await show(games[0].root);message("导入成功。");}
+el("file").onchange=()=>run(async()=>{const file=el("file").files[0];if(file){el("input").value=await file.text();await load("pgn");}});
+for(const kind of ["pgn","fen"])el(kind).onclick=()=>run(()=>load(kind));
+el("game").onchange=()=>run(()=>{index=+el("game").value;++analysisId;pending?.abort();el("report").replaceChildren();showChat();return show(games[index].root);});
+el("back").onclick=()=>run(()=>show(parents.get(node)||node));
+el("next").onclick=()=>run(()=>show(node.children[0]||node));
+el("root").onclick=()=>run(()=>show(games[index].root));
+el("flip").onclick=()=>run(()=>{flipped=!flipped;return show(node);});
+el("analyze").onclick=()=>run(()=>coach("current"));
+el("last").onclick=()=>run(()=>coach("last"));
+el("ask").onclick=()=>run(()=>coach("ask"));
+el("hint").onclick=()=>run(()=>coach("hint"));
+el("scan").onclick=()=>run(scan);
+el("cancel").onclick=()=>{++analysisId;pending?.abort();message("已取消等待。");};
+menu();run(()=>show(games[0].root));
+</script></html>
+
+

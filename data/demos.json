@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-11-12 14:11:28",
+  "source": "Lichess Puzzle Database (https://database.lichess.org/#puzzles), CC0",
+  "lessons": {
+    "l1-2": {
+      "theme": "mateIn1",
+      "puzzle_id": "2OZ3G",
+      "rating": 787,
+      "themes": [
+        "arabianMate",
+        "endgame",
+        "mate",
+        "mateIn1",
+        "oneMove"
+      ],
+      "moves": [
+        "e8f8",
+        "a7h7"
+      ],
+      "plies": 1,
+      "mate": true,
+      "url": "https://lichess.org/training/2OZ3G",
+      "kp_ids": [
+        "k02",
+        "k03"
+      ]
+    },
+    "l1-4": {
+      "theme": "hangingPiece",
+      "puzzle_id": "0I4Wr",
+      "rating": 786,
+      "themes": [
+        "backRankMate",
+        "hangingPiece",
+        "mate",
+        "mateIn2",
+        "middlegame"
+      ],
+      "moves": [
+        "b6c4",
+        "a6c8",
+        "d6d8",
+        "c8d8"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/0I4Wr",
+      "kp_ids": [
+        "k08"
+      ]
+    },
+    "l1-5": {
+      "theme": "fork",
+      "puzzle_id": "01czg",
+      "rating": 791,
+      "themes": [
+        "backRankMate",
+        "fork",
+        "mate",
+        "mateIn2",
+        "middlegame"
+      ],
+      "moves": [
+        "b1b2",
+        "a3a1",
+        "b2b1",
+        "a1b1"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/01czg",
+      "kp_ids": [
+        "k06"
+      ]
+    },
+    "l1-6": {
+      "theme": "pin",
+      "puzzle_id": "02J2r",
+      "rating": 755,
+      "themes": [
+        "endgame",
+        "mate",
+        "mateIn2",
+        "pin"
+      ],
+      "moves": [
+        "f8f7",
+        "d1d8",
+        "c6e8",
+        "d8e8"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/02J2r",
+      "kp_ids": [
+        "k07"
+      ]
+    },
+    "l2-1": {
+      "theme": "discoveredCheck",
+      "puzzle_id": "0b1PI",
+      "rating": 1286,
+      "themes": [
+        "discoveredAttack",
+        "discoveredCheck",
+        "mate",
+        "mateIn2",
+        "middlegame"
+      ],
+      "moves": [
+        "e3e2",
+        "h7f6",
+        "g7h6",
+        "h2h6"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/0b1PI",
+      "kp_ids": [
+        "k11"
+      ]
+    },
+    "l2-2": {
+      "theme": "capturingDefender",
+      "puzzle_id": "0W9ml",
+      "rating": 1422,
+      "themes": [
+        "capturingDefender",
+        "mate",
+        "mateIn2",
+        "middlegame"
+      ],
+      "moves": [
+        "a8c8",
+        "d5f6",
+        "g7f6",
+        "b7d7"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/0W9ml",
+      "kp_ids": [
+        "k12"
+      ]
+    },
+    "l2-3": {
+      "theme": "attraction",
+      "puzzle_id": "0DukA",
+      "rating": 1310,
+      "themes": [
+        "attraction",
+        "deflection",
+        "endgame",
+        "mate",
+        "mateIn2",
+        "rookEndgame"
+      ],
+      "moves": [
+        "f3f1",
+        "h8h1",
+        "g1h1",
+        "d1f1"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/0DukA",
+      "kp_ids": [
+        "k13"
+      ]
+    },
+    "l2-4": {
+      "theme": "backRankMate",
+      "puzzle_id": "0hcSy",
+      "rating": 1289,
+      "themes": [
+        "backRankMate",
+        "endgame",
+        "mate",
+        "mateIn2"
+      ],
+      "moves": [
+        "f5f7",
+        "d3f1",
+        "f7f1",
+        "f8f1"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/0hcSy",
+      "kp_ids": [
+        "k10"
+      ]
+    },
+    "l2-5": {
+      "theme": "intermezzo",
+      "puzzle_id": "0SjJQ",
+      "rating": 1285,
+      "themes": [
+        "endgame",
+        "intermezzo",
+        "mate",
+        "mateIn2"
+      ],
+      "moves": [
+        "f2g3",
+        "e2g2",
+        "g1h1",
+        "h5g3"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/0SjJQ",
+      "kp_ids": [
+        "k14"
+      ]
+    },
+    "l3-1": {
+      "theme": "smotheredMate",
+      "puzzle_id": "6qt4L",
+      "rating": 1825,
+      "themes": [
+        "mate",
+        "mateIn2",
+        "middlegame",
+        "smotheredMate"
+      ],
+      "moves": [
+        "d7d6",
+        "d5g8",
+        "f8g8",
+        "e5f7"
+      ],
+      "plies": 3,
+      "mate": true,
+      "url": "https://lichess.org/training/6qt4L",
+      "kp_ids": [
+        "k19"
+      ]
+    },
+    "l3-6": {
+      "theme": "mateIn3",
+      "puzzle_id": "0Hk7S",
+      "rating": 1825,
+      "themes": [
+        "mate",
+        "mateIn3",
+        "middlegame"
+      ],
+      "moves": [
+        "h7h6",
+        "h1h6",
+        "g7h6",
+        "d6e5",
+        "f7f6",
+        "e5f6"
+      ],
+      "plies": 5,
+      "mate": true,
+      "url": "https://lichess.org/training/0Hk7S",
+      "kp_ids": [
+        "k25"
+      ]
+    }
+  }
+}
