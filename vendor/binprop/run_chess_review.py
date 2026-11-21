@@ -23,6 +23,18 @@ def _confirmed(values, start_limit, followup, terminal):
     return starts, pending
 
 
+def select_fallback(candidates):
+    """Choose one tier globally; never mix fallback concepts into a higher tier."""
+    ordered = sorted(candidates, key=lambda item: item[:3], reverse=True)
+    for tier, flag in (("strict", "strict_qualified"),
+                       ("branch_gap", "gap_qualified"),
+                       ("mainline", "main_difference")):
+        selected = [dict(item[3], tier=tier) for item in ordered if item[3][flag]]
+        if selected:
+            return tier, selected
+    return None, []
+
+
 def main():
     data = json.load(sys.stdin)
     groups = data["groups"]
@@ -47,6 +59,11 @@ def main():
                 line.append(unique[key])
             indexes[side].append(line)
 
+    before_index = None
+    if data.get("before_fen"):
+        before_index = len(positions)
+        positions.append(position_from_dict({"fen": data["before_fen"], "color": "white" if data["before_fen"].split()[1] == "w" else "black"}, "chess"))
+    before = {}
     motifs = []
     evaluated = 0
     for motif in library.motifs if positions else ():
@@ -55,6 +72,8 @@ def main():
         except Exception:
             continue
         evaluated += 1
+        if before_index is not None:
+            before[motif.name] = bool(values[before_index])
         verdicts = {}
         for side, lines in indexes.items():
             verdicts[side] = []
@@ -65,25 +84,30 @@ def main():
                 verdicts[side].append((bool(rounds), pending))
                 if pending:
                     pending_rows[side].add(i)
-                if rounds:
-                    events[side][i].append({"name": motif.name, "rounds": rounds})
+                true_rounds = [r + 1 for r, index in enumerate(line) if values[index]]
+                if true_rounds:
+                    events[side][i].append({"name": motif.name, "rounds": rounds, "true_rounds": true_rounds})
 
         positives, negatives = verdicts["positive"], verdicts["negative"]
         hits = [i for i, (hit, _) in enumerate(positives) if hit]
         missed = sum(hit for hit, _ in negatives)
         unknown = sum(pending and not hit for hit, pending in negatives)
-        if (negatives and len(hits) >= 2 and len(hits) * 2 >= len(positives)
-                and (missed + unknown) * 4 <= len(negatives)):
-            main = verdicts.get("main", [])
-            main_difference = len(main) == 2 and main[0][0] and not any(main[1])
-            contrast = len(hits) / len(positives) - (missed + unknown) / len(negatives)
+        strict = (bool(negatives) and len(hits) >= 2 and len(hits) * 2 >= len(positives)
+                  and (missed + unknown) * 4 <= len(negatives))
+        main = verdicts.get("main", [])
+        main_difference = len(main) == 2 and main[0][0] and not any(main[1])
+        gap = bool(negatives) and len(hits) - missed >= 2
+        if strict or main_difference or gap:
+            contrast = (len(hits) / len(positives) if positives else 0) - (
+                (missed + unknown) / len(negatives) if negatives else 0)
             motifs.append((main_difference, contrast, motif.delta, {
                 "name": motif.name, "positive_indices": hits, "negative_hits": missed,
-                "main_difference": main_difference,
+                "negative_pending": unknown, "main_difference": main_difference,
+                "strict_qualified": strict, "gap_qualified": gap,
             }))
 
-    motifs.sort(key=lambda item: item[:3], reverse=True)
-    print(json.dumps({"evaluated": evaluated, "motifs": [item[3] for item in motifs[:3]], "events": events,
+    tier, selected = select_fallback(motifs)
+    print(json.dumps({"evaluated": evaluated, "before": before, "tier": tier, "motifs": selected, "events": events,
                       "pending": {side: sorted(rows) for side, rows in pending_rows.items()}}))
 
 

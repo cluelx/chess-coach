@@ -338,6 +338,33 @@ def explain_move(body: MoveExplanationIn):
         raise HTTPException(400, "局面或走法非法，且两手走法必须不同") from exc
 
 
+class PositionDecodeIn(BranchIn):
+    candidate: str | None = Field(default=None, max_length=16)
+
+
+@app.post("/api/analysis/decode-position")
+def decode_position(body: PositionDecodeIn):
+    try:
+        return move_explanation.explain_position(
+            body.initial, body.history, body.candidate, body.depth
+        )
+    except ValueError as exc:
+        raise HTTPException(400, "局面、棋步历史或候选着非法") from exc
+
+
+class StaticFeaturesIn(BaseModel):
+    fen: str = Field(max_length=120)
+
+
+@app.post("/api/static-features")
+def static_review_features(body: StaticFeaturesIn):
+    from .review_features import inspect_static
+    try:
+        return inspect_static(body.fen)
+    except ValueError as exc:
+        raise HTTPException(400, str(exc)) from exc
+
+
 class SimilarIn(BaseModel):
     fen: str = Field(max_length=120)
     uci: str = Field(max_length=5)

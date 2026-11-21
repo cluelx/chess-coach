@@ -179,9 +179,9 @@ def best_move(fen: str, per_move: float = 0.2) -> dict | None:
     return rows[0] if rows else None
 
 
-CONCEPT_START_ROUNDS = 10
+CONCEPT_START_ROUNDS = 7
 CONCEPT_FOLLOWUP_ROUNDS = 3
-CONCEPT_MAX_ROUNDS = 12
+CONCEPT_MAX_ROUNDS = 10
 
 
 # Both review explanations and the board button use the same main-line search.
@@ -260,7 +260,7 @@ def _review_row(root, path):
 def comparison_positions(fen: str, recommended: str, played: str, *,
                          initial: str | None = None, history: list[str] | None = None,
                          depth: int = REVIEW_REPLY_DEPTH) -> dict | None:
-    """Explore up to eight opponent replies and follow our best continuation in each."""
+    """Branch on the opponent's top three replies and then their top two replies."""
     position = chess.Board(fen)
     if not position.is_valid():
         raise ValueError("局面非法")
@@ -299,27 +299,43 @@ def comparison_positions(fen: str, recommended: str, played: str, *,
                 and not best.get("lowerbound") and not best.get("upperbound")
             )
 
-            with _lock:
-                candidates = eng.analyse(
-                    start, chess.engine.Limit(depth=depth),
-                    multipv=8, game=object(),
-                )
-            opponent_moves = dict.fromkeys([
-                *replies[:1],
-                *(info["pv"][0] for info in candidates if info.get("pv")),
-            ])
-            for opponent_move in list(opponent_moves)[:8]:
-                if replies and opponent_move == replies[0]:
-                    rows.append(main)
-                    continue
+            def opponent_choices(board, count):
+                with _lock:
+                    candidates = eng.analyse(
+                        board, chess.engine.Limit(depth=depth),
+                        multipv=count, game=object(),
+                    )
+                return list(dict.fromkeys(
+                    info["pv"][0] for info in candidates if info.get("pv")
+                ))
+
+            for opponent_move in opponent_choices(start, 3):
                 prefix = [first, opponent_move]
                 response, row = _review_row(root, prefix)
-                if not row["terminal"]:
-                    info = _review_main_line(eng, response, depth)
-                    reply_count = 2 * CONCEPT_START_ROUNDS - len(prefix)
-                    tail = _review_continuation(eng, response, info, reply_count, depth)
-                    _, row = _review_row(root, [*prefix, *tail])
-                rows.append(row)
+                if row["terminal"]:
+                    rows.append(row)
+                    continue
+                own_info = _review_main_line(eng, response, depth)
+                own_pv = own_info.get("pv") or []
+                if not own_pv:
+                    rows.append(row)
+                    continue
+                prefix.append(own_pv[0])
+                second_reply, row = _review_row(root, prefix)
+                if row["terminal"]:
+                    rows.append(row)
+                    continue
+                for second_opponent_move in opponent_choices(second_reply, 2):
+                    path = [*prefix, second_opponent_move]
+                    probe, row = _review_row(root, path)
+                    if not row["terminal"]:
+                        info = _review_main_line(eng, probe, depth)
+                        tail = _review_continuation(
+                            eng, probe, info,
+                            2 * CONCEPT_START_ROUNDS - len(path), depth,
+                        )
+                        _, row = _review_row(root, [*path, *tail])
+                    rows.append(row)
     except (chess.engine.EngineError, TimeoutError):
         _reset()
         return None

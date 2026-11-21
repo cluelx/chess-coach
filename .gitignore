@@ -4,8 +4,11 @@ data/*.db-wal
 data/*.db-shm
 data/server.log
 data/logs/
+data/review-lab/
+data/benchmarks/
 data/*.log
 data/sf.zip
+backups/
 engine/
 shots/
 .tmp/

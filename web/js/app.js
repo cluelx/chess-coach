@@ -1663,6 +1663,42 @@
   let rvCloser = null;
 
   /** 把 SAN 数组展开成可逐手回放的步骤（每步都存 FEN，切步只换局面）。 */
+  function openStaticVisualization(fen) {
+    const dialog = el("dialog", "card");
+    dialog.style.cssText = "width:min(1100px,95vw);height:90vh;padding:12px";
+    const close = label("button", "btn sm", "关闭可视化");
+    const frame = document.createElement("iframe");
+    frame.title = "双方静态特征可视化";
+    frame.src = "/static/review-lab/index.html?featureFen=" + encodeURIComponent(fen);
+    frame.style.cssText = "width:100%;height:calc(100% - 45px);border:0";
+    close.onclick = () => dialog.close();
+    dialog.append(close, frame);document.body.append(dialog);
+    dialog.addEventListener('close',()=>dialog.remove());dialog.showModal();
+  }
+
+  async function renderConceptVisualization(host, board, fen, concepts) {
+    if (board._reviewEvidenceDispose) board._reviewEvidenceDispose();
+    host.replaceChildren(label("p", "muted", "正在读取概念的完整可视化证据…"));
+    if (!concepts.length) { host.replaceChildren(label("p", "muted", "当前变化没有最终展示的概念。")); return; }
+    const requestToken = {};
+    host._evidenceRequest = requestToken;
+    try {
+      const payload = await apiPost("/api/static-features", {fen});
+      if (!host.isConnected || board.fen !== fen || host._evidenceRequest !== requestToken) return;
+      host.innerHTML = "<div data-evidence=\"evidence-panel\"><div class=\"section-head\"><h2>静态特征可视化</h2><button data-evidence=\"feature-show\">显示</button></div>\n<p class=\"muted\">21项静态概念已接入；8、14、17、18、23、24、25、28、30尚未可视化。蓝圈表示白方项目，橙框表示黑方项目；项目所属视角不等于格上棋子的颜色。总判定未成立时仍可检查静态诊断。</p>\n<div class=\"evidence-controls\"><label>概念<select data-evidence=\"feature-rule\"></select></label><label>标记双方<select data-evidence=\"feature-side\"><option value=\"both\">双方</option><option value=\"white\">只看白方项目</option><option value=\"black\">只看黑方项目</option></select></label><label>标记类别<select data-evidence=\"feature-type\"><option value=\"all\">全部类别</option></select></label><label class=\"feature-checkbox\"><input type=\"checkbox\" data-evidence=\"feature-aux\">包含背景/正常项目</label></div>\n<p data-evidence=\"feature-status\" role=\"status\"></p><p data-evidence=\"feature-scores\"></p>\n<div class=\"evidence-tabs\"><button data-evidence=\"feature-show-all\" class=\"secondary\">标记全部目标</button><button data-evidence=\"feature-show-relations\" class=\"secondary\">同时显示攻防关系</button></div>\n<p class=\"muted\">实线为攻击/控制，虚线为同方保护。点击下方项目可单独显示坐标、关系和计分依据；点击棋盘格可检查该格关联项目。特征分采用各规则自己的单位。</p>\n<p data-evidence=\"feature-square-info\" aria-live=\"polite\"></p><div data-evidence=\"feature-items\"></div><div data-evidence=\"feature-detail\"></div>\n<details><summary>固定格式返回信息（测试打印）</summary><pre data-evidence=\"feature-text\"></pre></details>\n<details><summary>原始返回JSON（测试打印）</summary><label class=\"feature-checkbox\"><input type=\"checkbox\" data-evidence=\"feature-print-all\">打印全部返回概念数据</label><pre data-evidence=\"feature-raw\"></pre></details>\n<p data-evidence=\"feature-board-status\" aria-live=\"polite\"></p></div>";
+      const names = concepts.map(c=>c.name);
+      const labels = new Map(concepts.map(c=>[c.name,c.text]));
+      const evidence = createReviewEvidence(host, {allowedNames:names, payload});
+      evidence.init(board, payload.rules, name=>labels.get(name)||name, null);
+      const dispose = () => { evidence.dispose(); if(board._reviewEvidenceDispose === dispose) board._reviewEvidenceDispose=null; };
+      board._reviewEvidenceDispose = dispose;
+      const clear = label("button", "btn sm", "退出可视化，恢复走棋");
+      clear.onclick = () => { dispose(); host.replaceChildren(); };
+      host.prepend(clear);
+      await evidence.update(fen, board.orientation, "当前概念证据局面");
+    } catch (e) { if(host.isConnected && host._evidenceRequest === requestToken) host.replaceChildren(label("p", "muted", e.message || "可视化读取失败，请重试。")); }
+  }
+
   function lineSteps(fen, sans) {
     const steps = [{ fen, last: null, token: "" }];
     let chess;
@@ -1775,6 +1811,9 @@
       const steps = stepsFor(lineIdx);
       idx = Math.max(0, Math.min(steps.length - 1, idx));
       const st = steps[idx];
+      if (board._reviewEvidenceDispose) board._reviewEvidenceDispose();
+      if (typeof visualization !== "undefined") visualization.replaceChildren();
+      board.setMarks([]);
       board.setFen(st.fen);
       board.setLastMove(st.last ? st.last.from : null, st.last ? st.last.to : null);
       if (lines[lineIdx].showArrow && st.last) board.setArrow(st.last.from, st.last.to, "green");
@@ -1785,7 +1824,9 @@
       sanRow.innerHTML = "";
       steps.forEach((s, i) => {
         if (i === 0) return;
-        const tok = el("button", "san" + (i === idx ? " on" : ""), s.token);
+        const marks = lines[lineIdx].conceptMarks?.[i] || [];
+        const tok = el("button", "san" + (i === idx ? " on" : ""), s.token + (marks.length ? " ◆" : ""));
+        if (marks.length) { tok.title = marks.join("；"); tok.classList.add("concept-true"); }
         tok.type = "button";
         tok.style.cssText = "font:inherit;border:0;background:transparent;padding:2px 6px;border-radius:6px;cursor:pointer;white-space:nowrap;"
           + (i === idx ? "background:#1d1f1c;color:#fff" : "color:#4a4d47");
@@ -1830,7 +1871,12 @@
       };
       foot.appendChild(btn);
     }
-    foot.appendChild(label("span", "muted", "方向键翻步 · Esc 关闭"));
+    const visualization = el("div", "concept-visualization");
+    card.append(visualization);
+    const visualize = label("button", "btn sm", "可视化当前展示概念");
+    visualize.onclick = () => renderConceptVisualization(visualization, board, stepsFor(lineIdx)[idx].fen, lines[lineIdx].concepts || []);
+    foot.append(visualize);
+    foot.appendChild(label("span", "muted", "红色着法：当前概念连续验证通过的起点 n · 方向键翻步 · Esc 关闭"));
 
     function onKey(e) {
       if (e.key === "Escape") { e.preventDefault(); close(); return; }
@@ -1842,6 +1888,7 @@
     function close() {
       if (closed) return;
       closed = true;
+      if (board._reviewEvidenceDispose) board._reviewEvidenceDispose();
       stopPlay();
       document.removeEventListener("keydown", onKey);
       overlay.remove();
@@ -2135,6 +2182,105 @@
     return (cp > 0 ? "+" : "") + (cp / 100).toFixed(1);
   }
 
+  function confirmedConceptStartMarks(rows, names) {
+    const first = new Map();
+    for (const row of rows) for (const concept of row.concepts || []) {
+      if (!names.includes(concept.text)) continue;
+      for (const round of concept.rounds || []) {
+        if (Number.isInteger(round) && round > 0 && (!first.has(concept.text) || round < first.get(concept.text)))
+          first.set(concept.text, round);
+      }
+    }
+    const marks = {};
+    for (const [text, round] of first) (marks[round * 2] ||= []).push(text);
+    return marks;
+  }
+
+  function renderDecodeTree(turn, groups, openLines, selectedConcepts = new Set()) {
+    const root = { children: new Map(), notes: new Map(), lines: new Set() };
+    const inputs = [
+      ["推荐着主变化", (groups.main || []).slice(0, 1)],
+      ["实战着主变化", (groups.main || []).slice(1)],
+      ["推荐着分支", groups.positive || []],
+      ["实战着分支", groups.negative || []],
+    ];
+    for (const [title, rows] of inputs) {
+      rows.forEach((row, index) => {
+        const line = {
+          label: rows.length === 1 ? title : `${title} ${index + 1}`,
+          san: row.san, showArrow: true,
+        };
+        const path = [root];
+        let node = root;
+        for (const step of lineSteps(turn.fen, row.san).slice(1)) {
+          if (!node.children.has(step.token)) {
+            node.children.set(step.token, {
+              token: step.token, children: new Map(), notes: new Map(), lines: new Set(),
+              line, ply: path.length,
+            });
+          }
+          node = node.children.get(step.token);
+          node.lines.add(line);
+          path.push(node);
+        }
+        function annotate(ply, text) {
+          const target = path[ply];
+          if (!target) return;
+          if (!target.notes.has(text)) target.notes.set(text, []);
+          target.notes.get(text).push({ line, ply });
+        }
+        for (const event of row.events || []) {
+          const side = event.side === "white" ? "白方" : "黑方";
+          const effect = {
+            check: "将军", mate: "将死",
+            capture_gain: `吃${event.target}，净赚 ${event.gain} 子力（后续 3 回合已确认）`,
+          }[event.kind];
+          if (effect) annotate(event.ply, side + effect);
+        }
+        for (const concept of row.concepts || []) {
+          for (const round of (concept.rounds || []).slice(0, 1)) {
+            annotate(round * 2, concept.text + "（连续验证通过的起点）");
+          }
+        }
+      });
+    }
+
+    const trace = el("details", "explanation-concept decode-tree");
+    trace.open = true;
+    trace.append(label("summary", "", "逐回合事件与概念"));
+    const start = el("div", "decode-tree-root");
+    start.append(label("strong", "", `第 ${turn.move_no} 回合 · 行棋前局面`));
+    const reset = label("button", "btn sm", "查看起始局面");
+    reset.type = "button";
+    reset.onclick = () => {
+      const first = root.children.values().next().value;
+      if (first) openLines([first.line], 0);
+    };
+    start.append(reset);
+    trace.append(start);
+
+    const nodes = {root:{san:"起点",ply:0,parentId:null,children:[],isMainline:true}};
+    const sources = new Map();
+    function collect(parent, parentId) {
+      let index=0;
+      for(const node of parent.children.values()) {
+        const id = parentId + "/" + index;
+        nodes[parentId].children.push(id);
+        nodes[id]={san:node.token,ply:node.ply,parentId,children:[],isMainline:index===0,
+          conceptMarks:[...node.notes.keys()].filter(text=>selectedConcepts.has(text.replace(/（.*$/, "")))};
+        sources.set(id,node);
+        collect(node,id);index++;
+      }
+    }
+    collect(root,"root");
+    trace.append(VariationTree({nodes,currentNodeId:"root",onSelect(id){
+      const node=sources.get(id);
+      if(node)openLines([node.line],node.ply);
+      else {const first=root.children.values().next().value;if(first)openLines([first.line],0);}
+    }}));
+    return trace;
+  }
+
   function clampReviewDepth(value) {
     const level = Number.parseInt(value, 10);
     return Number.isFinite(level) ? Math.max(10, Math.min(19, level)) : 19;
@@ -2166,7 +2312,7 @@
 
     // ---------- 左侧：棋盘 + 步进 + 曲线 + 着法列表 ----------
     const leftCol = el("div");
-    leftCol.style.cssText = "display:grid;gap:14px";
+    leftCol.style.cssText = "display:grid;gap:14px;min-width:0;width:100%";
 
     const boardCard = el("div", "card rv-board-card");
     const topLine = el("div", "rv-eval-top");
@@ -2206,7 +2352,51 @@
     const back=label("button","btn sm","返回主线");
     const choose=el("select"); choose.setAttribute("aria-label","选择试走变化");
     const branchInfo=label("div","muted","");
-    branchBar.append(reply,undo,back,choose);
+    const exportFen = label("button", "btn sm", "导出 FEN");
+    exportFen.type = "button";
+    exportFen.onclick = () => {
+      // Snapshot the displayed board, including any user-created variation.
+      const fen = board.fen;
+      const dialog = el("dialog", "card");
+      dialog.style.cssText = "width:min(620px,calc(100% - 32px));max-height:85vh;overflow:auto";
+      dialog.setAttribute("aria-label", "导出当前棋盘 FEN");
+      const title = label("h3", "", "导出当前棋盘 FEN");
+      const field = el("textarea", "pgn");
+      field.value = fen;
+      field.readOnly = true;
+      field.style.minHeight = "85px";
+      field.setAttribute("aria-label", "当前局面完整 FEN");
+      const status = label("p", "muted", "包含行棋方、易位权、吃过路兵及回合计数。此处为打开时的局面快照。");
+      status.setAttribute("aria-live", "polite");
+      const tools = el("div", "board-tools");
+      const copy = label("button", "btn sm primary", "复制 FEN");
+      copy.onclick = async () => {
+        try {
+          await navigator.clipboard.writeText(fen);
+          status.textContent = "FEN 已复制。";
+        } catch {
+          field.focus(); field.select();
+          status.textContent = "自动复制不可用，已选中 FEN，请按 Ctrl+C 复制。";
+        }
+      };
+      const download = label("button", "btn sm", "下载 .fen");
+      download.onclick = () => {
+        const url = URL.createObjectURL(new Blob([fen + "\n"], {type:"text/plain;charset=utf-8"}));
+        const link = document.createElement("a");
+        link.href = url; link.download = "chess-position.fen";
+        dialog.append(link); link.click(); link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      };
+      const close = label("button", "btn sm", "关闭");
+      close.onclick = () => dialog.close();
+      tools.append(copy, download, close);
+      dialog.append(title, field, status, tools);
+      dialog.addEventListener("close", () => { rvModalOpen = Math.max(0, rvModalOpen - 1); dialog.remove(); }, {once:true});
+      document.body.append(dialog);
+      dialog.showModal();
+      rvModalOpen++;
+    };
+    branchBar.append(reply,undo,back,exportFen,choose);
     boardCard.insertBefore(branchBar,movelist);
     boardCard.insertBefore(branchInfo,movelist);
     const roots=new Map();
@@ -2246,6 +2436,8 @@
     function showBranch(node) {
       if(!node.parent){renderPly(cur);return;}
       branch=node;
+      if (board._reviewEvidenceDispose) board._reviewEvidenceDispose();
+      board.setMarks([]);
       board.setFen(node.fen);
       board.setLastMove(node.uci.slice(0,2),node.uci.slice(2,4));
       board.setArrows([]);
@@ -2253,6 +2445,7 @@
       evalBadge.textContent="变化盘面";
       tagBadge.textContent="";
       updateBranch();
+      renderTurn();
     }
     function addBranch(mv) {
       const parent=branch||root(), uci=mv.from+mv.to+(mv.promotion||"");
@@ -2316,6 +2509,8 @@
       cur = Math.max(0, Math.min(moves.length, ply));
       branch=null;
       updateBranch();
+      if (board._reviewEvidenceDispose) board._reviewEvidenceDispose();
+      board.setMarks([]);
       board.setFen(fenAt(cur));
 
       if (cur > 0) {
@@ -2366,6 +2561,7 @@
       else if (!opts2.keepTp) {
         document.querySelectorAll(".tp").forEach((n) => n.classList.remove("on"));
       }
+      renderTurn();
       moveCursor();
       if (res.id && cur !== savedPly) {
         savedPly = cur;
@@ -2477,6 +2673,7 @@
     // ---------- 右侧：概览 + 转折点 + 学习动作 ----------
     const s = res.stats || {};
     const rightCol = el("div", "rv-side");
+    rightCol.style.minWidth = "0";
     const sum = el("div", "rv-sum");
     sum.innerHTML = `
       <div class="s"><b>${res.plies}</b><span>半回合</span></div>
@@ -2487,38 +2684,38 @@
       <div class="s"><b>${res.engine && res.engine.used ? "引擎" : "规则"}</b><span>分析来源</span></div>`;
     rightCol.appendChild(sum);
 
-    if (!tps.length) {
-      rightCol.appendChild(el("div", "empty", "这盘棋没有找到明显的转折点。可能是对手太弱，也可能你走得确实干净。"));
-    } else {
-      const listHead = el("div");
-      listHead.innerHTML = `<h2 style="margin:4px 0 2px">转折点</h2>
-        <p class="muted" style="margin:0 0 10px">点任意一条，棋盘会跳到那一步，并用箭头标出实际走法与更优走法。</p>`;
-      rightCol.appendChild(listHead);
-
-      const list = el("div");
-      list.style.cssText = "display:grid;gap:10px";
-      tps.forEach((t, i) => {
-        const item = el("div", "tp");
-        const tagText = { blunder: "重大失误", mistake: "明显失误", inaccuracy: "不够精确", rule: "规则检测" }[t.tag] || "";
-        const delta = t.eval_before && t.eval_after ? `${t.eval_before} → ${t.eval_after}` : "";
-        item.innerHTML = `
-          <div class="dot ${t.tag}"></div>
-          <div class="b">
-            <div class="h"><span class="mvno">${t.move_no}${t.side === "white" ? "." : "..."}</span>${t.san} · ${t.title}</div>
-            <div class="d">${t.explain || ""}</div>
-            <div class="m">
-              <span class="pill">${tagText}</span>
-              ${t.kp_name ? `<span class="pill blue">${t.kp_name}</span>` : ""}
-              ${delta ? `<span class="delta">${delta}</span>` : ""}
-              <span class="muted">${t.similar_puzzles?.length ? "相似题 "+t.similar_puzzles.length+" 道" : "无高度相似题"}</span>
-              ${t.best && t.best.san && !t.best_is_played ? `<span class="best-line">更好：${t.best.san}</span>` : ""}
-            </div>
-          </div>`;
-        item.onclick = () => { renderPly(t.ply); selectTp(i, true); };
-        list.appendChild(item);
-      });
-      rightCol.appendChild(list);
+    let activeTp = -1;
+    let activeTab = 'explanation';
+    const pendingExplanations = new Set();
+    const turnCard = el("section", "card rv-turn-card");
+    const turnHead = el("div", "rv-turn-head");
+    const turnTitle = label("h2", "", "转折点分析");
+    const turnSelect = el("select", "btn sm");
+    turnSelect.setAttribute("aria-label", "选择转折点");
+    tps.forEach((t, i) => turnSelect.add(new Option(`${i + 1}. ${t.move_no}${t.side === "white" ? "." : "…"} ${t.san}`, String(i))));
+    turnSelect.onchange = () => jumpTurn(Number(turnSelect.value));
+    turnHead.append(turnTitle, turnSelect);
+    const turnMeta = el("div", "rv-turn-meta");
+    const turnTabs = el("div", "rv-turn-tabs");
+    turnTabs.setAttribute("role", "tablist");
+    const turnBody = el("div", "rv-turn-body");
+    const turnNav = el("div", "rv-turn-nav");
+    const prevTurn = label("button", "btn sm", "↑ 上个转折点");
+    const nextTurn = label("button", "btn sm", "下个转折点 ↓");
+    prevTurn.onclick = () => jumpTurn(activeTp - 1);
+    nextTurn.onclick = () => jumpTurn(activeTp + 1);
+    turnNav.append(prevTurn, nextTurn);
+    for (const [id, text] of [["explanation", "本步讲解"], ["features", "局面特征"], ["learning", "学习"]]) {
+      const button = label("button", "", text);
+      button.type = "button";
+      button.setAttribute("role", "tab");
+      button.dataset.tab = id;
+      button.onclick = () => { activeTab = id; renderTurn(); };
+      turnTabs.append(button);
     }
+    turnCard.append(turnHead, turnMeta, turnTabs, turnBody, turnNav);
+    rightCol.append(turnCard);
+    if (!tps.length) turnCard.replaceChildren(label("p", "muted", "这盘棋没有找到明显的转折点。"));
 
     const moveExplanations = new Map();
     const decodeDialog = el("dialog", "card");
@@ -2535,6 +2732,15 @@
     decodeDialog.append(decodeHead, decodeStatus, decodeResults);
 
     function renderMoveExplanation(panel, t, result) {
+      const selectedConcepts = new Set((result.motifs || []).map(m => m.text));
+      function decorated(lines) {
+        return lines.map(line => {
+          const concepts = line.concepts || result.motifs || [];
+          const rows = Object.values(result.round_events || {}).flat().filter(row => row.san.join(" ") === line.san.join(" "));
+          return {...line, concepts, conceptMarks: confirmedConceptStartMarks(rows, concepts.map(c=>c.text))};
+        });
+      }
+
       function openLines(lines, startIndex = 1) {
         openVariationPlayer({
           title: "推荐着 vs 实战着",
@@ -2542,29 +2748,33 @@
             + ` · 推荐 ${t.best.san}`,
           fen: t.fen,
           orientation,
-          lines,
-          modalHost: decodeDialog,
+          lines: decorated(lines),
+          modalHost: decodeDialog.open ? decodeDialog : undefined,
           onBoard: (sans, step) => {
             decodeDialog.close();
-            playLineOnBoard(t.ply - 1, sans, step);
+            if (t.onBoard) t.onBoard(sans, step);
+            else playLineOnBoard(t.ply - 1, sans, step);
           },
           startIndex,
         });
       }
 
-      function appendLine(parent, title, san) {
+      function appendLine(parent, title, san, concept = null) {
         const row = el("p", "explanation-line");
         row.append(label("strong", "", title + " "));
-        const line = { label: title, san, showArrow: true };
+        const line = { label: title, san, showArrow: true, ...(concept ? {concepts:[concept]} : {}) };
         lineSteps(t.fen, san).slice(1).forEach((step, i) => {
           const move = label("button", "btn sm", step.token);
           move.type = "button";
           move.onclick = () => openLines([line], i + 1);
+          const marks = decorated([line])[0].conceptMarks[i + 1] || [];
+          if (marks.length) { move.classList.add("concept-true"); move.title = marks.join("；"); }
           row.append(move, " ");
         });
         parent.append(row);
       }
 
+      if (result.same_move) panel.append(label("p", "", "候选着就是引擎推荐着，展示这一步的变化与概念。"));
       if (result.status !== "ok") {
         panel.append(label("p", "", {
           insufficient: "可比较的分支太少，暂时无法提取稳定的棋理。",
@@ -2625,59 +2835,54 @@
       for (const motif of result.motifs || []) {
         const details = el("details", "explanation-concept");
         const summary = el("summary");
-        if (motif.stable) summary.append(label("strong", "", "推荐着主变化"), ` · ${motif.text}`);
-        else summary.append("这么走的", label("strong", "", "意图"), `是${motif.text}`);
+        const tier = motif.tier || "strict";
+        if (tier === "mainline") summary.append(label("strong", "", "主变化说明"));
+        else if (tier === "branch_gap") summary.append(label("strong", "", "部分分支中的意图"));
+        else if (motif.stable) summary.append(label("strong", "", "跨分支支持 · 推荐主变化"));
+        else summary.append(label("strong", "", "跨分支支持的意图"));
+        summary.append(" · ");
+        if (motif.maintained) {
+          const maintain = label("strong", "", "维持");
+          maintain.style.color = "#1d1f1c";
+          summary.append(maintain, " ");
+        }
+        summary.append(motif.text);
+        if (motif.description) summary.title = motif.description;
         summary.append(`（采样分支：推荐着 ${motif.positive_hits}/${result.positive_count} 条，实战着 ${motif.negative_hits}/${result.negative_count} 条）`);
         details.append(summary);
-        motif.branches.forEach((san, i) => appendLine(details, `变化 ${i + 1}`, san));
+        if (motif.description) {
+          const help = el("details", "concept-rule-help");
+          help.append(label("summary", "muted", "判定说明"), label("p", "", motif.description));
+          details.append(help);
+        }
+        if (tier === "mainline") details.append(label("p", "muted", "沿本次双方最佳应对主线，推荐着后确认出现该概念，实战着主线未确认出现；这不代表所有采样分支都支持。"));
+        if (tier === "branch_gap") details.append(label("p", "muted", "推荐采样分支的确认命中数比实战至少多2条；这是部分分支中的意图，不代表多数分支或最佳应对主线都能实现。"));
+        if (motif.negative_pending) details.append(label("p", "muted", `实战组还有 ${motif.negative_pending} 条分支待确认。`));
+        motif.branches.forEach((san, i) => appendLine(details, `变化 ${i + 1}`, san, motif));
         panel.append(details);
       }
-      if (result.round_events) {
-        const trace = el("details", "explanation-concept");
-        trace.append(label("summary", "", "逐回合事件与概念"));
-        const groups = [
-          ["推荐着主变化", result.round_events.main.slice(0, 1)],
-          ["实战着主变化", result.round_events.main.slice(1)],
-          ["推荐着分支", result.round_events.positive],
-          ["实战着分支", result.round_events.negative],
-        ];
-        for (const [name, rows] of groups) {
-          rows.forEach((row, i) => {
-            const title = rows.length === 1 ? name : `${name} ${i + 1}`;
-            const log = el("details", "explanation-concept");
-            log.append(label("summary", "", `${title} · ${row.san.slice(0, 2).join(" ")}`));
-            const line = { label: title, san: row.san, showArrow: true };
-            const list = el("ul");
-            for (const event of row.events) {
-              const side = event.side === "white" ? "白方" : "黑方";
-              const effect = {
-                check: "将军", mate: "将死",
-                capture_gain: `吃${event.target}，净赚 ${event.gain} 子力`,
-              }[event.kind];
-              const item = el("li");
-              const jump = label("button", "btn sm", row.san[event.ply - 1]);
-              jump.type = "button";
-              jump.onclick = () => openLines([line], event.ply);
-              item.append(`${side}${effect} `, jump);
-              list.append(item);
-            }
-            for (const concept of row.concepts) {
-              const item = el("li");
-              item.append(concept.text + " ");
-              for (const round of concept.rounds) {
-                const jump = label("button", "btn sm", `第 ${round} 回合`);
-                jump.type = "button";
-                jump.onclick = () => openLines([line], round * 2);
-                item.append(jump, " ");
-              }
-              list.append(item);
-            }
-            if (list.childElementCount) log.append(list);
-            else log.append(label("p", "muted", "这条变化未记录到将军、将杀、已确认的净得子或概念。"));
-            trace.append(log);
-          });
+      if (result.concept_descriptions) {
+        const help = el("details", "concept-rule-help");
+        help.append(label("summary", "muted", "全部 30 个概念的判定说明"));
+        for (const [name, description] of Object.entries(result.concept_descriptions)) {
+          const item = el("details");
+          const title = label("summary", "", result.concept_names?.[name] || name);
+          title.title = description;
+          item.append(title, label("p", "", description));
+          help.append(item);
         }
-        panel.append(trace);
+        panel.append(help);
+      }
+      if (result.round_events) {
+        const tree = renderDecodeTree(t, result.round_events, openLines, selectedConcepts);
+        for (const note of tree.querySelectorAll('.decode-tree-note')) {
+          if ([...selectedConcepts].some(text => note.textContent.startsWith(text))) {
+            note.textContent = '◆ ' + note.textContent;
+            note.style.borderLeftColor = '#b8791d';
+            note.style.fontWeight = 'bold';
+          }
+        }
+        panel.append(tree);
       }
       const lines = variationLines(t, result);
       if (!lines.length) return;
@@ -2688,118 +2893,123 @@
       panel.append(tools);
     }
 
-    let decoding = false;
     const decodeTools = el("div", "board-tools");
     decodeTools.append(searchDepth);
     rightCol.prepend(decodeTools);
-    if (tps.length) {
-      const decode = label("button", "btn sm primary", "Decode");
-      decode.type = "button";
-      decodeTools.append(decode);
-      rightCol.append(decodeDialog);
+    rightCol.append(decodeDialog);
+    const previousDepthChange = searchDepth.onchange;
+    searchDepth.onchange = () => {
+      if (previousDepthChange) previousDepthChange();
+      renderTurn();
+    };
 
-      decode.onclick = async () => {
-        if (!decodeDialog.open) decodeDialog.showModal();
-        if (decoding) return;
-        decoding = true;
-        const selectedDepth = Number(searchDepth.value);
-        decodeResults.replaceChildren();
-        const results = [];
-        try {
-          for (const [i, t] of tps.entries()) {
-            if (!decode.isConnected) return;
-            decodeStatus.textContent = `正在分析第 ${i + 1} / ${tps.length} 个转折点…`;
-            if (!t.best?.uci || t.best.uci === t.uci) {
-              results.push(null);
-              continue;
-            }
-            const cacheKey = `${selectedDepth}:${t.ply}`;
-            let result = moveExplanations.get(cacheKey);
-            if (!result) {
-              try {
-                result = await apiPost("/api/analysis/explain-move", {
-                  fen: t.fen, recommended: t.best.uci, played: t.uci,
-                  initial: moves[0].fen, history: moves.slice(0, t.ply - 1).map(m => m.uci),
-                  depth: selectedDepth,
-                });
-                if (result.status !== "unavailable") moveExplanations.set(cacheKey, result);
-              } catch {
-                result = { status: "unavailable" };
-              }
-            }
-            results.push(result);
-          }
-          if (!decode.isConnected) return;
-          decodeStatus.textContent = `共 ${tps.length} 个转折点 · 深度 ${selectedDepth}`;
-          tps.forEach((t, i) => {
-            const section = el("section", "card");
-            const number = t.side === "white" ? `${t.move_no}.` : `${t.move_no}…`;
-            section.append(label("h3", "", `${number} ${t.san}` +
-              (t.best?.san && t.best.uci !== t.uci ? ` · 推荐 ${t.best.san}` : "")));
-            if (results[i]) renderMoveExplanation(section, t, results[i]);
-            else section.append(label("p", "muted", "没有不同的引擎推荐着可比较。"));
-            decodeResults.append(section);
-          });
-        } finally {
-          decoding = false;
-        }
-      };
+    function jumpTurn(i) {
+      if (i < 0 || i >= tps.length) return;
+      renderPly(tps[i].ply);
+      selectTp(i, false);
     }
 
-    function selectTp(i, scroll) {
-      document.querySelectorAll(".tp").forEach((n, k) => n.classList.toggle("on", k === i));
-      if (scroll) {
-        const node = document.querySelectorAll(".tp")[i];
-        if (node) node.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    function selectTp(i) {
+      if (!tps[i]) return;
+      activeTp = i;
+      renderTurn();
+    }
+
+    function renderTurn() {
+      if (board._reviewEvidenceDispose) board._reviewEvidenceDispose();
+      const t = tps[activeTp];
+      if (!t) return;
+      turnSelect.value = String(activeTp);
+      turnTitle.textContent = `${t.move_no}${t.side === "white" ? "." : "…"} ${t.san} · ${t.title || "转折点"}`;
+      prevTurn.disabled = activeTp <= 0;
+      nextTurn.disabled = activeTp >= tps.length - 1;
+      const tag = {blunder:"重大失误",mistake:"明显失误",inaccuracy:"不够精确",rule:"规则检测"}[t.tag] || "转折点";
+      turnMeta.replaceChildren(label("span", "pill", tag));
+      if (t.eval_before != null && t.eval_after != null)
+        turnMeta.append(label("span", "muted", `${t.eval_before} → ${t.eval_after}`));
+      if (t.best?.san) turnMeta.append(label("span", "best-line", `更好：${t.best.san}`));
+      if (branch || cur !== t.ply) turnMeta.append(label("p", "muted rv-turn-context", `当前棋盘${branch ? "正在试走变化" : "停在其他棋步"}；本卡片分析第 ${t.move_no} 回合 ${t.san}。`));
+      for (const button of turnTabs.children) {
+        const selected = button.dataset.tab === activeTab;
+        button.classList.toggle("on", selected);
+        button.setAttribute("aria-selected", String(selected));
       }
-      const t = tps[i];
-      if (t) {
-        const box = host.querySelector(".best-box");
-        if (box) {
-          const pv = (t.best && t.best.pv) || [];
-          const head = pv.slice(0, 5).join(" ");
-          const more = pv.length > 5 ? " …" : "";
-          box.innerHTML = `<div class="t">更优走法</div>
-            <div class="mvs">${t.best && t.best.san ? `<b>${t.best.san}</b>` : "这一步程序没有给出替代着法"}</div>
-            ${pv.length ? `<div class="mvs" style="margin-top:6px;color:var(--ink-2)">后续：${head}${more}</div>` : ""}
-            <div class="muted" style="margin-top:8px">${t.explain || ""}</div>`;
-          if (pv.length || (t.best && t.best.san)) {
-            const tools = el("div", "board-tools");
-            const see = label("button", "btn sm", "查看完整变化");
-            see.onclick = () => openVariationPlayer({
-              title: `更优走法 ${t.best && t.best.san ? t.best.san : ""}`,
-              subtitle: `第 ${t.move_no} 回合${t.side === "white" ? "（白）" : "（黑）"} · 实战 ${t.san}`,
-              fen: t.fen,
-              orientation,
-              lines: variationLines(t),
-              onBoard: (sans, step) => playLineOnBoard(t.ply - 1, sans, step),
+      turnBody.replaceChildren();
+      const selectedDepth = Number(searchDepth.value);
+      const cacheKey = `${selectedDepth}:${t.ply}`;
+      if (activeTab === "explanation") {
+        const tools = el("div", "board-tools");
+        const decode = label("button", "btn sm primary", pendingExplanations.has(cacheKey) ? "Decode 分析中…" : "Decode 这个转折点");
+        decode.disabled = pendingExplanations.has(cacheKey) || !t.best?.uci || t.best.uci === t.uci;
+        tools.append(decode);
+        if (t.best?.san) {
+          const view = label("button", "btn sm", "查看完整变化");
+          view.onclick = () => openVariationPlayer({title: `更优走法 ${t.best.san}`, subtitle: `第 ${t.move_no} 回合 · 实战 ${t.san}`, fen:t.fen, orientation,
+            lines:variationLines(t), onBoard:(sans, step)=>playLineOnBoard(t.ply - 1, sans, step)});
+          tools.append(view);
+        }
+        const tryMove = label("button", "btn sm", "自己试走");
+        tryMove.onclick = () => { renderPly(t.ply - 1, {keepTp:true, noArrows:true}); boardCard.scrollIntoView({block:"nearest", behavior:"smooth"}); };
+        tools.append(tryMove);
+        turnBody.append(tools);
+        const result = moveExplanations.get(cacheKey);
+        if (result) renderMoveExplanation(turnBody, t, result);
+        else turnBody.append(label("p", "muted rv-decode-hint", pendingExplanations.has(cacheKey) ? "正在分析这个转折点，可以切换查看其他转折点。" : "点击 Decode 这个转折点后显示解析。"));
+        decode.onclick = async () => {
+          if (pendingExplanations.has(cacheKey)) return;
+          pendingExplanations.add(cacheKey);
+          renderTurn();
+          let error = null;
+          try {
+            const result = await apiPost("/api/analysis/explain-move", {
+              fen:t.fen, recommended:t.best.uci, played:t.uci,
+              initial:moves[0].fen, history:moves.slice(0,t.ply - 1).map(m=>m.uci), depth:selectedDepth,
             });
-            tools.appendChild(see);
-            box.appendChild(tools);
+            if (result.status === "unavailable") error = "棋理解说暂不可用，请重试。";
+            else moveExplanations.set(cacheKey,result);
+          } catch (e) { error = e.message || "分析失败，请重试。"; }
+          finally {
+            pendingExplanations.delete(cacheKey);
+            if (turnCard.isConnected && tps[activeTp] === t && Number(searchDepth.value) === selectedDepth) {
+              renderTurn();
+              if (error && activeTab === "explanation") turnBody.append(label("p", "muted", error));
+            }
           }
-          const matches = t.similar_puzzles || [];
-          box.append(label("div","muted",matches.length ? "高度相似题："+matches.length+" 道" : "暂未找到足够相似的题"));
-          for (const p of matches) {
-            const btn=label("button","btn sm","练习 #"+p.id);
-            btn.onclick=()=>openPuzzleModal(p);
-            box.append(btn);
+        };
+      } else if (activeTab === "features") {
+        const result = moveExplanations.get(cacheKey);
+        const concepts = result?.motifs || [];
+        if (!concepts.length) turnBody.append(label("p", "muted", "请先 Decode 这个转折点；这里仅展示最终解析中实际出现的概念。"));
+        else {
+          for (const concept of concepts) {
+            const show = label("button", "btn sm", "可视化：" + concept.text);
+            show.onclick = () => {
+              const rows = Object.values(result.round_events || {}).flat();
+              const row = rows.find(row => (row.concepts || []).some(c => c.text === concept.text && (c.true_rounds || c.rounds).length));
+              const evidence = row?.concepts.find(c=>c.text===concept.text);
+              if (!row || !evidence) { toast("没有该概念为 true 的局面证据。"); return; }
+              const step = (evidence.true_rounds || evidence.rounds)[0] * 2;
+              playLineOnBoard(t.ply - 1, row.san, step);
+              const target = el("div", "concept-visualization");
+              turnBody.append(target);
+              renderConceptVisualization(target, board, board.fen, [concept]);
+            };
+            turnBody.append(show);
           }
-          const learn = label("button", "btn sm", "围绕这步学习");
-          learn.onclick = () => {
-            state.learningReview = {...t, reviewId: res.id};
-            location.hash = "#/learning";
-          };
-          box.append(learn);
-
         }
+      } else {
+        if (t.kp_name) turnBody.append(label("h3", "", t.kp_name));
+        const matches = t.similar_puzzles || [];
+        turnBody.append(label("p", "muted", matches.length ? `高度相似题：${matches.length} 道` : "暂未找到足够相似的题"));
+        for (const p of matches) {
+          const practice = label("button", "btn sm", "练习 #" + p.id);
+          practice.onclick = () => openPuzzleModal(p);
+          turnBody.append(practice);
+        }
+        const learn = label("button", "btn sm", "围绕这步学习");
+        learn.onclick = () => { state.learningReview = {...t, reviewId:res.id}; location.hash = "#/learning"; };
+        turnBody.append(learn);
       }
-    }
-
-    // 最佳走法卡片
-    if (tps.length) {
-      const bestBox = el("div", "best-box");
-      bestBox.innerHTML = `<div class="t">更优走法</div><div class="muted">点上面任意一条转折点。</div>`;
-      rightCol.appendChild(bestBox);
     }
 
     // 学习动作（知识点 → 题目）
@@ -2871,6 +3081,7 @@
       ? Math.max(0, Math.min(moves.length, Math.round(opts.startPly)))
       : 0;
     renderPly(startPly, startPly ? {} : { noArrows: true });
+    if (tps.length && activeTp < 0) selectTp(0);
 
     // 键盘左右翻步（切到别的页面后自动解绑）
     const onKey = (e) => {

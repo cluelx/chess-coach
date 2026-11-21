@@ -10,8 +10,10 @@ import sys
 from pathlib import Path
 
 import chess
+import chess.engine
 
 from . import engine
+from .concept_help import concept_descriptions
 
 _RUNNER = Path(__file__).resolve().parents[1] / "vendor/binprop/run_chess_review.py"
 
@@ -110,7 +112,7 @@ def _material_difference(preferred, reference, side):
     return None
 
 
-def _ranked_concepts(samples):
+def _ranked_concepts(samples, before_fen=None):
     env = {
         key: os.environ[key]
         for key in ("SYSTEMROOT", "WINDIR", "TMPDIR", "TEMP", "TMP", "LANG", "LC_ALL")
@@ -121,7 +123,7 @@ def _ranked_concepts(samples):
         process = subprocess.run(
             [sys.executable, str(_RUNNER)],
             input=json.dumps({
-                "groups": samples, "start_limit": engine.CONCEPT_START_ROUNDS,
+                "groups": samples, "before_fen": before_fen, "start_limit": engine.CONCEPT_START_ROUNDS,
                 "followup": engine.CONCEPT_FOLLOWUP_ROUNDS,
             }),
             capture_output=True,
@@ -150,6 +152,8 @@ def explain(fen: str, recommended: str, played: str, *,
     recommended_group, played_group = groups["positive"], groups["negative"]
     positive, negative = (len(group["branches"]) for group in (recommended_group, played_group))
     result = {
+        "concept_descriptions": concept_descriptions(),
+        "concept_names": _CONCEPTS,
         "positive_count": positive,
         "negative_count": negative,
         "positive_example": recommended_group["main"]["san"],
@@ -160,7 +164,7 @@ def explain(fen: str, recommended: str, played: str, *,
     samples = {side: group["branches"] for side, group in groups.items()}
     main_lines = [recommended_group["main"], played_group["main"]]
     line_groups = {**samples, "main": main_lines}
-    ranked = _ranked_concepts(line_groups)
+    ranked = _ranked_concepts(line_groups, before_fen=fen)
     pending = [
         line_groups[side][index]
         for side, indexes in ranked.get("pending", {}).items() for index in indexes
@@ -172,7 +176,7 @@ def explain(fen: str, recommended: str, played: str, *,
     pending.extend(group["main"] for group in groups.values()
                    if group["forced_mate"] or group.get("forced_loss"))
     if engine.extend_review_lines(fen, pending, initial=initial, history=history, depth=depth):
-        ranked = _ranked_concepts(line_groups)
+        ranked = _ranked_concepts(line_groups, before_fen=fen)
     result["positive_example"], result["negative_example"] = (row["san"] for row in main_lines)
     concepts = ranked.get("events", {})
     result["round_events"] = {}
@@ -184,14 +188,34 @@ def explain(fen: str, recommended: str, played: str, *,
                 "san": row["san"],
                 "events": _line_events(fen, row["san"], terminal=row["terminal"])[0],
                 "concepts": [
-                    {"text": _CONCEPTS.get(item["name"], item["name"]), "rounds": item["rounds"]}
+                    {"text": _CONCEPTS.get(item["name"], item["name"]), "rounds": item["rounds"], "name": item["name"], "true_rounds": item.get("true_rounds", item["rounds"])}
                     for item in found
                 ],
             })
 
+    # Preserve every qualifying concept before tactical outcome shortcuts.
+    result["motifs"] = [{
+        "name": item["name"], "text": _CONCEPTS.get(item["name"], item["name"]),
+        "description": concept_descriptions()[item["name"]],
+        "maintained": ranked.get("before", {}).get(item["name"]) is True,
+        "positive_hits": len(item["positive_indices"]), "negative_hits": item["negative_hits"],
+        "tier": item.get("tier", "strict"), "negative_pending": item.get("negative_pending", 0),
+        "stable": bool(item.get("main_difference")),
+        "branches": list({tuple(line): line for line in (
+            ([main_lines[0]["san"]] if item.get("main_difference") else []) +
+            [samples["positive"][i]["san"] for i in item["positive_indices"]]
+        )}.values()),
+    } for item in ranked.get("motifs", [])]
+
     best_win, played_win = (group["forced_mate"] for group in (recommended_group, played_group))
     best_loss, played_loss = (group.get("forced_loss", False) for group in (recommended_group, played_group))
     result["status"] = "ok"
+    if best_win or played_win or best_loss or played_loss:
+        result["motifs"] = []
+        # Confirmed mate outcomes take precedence over positional concepts.
+        for rows in result.get("round_events", {}).values():
+            for row in rows:
+                row["concepts"] = []
     if best_win and played_win:
         result["mate_outcome"] = "both_win"
         return result
@@ -250,20 +274,79 @@ def explain(fen: str, recommended: str, played: str, *,
     if mate_intent and not stable:
         add_mate_intent()
         return result
-    result["motifs"] = [
-        {
-            "text": _CONCEPTS.get(item["name"], item["name"]),
-            "positive_hits": len(item["positive_indices"]),
-            "negative_hits": item["negative_hits"],
-            "stable": bool(stable),
-            "branches": list({tuple(line): line for line in (
-                ([best_line] if stable else []) +
-                [samples["positive"][i]["san"] for i in item["positive_indices"]]
-            )}.values()),
-        }
-        for item in (stable or ranked["motifs"])
-    ]
     result["status"] = (
         "ok" if result["motifs"] else "no_match" if ranked["evaluated"] else "unavailable"
     )
     return result
+
+
+def explain_position(initial: str, history: list[str], candidate: str | None = None,
+                     depth: int = engine.REVIEW_REPLY_DEPTH) -> dict:
+    """Decode one current position, comparing the best move with a candidate."""
+    board = engine._replay_history(initial, history)
+    if board.is_game_over(claim_draw=False):
+        return {"status": "finished", "result": board.result()}
+    eng = engine._get()
+    if eng is None:
+        return {"status": "unavailable"}
+    try:
+        best = engine._review_main_line(eng, board, depth)
+        pv = best.get("pv") or []
+        if not pv:
+            return {"status": "unavailable"}
+        recommended = pv[0]
+        if candidate:
+            try:
+                played = board.parse_san(candidate.strip())
+            except ValueError:
+                played = board.parse_uci(candidate.strip())
+            if not played:
+                raise ValueError("候选着不能是空着")
+        else:
+            # Choose the next engine candidate when no comparison move was supplied.
+            with engine._lock:
+                options = eng.analyse(
+                    board, chess.engine.Limit(depth=depth), multipv=2, game=object()
+                )
+            played = next((item["pv"][0] for item in options
+                           if item.get("pv") and item["pv"][0] != recommended), recommended)
+
+        turn = {
+            "fen": board.fen(), "move_no": board.fullmove_number,
+            "side": chess.COLOR_NAMES[board.turn],
+            "san": board.san(played), "uci": played.uci(),
+            "best": {"san": board.san(recommended), "uci": recommended.uci()},
+        }
+        if played == recommended:
+            start = board.copy()
+            start.push(recommended)
+            path = [recommended]
+            if not start.is_game_over():
+                info = engine._review_main_line(eng, start, depth)
+                path += engine._review_continuation(
+                    eng, start, info, engine.CONCEPT_START_ROUNDS * 2 - 1, depth
+                )
+            line = engine._review_row(board, path)[1]
+            ranked = _ranked_concepts({"positive": [line], "negative": [], "main": [line]}, before_fen=board.fen())
+            pending = ranked.get("pending", {}).get("positive", [])
+            if pending or _line_events(board.fen(), line["san"], terminal=line["terminal"])[1]:
+                if engine.extend_review_lines(board.fen(), [line], initial=initial, history=history, depth=depth):
+                    ranked = _ranked_concepts({"positive": [line], "negative": [], "main": [line]}, before_fen=board.fen())
+            concepts = ranked.get("events", {}).get("positive", [[]])[0]
+            result = {
+                "status": "ok", "same_move": True, "motifs": [],
+                "positive_example": line["san"], "negative_example": [],
+                "round_events": {"main": [{
+                    "san": line["san"],
+                    "events": _line_events(board.fen(), line["san"], terminal=line["terminal"])[0],
+                    "concepts": [{"text": _CONCEPTS.get(c["name"], c["name"]), "rounds": c["rounds"], "name": c["name"], "true_rounds": c.get("true_rounds", c["rounds"])}
+                                 for c in concepts],
+                }], "positive": [], "negative": []},
+            }
+        else:
+            result = explain(board.fen(), recommended.uci(), played.uci(),
+                             initial=initial, history=history, depth=depth)
+        return {"status": result["status"], "turn": turn, "analysis": result}
+    except (chess.engine.EngineError, TimeoutError):
+        engine._reset()
+        return {"status": "unavailable"}
